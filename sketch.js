@@ -1,35 +1,44 @@
 
+
+// State
 const coords = []
+const colors = []
+// Constants
+const RGB_COLORS = 3
+const PIXEL_SIZE = 2
+const JITTER = 3
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(240);
   let points = max(windowWidth, windowHeight) / 6
-  while(points > 0) {
-  coords.push([])
+  while (points > 0) {
+    coords.push([])
     points--
   }
   coords.forEach((coord) => {
-    coord.push(width/2); 
-    coord.push(height/2)})
+    coord.push(width / 2);
+    coord.push(height / 2)
+  })
+  for (let i = 0; i < RGB_COLORS; i++) {
+    colors.push(random(255))
+  }
 }
 
-const col = [0, 0, 0]
 
 
 let count = 0
 function draw() {
-  fill(col[0],col[1],col[2])
   noStroke()
+  fill(colors[0], colors[1], colors[2])
   coords.forEach((coord) => {
     [x, y] = coord
-    const size = 2
-    rect(x,y, size, size)
-  let distorsion = 3
-  coord[0] = x + random(-distorsion, distorsion)
-  coord[1] = y + random(-distorsion, distorsion)
+    rect(x, y, PIXEL_SIZE, PIXEL_SIZE)
+    coord[0] = x + random(-JITTER, JITTER)
+    coord[1] = y + random(-JITTER, JITTER)
   }
-                
-                )
-  const indx = floor(random(3))
-  col[indx] = (col[indx] + random(20)) % 255
+
+  )
+  const indx = floor(random(RGB_COLORS))
+  colors[indx] = (colors[indx] + random(1)) % 255
 }
