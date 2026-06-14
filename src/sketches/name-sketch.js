@@ -1,10 +1,16 @@
 import p5 from "p5"
 
 // should depend on screen sizes
-const CONGLOMERATION_FACTOR = 0.12
-const MOUSE_REPULSION = 50
-const PARTICLE_WEIGHT = 2
+let conglomerationFactor = 0.12
+let mouseRepulsion = 0
+let particleWeight = 2
 const SPRINGY_FORCE_MAX = 0.06
+
+function setVariables(w, h) {
+  mouseRepulsion = w * 0.05
+  particleWeight = Math.max(w, h) * 0.002
+  conglomerationFactor = Math.max(w, h) * 0.0001 || 0.12
+}
 
 // text should be separated in 2 lines when tab-port
 
@@ -16,6 +22,7 @@ export default function sketch(p, parent) {
     const w = parent.clientWidth
     const h = parent.clientHeight
 
+    setVariables(w, h)
 
     p.createCanvas(w, h)
 
@@ -33,7 +40,7 @@ export default function sketch(p, parent) {
       const y = h / 2 + bounds.h / 2
 
       const points = font.textToPoints(text, x, y, {
-        sampleFactor: CONGLOMERATION_FACTOR,
+        sampleFactor: conglomerationFactor,
       })
 
       particles = points.map((pt) => new Particle(p, pt.x, pt.y))
@@ -74,9 +81,10 @@ export default function sketch(p, parent) {
     const x = (w - bounds.w) / 2
     const y = h / 2 + bounds.h / 2
     const points = font.textToPoints("Martín Roncero", x, y, {
-      sampleFactor: CONGLOMERATION_FACTOR,
+      sampleFactor: conglomerationFactor,
     })
     particles = points.map((pt) => new Particle(p, pt.x, pt.y))
+    setVariables(w)
   }
 }
 
@@ -108,7 +116,7 @@ class Particle {
 
     const distToMouse = p5.Vector.dist(this.pos, mouse)
 
-    if (distToMouse < MOUSE_REPULSION) {
+    if (distToMouse < mouseRepulsion) {
       const repelForce = p5.Vector.sub(this.pos, mouse)
 
       repelForce.setMag(3)
@@ -133,7 +141,7 @@ class Particle {
     const p = this.p
 
     p.stroke(250, 251, 253)
-    p.strokeWeight(PARTICLE_WEIGHT)
+    p.strokeWeight(particleWeight)
     p.point(this.pos.x, this.pos.y)
   }
 }
