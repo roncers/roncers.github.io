@@ -42,3 +42,11 @@ function draw() {
   const indx = floor(random(RGB_COLORS))
   colors[indx] = (colors[indx] + random(1)) % 255
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  coords.forEach((coord) => {
+    coord[0] = width / 2;
+    coord[1] = height / 2;
+  })
+}
