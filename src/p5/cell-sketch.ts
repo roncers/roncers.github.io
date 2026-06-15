@@ -1,12 +1,14 @@
+import type p5 from 'p5'
+
 // State
-const coords = []
-const colors = []
+const coords: number[][] = []
+const colors: number[] = []
 // Constants
 const RGB_COLORS = 3
 const PIXEL_SIZE = 2
 const JITTER = 3
 
-export default function sketch(p, parent) {
+export default function sketch(p: p5, parent: HTMLElement): void {
   p.setup = () => {
     const w = parent.clientWidth
     const h = parent.clientHeight
