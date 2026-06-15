@@ -1,5 +1,5 @@
-import type p5 from 'p5'
-import type { ParticleUpdateOptions } from '../../types/p5'
+import type p5 from "p5"
+import type { ParticleUpdateOptions } from "../../types/p5"
 
 export default class Particle {
   p: p5
@@ -16,7 +16,7 @@ export default class Particle {
     targetX: number,
     targetY: number,
     startX?: number,
-    startY?: number
+    startY?: number,
   ) {
     this.p = p
 
@@ -24,7 +24,7 @@ export default class Particle {
 
     this.pos = p.createVector(
       startX ?? p.random(p.width),
-      startY ?? p.random(p.height)
+      startY ?? p.random(p.height),
     )
 
     this.vel = p.createVector(0, 0)
@@ -36,7 +36,11 @@ export default class Particle {
     this.mouseRepelForce = p.createVector(0, 0)
   }
 
-  update(springFactor: number, { mouse, mouseRepulsionSq }: ParticleUpdateOptions): void {
+  update(
+    springFactor: number,
+    { mouse, mouseRepulsionSq }: ParticleUpdateOptions,
+    noiseValue: number,
+  ): void {
     const p = this.p
 
     this.force.x = this.target.x - this.pos.x
@@ -54,8 +58,20 @@ export default class Particle {
     }
 
     // maybe check this double noise call.
-    const floatX = p.map(p.noise(this.noiseOffset), 0, 1, -0.5, 0.5)
-    const floatY = p.map(p.noise(this.noiseOffset + 10000), 0, 1, -0.5, 0.5)
+    const floatX = p.map(
+      p.noise(this.noiseOffset),
+      0,
+      1,
+      -noiseValue,
+      noiseValue,
+    )
+    const floatY = p.map(
+      p.noise(this.noiseOffset + 10000),
+      0,
+      1,
+      -noiseValue,
+      noiseValue,
+    )
 
     this.vel.add(p.createVector(floatX, floatY))
 

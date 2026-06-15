@@ -5,17 +5,19 @@ import type { ExtendedFont, ParticleUpdateOptions, TextPoint } from "@/types/p5"
 import interThinFont from "@/assets/fonts/Inter/static/Inter_18pt-Thin.ttf"
 
 // Font path - update this to match your actual font file location normally 0.6
-const SPRINGY_FORCE_MAX = 0.55
+const SPRINGY_FORCE_MAX = 0.1
 const TEXT_1 = "Martín"
 const TEXT_2 = "Roncero"
 const DISPLAYED_TEXT = `${TEXT_1} ${TEXT_2}`
 
+// TAL Y COMO SE QUEDA AL FINAL NO ME TERMINA DE CONVENCER, MIRAR ESO.
 // should depend on screen sizes
 let conglomerationFactor: number = 0
 let mouseRepulsion = 0
 let particleWeight = 0
-// will be 25, now for testing is lower
-const CALC_DELAY = 5
+let noiseValue = 0
+// will be 15, now for testing is lower
+const DELAY = 10
 const PARTICLE_LIFETIME = 60 * 1000
 const MOBILE_BREAKPOINT = 768
 
@@ -24,6 +26,11 @@ export default function sketch(p: p5, parent: HTMLElement): void {
   let font: ExtendedFont | null = null
   let particles: Particle[] = []
   const timeouts: ReturnType<typeof setTimeout>[] = []
+
+  // SHOULD BE 0
+  let sprFactor = 0
+  let count = 0
+
 
   // --- UTILITIES ---
   const handleResize = debounce(() => {
@@ -61,8 +68,9 @@ export default function sketch(p: p5, parent: HTMLElement): void {
 
   function setVariables(w: number, h: number): void {
     mouseRepulsion = w * 0.05
-    particleWeight = p.max(w, h) * 0.002
+    particleWeight = w > MOBILE_BREAKPOINT ? 3 : 2
     conglomerationFactor = p.max(p.max(w, h) * 0.00005, 0.12)
+    noiseValue = w > MOBILE_BREAKPOINT ? 1 : 0.5
   }
 
   function getPoints(w: number, h: number): TextPoint[] {
@@ -115,7 +123,7 @@ export default function sketch(p: p5, parent: HTMLElement): void {
   p.setup = () => {
     const w = parent.clientWidth
     const h = parent.clientHeight
-
+    p.frameRate(60)
     setVariables(w, h)
 
     p.createCanvas(w, h)
@@ -133,17 +141,16 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     })
   }
 
-  let sprFactor = SPRINGY_FORCE_MAX
-  let count = 0
+
 
   p.draw = () => {
     p.background(28, 28, 28)
 
     if (sprFactor >= SPRINGY_FORCE_MAX) {
-      sprFactor = p.random(0, 0.075)
-    } else if (count % CALC_DELAY === 0) {
+      // sprFactor = 0.001
+    } else if (count % DELAY === 0) {
       count = 0
-      sprFactor += 0.001
+      sprFactor += 0.0005
     }
     count++
     const mouse = p.createVector(p.mouseX, p.mouseY)
@@ -156,7 +163,7 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     }
 
     for (const particle of particles) {
-      particle.update(sprFactor, updateOptions)
+      particle.update(sprFactor, updateOptions, noiseValue)
       particle.show()
     }
   }
