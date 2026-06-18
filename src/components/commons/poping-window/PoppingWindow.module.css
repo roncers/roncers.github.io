@@ -22,9 +22,15 @@
   position: relative;
 }
 
-.closeIcon {
+.closeIcon.closeIcon {
   &:hover {
-    background: red !important;
+    background: color-mix(in srgb, var(--color-warning) 80%, transparent);
+  }
+}
+
+.closeIcon.closeIcon {
+  &:active {
+    background: color-mix(in srgb, var(--color-warning) 95%, transparent);
   }
 }
 

@@ -19,3 +19,8 @@
   inherits: false;
   initial-value: #fafbfd;
 }
+@property --color-warning {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #a12d1e;
+}
