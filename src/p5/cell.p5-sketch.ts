@@ -1,4 +1,4 @@
-import type p5 from 'p5'
+import type p5 from "p5"
 
 // State
 const coords: number[][] = []
@@ -39,5 +39,13 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     })
     const indx = p.floor(p.random(RGB_COLORS))
     colors[indx] = (colors[indx] + p.random(1)) % 255
+  }
+
+  p.windowResized = () => {
+    p.resizeCanvas(parent.clientWidth, parent.clientHeight)
+    coords.forEach((coord) => {
+      coord[0] = p.width / 2
+      coord[1] = p.height / 2
+    })
   }
 }

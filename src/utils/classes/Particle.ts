@@ -52,7 +52,9 @@ export default class Particle {
     this.force.x = this.target.x - this.pos.x
     this.force.y = this.target.y - this.pos.y
 
-    const diff = (SPRINGY_FORCE_MAX * 0.6) <= springFactor ? this.springyForceDiff : 0
+    const springFactorRatio = springFactor / SPRINGY_FORCE_MAX
+
+    const diff = this.springyForceDiff * springFactorRatio
 
     this.force.mult(springFactor - diff)
 

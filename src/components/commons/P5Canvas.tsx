@@ -13,18 +13,27 @@ export default function P5Canvas({ sketch }: P5CanvasProps): React.ReactElement 
     const parent = containerRef.current
     if (!parent) return
 
+    let instance: p5 | null = null
+    let resizeObserver: ResizeObserver | null = null
     let timeoutId: ReturnType<typeof setTimeout> | null = null
 
     // timeout is to fix a bug where 2 instances where getting mounted with React 19 strict mode
     timeoutId = setTimeout(() => {
-      new p5((p: p5) => sketch(p, parent), parent)
-    }, 0)
+      instance = new p5((p: p5) => sketch(p, parent), parent)
 
+      // forward container size changes to the sketch's windowResized hook
+      resizeObserver = new ResizeObserver(() => {
+        instance?.windowResized?.()
+      })
+      resizeObserver.observe(parent)
+    }, 0)
 
     return () => {
       if (timeoutId) {
         clearTimeout(timeoutId)
       }
+      resizeObserver?.disconnect()
+      instance?.remove()
     }
   }, [sketch])
 
