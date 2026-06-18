@@ -1,0 +1,21 @@
+@property --color-dark {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #1c1c1c;
+}
+@property --color-darker {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #333333;
+}
+@property --color-darkest {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #000000;
+}
+
+@property --color-light {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #fafbfd;
+}

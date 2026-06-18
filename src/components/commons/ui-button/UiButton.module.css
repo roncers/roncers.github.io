@@ -1,0 +1,16 @@
+.uiButton {
+  color: var(--color-light);
+  border: none;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  place-self: center;
+  padding: 0.3rem 0.7rem;
+  background: transparent;
+  &:hover {
+    background: color-mix(in srgb, var(--color-light) 10%, transparent);
+  }
+  &:active {
+    background: color-mix(in srgb, var(--color-light) 20%, transparent);
+  }
+}

@@ -1,9 +1,11 @@
 @import "./abstracts/reset.css";
 @import "./abstracts/utils.css";
+@import "./abstracts/properties.css";
 
 :root {
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  font-size: 62.5%; 
+  font: 1.8rem/145% var(--sans);
+  letter-spacing: 0.18rem;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
