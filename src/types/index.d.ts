@@ -1,3 +1,8 @@
+declare module '*.module.css' {
+  const classes: Record<string, string>
+  export default classes
+}
+
 declare module '*.ttf' {
   const content: string
   export default content

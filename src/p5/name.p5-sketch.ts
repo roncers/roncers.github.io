@@ -1,23 +1,27 @@
 import type p5 from "p5"
-import { debounce } from "@/utils/debounce"
+import { debounce } from "@/utils/functions/debounce"
 import Particle from "@/utils/classes/Particle"
-import type { ExtendedFont, ParticleUpdateOptions, TextPoint } from "@/types/p5"
+import type {
+  ExtendedFont,
+  ParticleUpdateOptions,
+  TextPoint,
+} from "@/types/p5.types"
 import interThinFont from "@/assets/fonts/Inter/static/Inter_18pt-Thin.ttf"
 
 // Font path - update this to match your actual font file location normally 0.6
-const SPRINGY_FORCE_MAX = 0.1
+export const SPRINGY_FORCE_MAX = 0.1
 const TEXT_1 = "Martín"
 const TEXT_2 = "Roncero"
 const DISPLAYED_TEXT = `${TEXT_1} ${TEXT_2}`
 
 // TAL Y COMO SE QUEDA AL FINAL NO ME TERMINA DE CONVENCER, MIRAR ESO.
 // should depend on screen sizes
-let conglomerationFactor: number = 0
+let conglomerationFactor = 0
 let mouseRepulsion = 0
 let particleWeight = 0
 let noiseValue = 0
 // will be 15, now for testing is lower
-const DELAY = 10
+const DELAY = 2
 const PARTICLE_LIFETIME = 60 * 1000
 const MOBILE_BREAKPOINT = 768
 
@@ -30,7 +34,6 @@ export default function sketch(p: p5, parent: HTMLElement): void {
   // SHOULD BE 0
   let sprFactor = 0
   let count = 0
-
 
   // --- UTILITIES ---
   const handleResize = debounce(() => {
@@ -141,18 +144,15 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     })
   }
 
-
-
   p.draw = () => {
     p.background(28, 28, 28)
 
-    if (sprFactor >= SPRINGY_FORCE_MAX) {
-      // sprFactor = 0.001
-    } else if (count % DELAY === 0) {
-      count = 0
-      sprFactor += 0.0005
+    if (sprFactor < SPRINGY_FORCE_MAX) {
+      count++
+      if (count % DELAY === 0) {
+        sprFactor += 0.0005
+      }
     }
-    count++
     const mouse = p.createVector(p.mouseX, p.mouseY)
     p.stroke(250, 251, 253)
     p.strokeWeight(particleWeight)

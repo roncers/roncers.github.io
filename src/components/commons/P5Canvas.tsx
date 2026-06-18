@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import p5 from 'p5'
-import type { Sketch } from '@/types/p5'
+import type { Sketch } from '@/types/p5.types'
 
 interface P5CanvasProps {
   sketch: Sketch
