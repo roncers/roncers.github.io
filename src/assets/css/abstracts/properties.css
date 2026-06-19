@@ -19,8 +19,17 @@
   inherits: false;
   initial-value: #fafbfd;
 }
+@property --color-grey {
+  syntax: "<color>";
+  inherits: false;
+}
 @property --color-warning {
   syntax: "<color>";
   inherits: false;
   initial-value: #a12d1e;
+}
+
+@property --font-size-sm {
+  syntax: "<number>";
+  inherits: false;
 }
