@@ -1,11 +1,11 @@
 .uiButton {
   color: var(--color-light);
   border: none;
-  padding: 0;
-  cursor: default;
+  cursor: pointer;
   display: flex;
-  place-self: center;
-  padding: 0.3rem 0.7rem;
+  align-items: center;
+  padding: 0rem 0.7rem;
+  height: 100%;
   background: transparent;
   &:hover {
     background: color-mix(in srgb, var(--color-light) 10%, transparent);

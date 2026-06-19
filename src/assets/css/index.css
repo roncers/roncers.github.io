@@ -1,22 +1,24 @@
 @import "./abstracts/reset.css";
-@import "./abstracts/utils.css";
+@import "./abstracts/utility-classes.css";
 @import "./abstracts/properties.css";
+@import "./abstracts/fonts.css";
 
 :root {
-  font-size: 62.5%; 
-  font: 1.8rem/145% var(--sans);
-  letter-spacing: 0.18rem;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
+  --font-size-sm: 1.3rem;
+  --default-font: "Inter", sans-serif;
+  --color-grey: color-mix(in srgb, var(--color-dark) 40%, var(--color-light));
+  /* @media (max-width: 1024px) {
+    font-size: 16px;
+    } */
+}
+
+html {
+  font-family: var(--default-font);
+  font-size: 62.5%;
+  color: var(--color-light);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* @media (max-width: 1024px) {
-    font-size: 16px;
-  } */
 }
 
 /* For the canvas to occupy only the 100% not more. */

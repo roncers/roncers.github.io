@@ -11,11 +11,11 @@ interface TabCanvasProps {
 export default function TabCanvas({ sketch, label }: TabCanvasProps): React.ReactElement {
 
   return (
-    <div className='w-full h-full flex flex-col' style={{ padding: '1rem' }}>
+    <div className={`w-full h-full flex flex-col ${style.tabContainer}`}>
       <label className={style.label}>
         {label}
       </label>
-      <P5Canvas style={{ border: '1px solid red' }} sketch={sketch} />
+      <P5Canvas className={style.canvasWrapper} sketch={sketch} />
     </div>
   )
 }

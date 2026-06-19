@@ -1,9 +1,9 @@
 import type p5 from "p5"
 import type { ParticleUpdateOptions } from "../../types/p5.types"
-import { SPRINGY_FORCE_MAX } from "@//p5/name.p5-sketch"
+import { ATTRACTION_FORCE_MAX } from "@//p5/name.p5-sketch"
 
-const SPRINGY_DIFF = 0.1
-const SPRINGY_STEP = 0.01
+const ATTRACTION_DIFF = 0.1
+const ATTRACTION_STEP = 0.01
 
 export default class Particle {
   p: p5
@@ -14,7 +14,7 @@ export default class Particle {
   noiseOffset: number
   force: p5.Vector
   mouseRepelForce: p5.Vector
-  springyForceDiff: number
+  attractionForceDiff: number
 
   constructor(
     p: p5,
@@ -39,11 +39,11 @@ export default class Particle {
 
     this.force = p.createVector(0, 0)
     this.mouseRepelForce = p.createVector(0, 0)
-    this.springyForceDiff = 0
+    this.attractionForceDiff = 0
   }
 
   update(
-    springFactor: number,
+    attractionForce: number,
     { mouse, mouseRepulsionSq }: ParticleUpdateOptions,
     noiseValue: number,
   ): void {
@@ -52,18 +52,18 @@ export default class Particle {
     this.force.x = this.target.x - this.pos.x
     this.force.y = this.target.y - this.pos.y
 
-    const springFactorRatio = springFactor / SPRINGY_FORCE_MAX
+    const attractionForceRatio = attractionForce / ATTRACTION_FORCE_MAX
 
-    const diff = this.springyForceDiff * springFactorRatio
+    const diff = this.attractionForceDiff * attractionForceRatio
 
-    this.force.mult(springFactor - diff)
+    this.force.mult(attractionForce - diff)
 
     const dx = this.pos.x - mouse.x
     const dy = this.pos.y - mouse.y
     if (dx * dx + dy * dy < mouseRepulsionSq) {
       this.mouseRepelForce.x = this.pos.x - mouse.x
       this.mouseRepelForce.y = this.pos.y - mouse.y
-      this.springyForceDiff = SPRINGY_DIFF
+      this.attractionForceDiff = ATTRACTION_DIFF
       this.mouseRepelForce.setMag(3)
       this.vel.add(this.mouseRepelForce)
     }
@@ -91,8 +91,8 @@ export default class Particle {
     this.vel.mult(0.9)
     this.vel.add(this.force)
     this.pos.add(this.vel)
-    if (this.springyForceDiff > 0) {
-      this.springyForceDiff -= SPRINGY_STEP
+    if (this.attractionForceDiff > 0) {
+      this.attractionForceDiff -= ATTRACTION_STEP
     }
   }
 

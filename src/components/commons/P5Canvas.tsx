@@ -4,10 +4,11 @@ import type { Sketch } from '@/types/p5.types'
 
 interface P5CanvasProps {
   sketch: Sketch
+  className?: string
   [key: string]: any
 }
 
-export default function P5Canvas({ sketch, ...props }: P5CanvasProps): React.ReactElement {
+export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps): React.ReactElement {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -38,5 +39,5 @@ export default function P5Canvas({ sketch, ...props }: P5CanvasProps): React.Rea
     }
   }, [sketch])
 
-  return <div ref={containerRef} className="w-full h-full flex-1 min-h-0" {...props} />
+  return <div ref={containerRef} className={`w-full h-full flex-1 min-h-0 ${className || ''}`} {...props} />
 }

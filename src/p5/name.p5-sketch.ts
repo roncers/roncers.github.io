@@ -9,10 +9,11 @@ import type {
 import interThinFont from "@/assets/fonts/Inter/static/Inter_18pt-Thin.ttf"
 
 // Font path - update this to match your actual font file location normally 0.6
-export const SPRINGY_FORCE_MAX = 0.1
+export const ATTRACTION_FORCE_MAX = 0.1
 const TEXT_1 = "Martín"
 const TEXT_2 = "Roncero"
 const DISPLAYED_TEXT = `${TEXT_1} ${TEXT_2}`
+const DRAG_LIMITATION = 2
 
 // TAL Y COMO SE QUEDA AL FINAL NO ME TERMINA DE CONVENCER, MIRAR ESO.
 // should depend on screen sizes
@@ -21,19 +22,20 @@ let mouseRepulsion = 0
 let particleWeight = 0
 let noiseValue = 0
 // will be 15, now for testing is lower
-const DELAY = 2
+const DELAY = 13
 const PARTICLE_LIFETIME = 60 * 1000
+const PARTICLE_LIFETIME_DRAG = 10 * 1000
 const MOBILE_BREAKPOINT = 768
 
 export default function sketch(p: p5, parent: HTMLElement): void {
   // ENV
   let font: ExtendedFont | null = null
-  let particles: Particle[] = []
+  let textParticles: Particle[] = []
+  let mouseParticles: Particle[] = []
   const timeouts: ReturnType<typeof setTimeout>[] = []
 
   // SHOULD BE 0
   let sprFactor = 0
-  let count = 0
 
   // --- UTILITIES ---
   const handleResize = debounce(() => {
@@ -45,19 +47,21 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     timeouts.forEach((timeout) => clearTimeout(timeout))
     const points = getPoints(w, h)
     points.forEach((point, index) => {
-      if (index < particles.length) {
+      if (index < textParticles.length) {
         // resetting target of existing particles in different points
-        particles[index].target.x = point.x
-        particles[index].target.y = point.y
+        textParticles[index].target.x = point.x
+        textParticles[index].target.y = point.y
       } else {
         // addition of new particles
-        particles.push(new Particle(p, point.x, point.y))
+        textParticles.push(new Particle(p, point.x, point.y))
       }
     })
     // deletion of particles if needed
-    if (particles.length > points.length) {
-      particles = particles.slice(0, points.length)
+    if (textParticles.length > points.length) {
+      textParticles = textParticles.slice(0, points.length)
     }
+    // clear mouse particles on resize so they don't outlive their removed timeouts
+    mouseParticles = []
     setVariables(w, h)
   }, 150)
 
@@ -140,16 +144,15 @@ export default function sketch(p: p5, parent: HTMLElement): void {
 
       const points = getPoints(w, h)
 
-      particles = points.map((pt) => new Particle(p, pt.x, pt.y))
+      textParticles = points.map((pt) => new Particle(p, pt.x, pt.y))
     })
   }
 
   p.draw = () => {
     p.background(28, 28, 28)
 
-    if (sprFactor < SPRINGY_FORCE_MAX) {
-      count++
-      if (count % DELAY === 0) {
+    if (sprFactor < ATTRACTION_FORCE_MAX) {
+      if (p.frameCount % DELAY === 0) {
         sprFactor += 0.0005
       }
     }
@@ -162,18 +165,31 @@ export default function sketch(p: p5, parent: HTMLElement): void {
       mouseRepulsionSq: mouseRepulsion ** 2,
     }
 
-    for (const particle of particles) {
+    for (const particle of textParticles) {
+      particle.update(sprFactor, updateOptions, noiseValue)
+      particle.show()
+    }
+    for (const particle of mouseParticles) {
       particle.update(sprFactor, updateOptions, noiseValue)
       particle.show()
     }
   }
 
   p.mousePressed = () => {
-    particles.push(new Particle(p, p.mouseX, p.mouseY, p.mouseX, p.mouseY))
+    mouseParticles.unshift(new Particle(p, p.mouseX, p.mouseY, p.mouseX, p.mouseY))
     timeouts.push(
       setTimeout(() => {
-        particles.pop()
+        mouseParticles.pop()
       }, PARTICLE_LIFETIME),
+    )
+  }
+  p.mouseDragged = () => {
+    if (p.frameCount % DRAG_LIMITATION !== 0) return
+    mouseParticles.unshift(new Particle(p, p.mouseX, p.mouseY, p.mouseX, p.mouseY))
+    timeouts.push(
+      setTimeout(() => {
+        mouseParticles.pop()
+      }, PARTICLE_LIFETIME_DRAG),
     )
   }
 
