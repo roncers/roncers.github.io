@@ -3,6 +3,8 @@ import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import CellSketch from "@/components/tabs/p5/CellSketch"
 import LavaSketch from "@/components/tabs/p5/LavaSketch"
 
+const FIRST_RENDER_DELAY = 10000
+
 function getRandomPosition() {
   const top = Math.floor(Math.random() * 80) + 10
   const left = Math.floor(Math.random() * 80) + 10
@@ -32,7 +34,7 @@ function TabRenderer(): ReactElement {
                     content: LavaSketch,
                 },
             ])
-        }, 1000)
+        }, FIRST_RENDER_DELAY)
 
         return () => clearTimeout(timeout)
         // eslint-disable-next-line react-hooks/exhaustive-deps

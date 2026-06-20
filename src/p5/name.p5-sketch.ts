@@ -22,7 +22,7 @@ let mouseRepulsion = 0
 let particleWeight = 0
 let noiseValue = 0
 // will be 15, now for testing is lower
-const DELAY = 13
+const DELAY = 10
 const PARTICLE_LIFETIME = 60 * 1000
 const PARTICLE_LIFETIME_DRAG = 10 * 1000
 const MOBILE_BREAKPOINT = 768

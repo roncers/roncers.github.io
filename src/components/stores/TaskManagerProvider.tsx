@@ -1,5 +1,8 @@
-import { createContext, useReducer } from "react"
+import { createContext, useReducer, use } from "react"
 import { Tab } from "@/types/tab.types"
+import { UiWindowContext } from "@/components/stores/UiWindowProvider"
+
+type TabUpdate = Pick<Tab, 'id'> & Partial<Omit<Tab, 'id'>>;
 
 interface TaskManagerContextType {
   maxZ: number
@@ -8,23 +11,27 @@ interface TaskManagerContextType {
   setTabs: (tabs: Tab[]) => void
   addTab: (tab: Tab) => void
   removeTab: (id: string) => void
-  updateTab: (tab: Tab) => void
+  updateTab: (tab: TabUpdate) => void
   setTabSize: (id: string, sizeX: number, sizeY: number) => void
   setTabPosition: (id: string, screenPosition: { x: number; y: number } | null) => void
   incrementTabZIndex: (id: string) => void
+  maximizeTab: (id: string) => void
+  minimizeTab: (id: string) => void
 }
 
 export const TaskManagerContext = createContext<TaskManagerContextType>({
   maxZ: 0,
   tabs: [],
-  incrementMaxZ: () => {},
-  setTabs: () => {},
-  addTab: () => {},
-  removeTab: () => {},
-  updateTab: () => {},
-  setTabSize: () => {},
-  setTabPosition: () => {},
-  incrementTabZIndex: () => {},
+  incrementMaxZ: () => { },
+  setTabs: () => { },
+  addTab: () => { },
+  removeTab: () => { },
+  updateTab: () => { },
+  setTabSize: () => { },
+  setTabPosition: () => { },
+  incrementTabZIndex: () => { },
+  maximizeTab: () => { },
+  minimizeTab: () => { },
 })
 
 function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: string; payload: any }) {
@@ -36,14 +43,14 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
     case "UPDATE_TAB":
       return {
         ...state,
-        tabs: state.tabs.map((tab) => (tab.id === action.payload.id ? action.payload : tab)),
+        tabs: state.tabs.map((tab) => (tab.id === action.payload.id ? {...tab, ...action.payload} : tab)),
       }
     case "SET_TAB_SIZE":
       return {
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
-            ? { ...tab, sizeX: action.payload.sizeX, sizeY: action.payload.sizeY }
+            ? { ...tab, sizeX: action.payload.sizeX, sizeY: action.payload.sizeY, prevX: tab.sizeX, prevY: tab.sizeY }
             : tab
         ),
       }
@@ -52,7 +59,25 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
-            ? { ...tab, screenPosition: action.payload.screenPosition }
+            ? { ...tab, screenPosition: action.payload.screenPosition, prevPosition: { ...tab.screenPosition } }
+            : tab
+        ),
+      }
+    case "SET_TAB_PREV_SIZE":
+      return {
+        ...state,
+        tabs: state.tabs.map((tab) =>
+          tab.id === action.payload.id
+            ? { ...tab, sizeX: tab.prevX!, sizeY: tab.prevY! }
+            : tab
+        ),
+      }
+    case "SET_TAB_PREV_POSITION":
+      return {
+        ...state,
+        tabs: state.tabs.map((tab) =>
+          tab.id === action.payload.id
+            ? { ...tab, screenPosition: tab.prevPosition! }
             : tab
         ),
       }
@@ -79,7 +104,8 @@ export default function TaskManagerContextProvider({
 }: {
   children: React.ReactNode
 }) {
-  const [tabsState, tabsStateDispatch] = useReducer(tabsReducer, {maxZ: 0, tabs: []})
+  const [tabsState, tabsStateDispatch] = useReducer(tabsReducer, { maxZ: 0, tabs: [] })
+  const { width, height } = use(UiWindowContext)
 
   function addTab(tab: Tab) {
     tabsStateDispatch({ type: "ADD_TAB", payload: tab })
@@ -89,7 +115,7 @@ export default function TaskManagerContextProvider({
     tabsStateDispatch({ type: "REMOVE_TAB", payload: id })
   }
 
-  function updateTab(tab: Tab) {
+  function updateTab(tab: TabUpdate) {
     tabsStateDispatch({ type: "UPDATE_TAB", payload: tab })
   }
 
@@ -114,8 +140,19 @@ export default function TaskManagerContextProvider({
     tabsStateDispatch({ type: "UPDATE_TAB_Z_INDEX", payload: { id } })
   }
 
+  function maximizeTab(id: string) {
+    tabsStateDispatch({ type: "SET_TAB_SIZE", payload: { id, sizeX: width, sizeY: height } })
+    tabsStateDispatch({ type: "SET_TAB_POSITION", payload: { id, screenPosition: { x: 0, y: 0 } } })
+  }
+
+  function minimizeTab(id: string) {
+    console.log('mini')
+    tabsStateDispatch({ type: "SET_TAB_PREV_SIZE", payload: { id } })
+    tabsStateDispatch({ type: "SET_TAB_PREV_POSITION", payload: { id } })
+  }
+
   return (
-    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex }}>
+    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab }}>
       {children}
     </TaskManagerContext.Provider>
   )
