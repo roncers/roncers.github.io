@@ -1,13 +1,15 @@
-import { ReactNode, CSSProperties, useRef, useMemo, use } from "react"
+import { ReactNode, CSSProperties, useRef, use } from "react"
 import styles from "./PoppingWindow.module.css"
 import CloseIcon from '@/components/icons/CloseIcon'
 // import MinimizeIcon from '@/components/icons/MinimizeIcon'
 import MaximizeIcon from '@/components/icons/MaximizeIcon'
+import MinimizeIcon from '@/components/icons/MinimizeIcon'
 import HideIcon from '@/components/icons/HideIcon'
 import UiButton from '@/components/commons/ui-button/UiButton'
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
+import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 
 interface PoppingWindowProps {
   id: string
@@ -19,14 +21,8 @@ interface PoppingWindowProps {
   [key: string]: any
 }
 
-// move this logic to the Tab class which will be available for all tabs
-
-
 const MIN_WIDTH = 150
 const MIN_HEIGHT = 100
-
-// TODO: if clicked put the max z-index available + 1
-// Also in this context It would be useful to include all the shared relevant data of the popovers, to being able to close them without references.
 
 export default function PoppingWindow({
   id,
@@ -37,14 +33,43 @@ export default function PoppingWindow({
   children,
   ...rest
 }: PoppingWindowProps): React.ReactElement {
-  const { incrementTabZIndex, removeTab } = use(TaskManagerContext)
+  const { incrementTabZIndex, removeTab, maximizeTab, minimizeTab, updateTab } = use(TaskManagerContext)
+  const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
 
-  const { onDragStart } = useDraggable(ref)
+  const { onDragStart } = useDraggable(ref, updateTabPos)
+
+  function updateTabPos(screenPosition: { x: number; y: number }) {
+    screenPosition.x = (screenPosition.x / width) * 100
+    screenPosition.y = (screenPosition.y / height) * 100
+    updateTab({ id, screenPosition })
+  }
+  function updateTabSize(
+    size: { width: number; height: number },
+    position: { x: number; y: number }
+  ) {
+    updateTab({
+      id,
+      sizeX: size.width,
+      sizeY: size.height,
+      screenPosition: {
+        x: (position.x / width) * 100,
+        y: (position.y / height) * 100,
+      },
+    })
+  }
   const { onResizeStart, directions } = useResizable(ref, {
     minWidth: MIN_WIDTH,
     minHeight: MIN_HEIGHT,
+    onResizeEnd: updateTabSize,
   })
+  const isMaximized = width === sizeX && height === sizeY
+  function eventHandler<E>(callback: (e: E) => void) {
+    return (e: E) => {
+      incrementTabZIndex(id)
+      callback(e)
+    }
+  }
 
   return (
     <section
@@ -65,15 +90,16 @@ export default function PoppingWindow({
     >
       <header onMouseDown={onDragStart}>
         <UiButton><HideIcon /></UiButton>
-        <UiButton><MaximizeIcon /></UiButton>
-        <UiButton className={styles.closeIcon} onClick={() => removeTab(id)}><CloseIcon /></UiButton>
+        {isMaximized && <UiButton onClick={eventHandler(() => minimizeTab(id))}><MinimizeIcon /></UiButton>}
+        {!isMaximized && <UiButton onClick={eventHandler(() => maximizeTab(id))}><MaximizeIcon /></UiButton>}
+        <UiButton className={styles.closeIcon} onClick={eventHandler(() => removeTab(id))}><CloseIcon /></UiButton>
       </header>
       <div className={styles.content}>{children}</div>
       {directions.map((dir) => (
         <div
           key={dir}
           className={`${styles.handle} ${styles[dir]}`}
-          onMouseDown={onResizeStart(dir)}
+          onMouseDown={eventHandler(onResizeStart(dir))}
         />
       ))}
     </section>

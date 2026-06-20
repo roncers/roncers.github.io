@@ -16,6 +16,10 @@ export const RESIZE_DIRECTIONS: ResizeDirection[] = [
 interface UseResizableOptions {
   minWidth?: number
   minHeight?: number
+  onResizeEnd?: (
+    size: { width: number; height: number },
+    position: { x: number; y: number }
+  ) => void
 }
 
 /**
@@ -25,7 +29,7 @@ interface UseResizableOptions {
  */
 export function useResizable(
   ref: RefObject<HTMLElement | null>,
-  { minWidth = 150, minHeight = 100 }: UseResizableOptions = {}
+  { minWidth = 150, minHeight = 100, onResizeEnd }: UseResizableOptions = {}
 ) {
   const onResizeStart = useCallback(
     (dir: ResizeDirection) => (e: React.MouseEvent) => {
@@ -42,37 +46,50 @@ export function useResizable(
       const startLeft = rect.left
       const startTop = rect.top
 
+      let lastW = startW
+      let lastH = startH
+      let lastLeft = startLeft
+      let lastTop = startTop
+
       const onMouseMove = (ev: MouseEvent) => {
         const dx = ev.clientX - startX
         const dy = ev.clientY - startY
 
         if (dir.includes("e")) {
-          el.style.width = `${Math.max(minWidth, startW + dx)}px`
+          lastW = Math.max(minWidth, startW + dx)
+          el.style.width = `${lastW}px`
         }
         if (dir.includes("s")) {
-          el.style.height = `${Math.max(minHeight, startH + dy)}px`
+          lastH = Math.max(minHeight, startH + dy)
+          el.style.height = `${lastH}px`
         }
         if (dir.includes("w")) {
-          const newW = Math.max(minWidth, startW - dx)
-          el.style.width = `${newW}px`
-          el.style.left = `${startLeft + (startW - newW)}px`
+          lastW = Math.max(minWidth, startW - dx)
+          lastLeft = startLeft + (startW - lastW)
+          el.style.width = `${lastW}px`
+          el.style.left = `${lastLeft}px`
         }
         if (dir.includes("n")) {
-          const newH = Math.max(minHeight, startH - dy)
-          el.style.height = `${newH}px`
-          el.style.top = `${startTop + (startH - newH)}px`
+          lastH = Math.max(minHeight, startH - dy)
+          lastTop = startTop + (startH - lastH)
+          el.style.height = `${lastH}px`
+          el.style.top = `${lastTop}px`
         }
       }
 
       const onMouseUp = () => {
         window.removeEventListener("mousemove", onMouseMove)
         window.removeEventListener("mouseup", onMouseUp)
+        onResizeEnd?.(
+          { width: lastW, height: lastH },
+          { x: lastLeft, y: lastTop }
+        )
       }
 
       window.addEventListener("mousemove", onMouseMove)
       window.addEventListener("mouseup", onMouseUp)
     },
-    [ref, minWidth, minHeight]
+    [ref, minWidth, minHeight, onResizeEnd]
   )
 
   return { onResizeStart, directions: RESIZE_DIRECTIONS }

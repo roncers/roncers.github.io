@@ -4,6 +4,9 @@ export type TabComponentProps = {
   sizeY: number
   screenPosition: { x: number; y: number } | null
   zIndex: number
+  prevX?: number
+  prevY?: number
+  prevPosition?: { x: number; y: number } | null
 }
 
 export type Tab = TabComponentProps & {
