@@ -1,4 +1,4 @@
-import { ReactNode, CSSProperties, useRef, use } from "react"
+import { ReactNode, CSSProperties, useRef, use, useState } from "react"
 import styles from "./PoppingWindow.module.css"
 import CloseIcon from '@/components/icons/CloseIcon'
 // import MinimizeIcon from '@/components/icons/MinimizeIcon'
@@ -38,9 +38,22 @@ export default function PoppingWindow({
   fadingOut,
   ...rest
 }: PoppingWindowProps): React.ReactElement {
-  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab } = use(TaskManagerContext)
+  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab, hideTab } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
+  const [isToggling, setIsToggling] = useState(false)
+  const [isHiding, setIsHiding] = useState(false)
+
+  function toggleWithAnimation(callback: () => void) {
+    setIsToggling(true)
+    callback()
+    setTimeout(() => setIsToggling(false), 500)
+  }
+
+  function hideWithAnimation() {
+    setIsHiding(true)
+    setTimeout(() => hideTab(id), 500)
+  }
 
   const { onDragStart } = useDraggable(ref, updateTabPos)
 
@@ -79,7 +92,7 @@ export default function PoppingWindow({
   return (
     <section
       id={id}
-      className={`${styles.poppingWindow} ${fadingOut ? styles.fadingOut : ''}`}
+      className={`${styles.poppingWindow} ${fadingOut ? styles.fadingOut : ''} ${isToggling ? styles.fullScreenToggling : ''} ${isHiding ? styles.hiding : ''}`}
       style={{
         left: `${screenPosition!.x}%`,
         top: `${screenPosition!.y}%`,
@@ -95,9 +108,9 @@ export default function PoppingWindow({
       {...rest}
     >
       <header onMouseDown={onDragStart}>
-        <UiButton><HideIcon /></UiButton>
-        {isMaximized && <UiButton onClick={eventHandler(() => minimizeTab(id))}><MinimizeIcon /></UiButton>}
-        {!isMaximized && <UiButton onClick={eventHandler(() => maximizeTab(id))}><MaximizeIcon /></UiButton>}
+        <UiButton onClick={eventHandler(() => hideWithAnimation())}><HideIcon /></UiButton>
+        {isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => minimizeTab(id)))}><MinimizeIcon /></UiButton>}
+        {!isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => maximizeTab(id)))}><MaximizeIcon /></UiButton>}
         <UiButton className={styles.closeIcon} onClick={eventHandler(() => fadeTab(id))}><CloseIcon /></UiButton>
       </header>
       <div className={styles.content}>{children}</div>

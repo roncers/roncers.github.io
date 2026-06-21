@@ -18,6 +18,7 @@ interface TaskManagerContextType {
   maximizeTab: (id: string) => void
   minimizeTab: (id: string) => void
   fadeTab: (id: string) => void
+  hideTab: (id: string) => void
 }
 
 export const TaskManagerContext = createContext<TaskManagerContextType>({
@@ -34,6 +35,7 @@ export const TaskManagerContext = createContext<TaskManagerContextType>({
   maximizeTab: () => { },
   minimizeTab: () => { },
   fadeTab: () => { },
+  hideTab: () => { },
 })
 
 function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: string; payload: any }) {
@@ -166,8 +168,12 @@ export default function TaskManagerContextProvider({
     }, 5000)
   }
 
+  function hideTab(id: string) {
+    updateTab({ id, screenPosition: null })
+  }
+
   return (
-    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab, fadeTab }}>
+    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab, fadeTab, hideTab }}>
       {children}
     </TaskManagerContext.Provider>
   )

@@ -6,10 +6,12 @@
   user-select: none;
   display: flex;
   flex-direction: column;
-  transition: opacity 1s ease allow-discrete, transform 1s ease allow-discrete;
+  transition:
+    opacity 1s ease allow-discrete,
+    transform 1s ease allow-discrete;
   @starting-style {
     opacity: 0;
-    transform: translateY(100%) scale(0.5);
+    transform: translateY(200%) scale(0);
   }
   header {
     background: linear-gradient(
@@ -23,6 +25,20 @@
     flex: 0 0 auto;
     height: 2.25rem;
   }
+}
+
+.fullScreenToggling {
+  transition:
+    width 0.5s ease allow-discrete,
+    height 0.5s ease allow-discrete,
+    top 0.5s ease allow-discrete,
+    left 0.5s ease allow-discrete;
+}
+
+.hiding {
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(200%) scale(0);
 }
 
 .content {
@@ -44,8 +60,9 @@
 }
 
 .fadingOut {
+  pointer-events: none;
   opacity: 0;
-  transform: translateY(100%) scale(0.5);
+  transform: scale(0);
 }
 
 /* TODO: only apply it to the header */
