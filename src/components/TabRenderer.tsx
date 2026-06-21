@@ -9,6 +9,7 @@ const FIRST_RENDER_DELAY = 1000
 function TabRenderer(): ReactElement {
     const { tabs, maxZ, setTabs, incrementMaxZ } = use(TaskManagerContext)
     const tabFactoryRef = useRef<TabFactory>(new TabFactory())
+    const availableTabs = tabs.filter(tab => tab.screenPosition)
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -29,7 +30,7 @@ function TabRenderer(): ReactElement {
 
     return (
         <>
-            {tabs.map(({ content: Content, ...tab }) => (
+            {availableTabs.map(({ content: Content, ...tab }) => (
                 <Content key={tab.id} {...tab} />
             ))}
         </>
