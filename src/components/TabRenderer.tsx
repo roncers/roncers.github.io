@@ -1,38 +1,25 @@
-import { ReactElement, use, useEffect } from "react"
+import { ReactElement, use, useEffect, useRef } from "react"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import CellSketch from "@/components/tabs/p5/CellSketch"
 import LavaSketch from "@/components/tabs/p5/LavaSketch"
+import TabFactory from "@/utils/classes/TabFactory"
 
-const FIRST_RENDER_DELAY = 10000
-
-function getRandomPosition() {
-  const top = Math.floor(Math.random() * 80) + 10
-  const left = Math.floor(Math.random() * 80) + 10
-  return { x: top, y: left }
-}
+const FIRST_RENDER_DELAY = 1000
 
 function TabRenderer(): ReactElement {
-    const { tabs, setTabs } = use(TaskManagerContext)
+    const { tabs, maxZ, setTabs, incrementMaxZ } = use(TaskManagerContext)
+    const tabFactoryRef = useRef<TabFactory>(new TabFactory())
 
     useEffect(() => {
         const timeout = setTimeout(() => {
+            const tabFactory = tabFactoryRef.current
+            const tab1 = tabFactory.createTab(maxZ, CellSketch)
+            incrementMaxZ()
+            const tab2 = tabFactory.createTab(maxZ, LavaSketch)
+            incrementMaxZ()
             setTabs([
-                {
-                    id: "1",
-                    sizeX: 400,
-                    sizeY: 400,
-                    screenPosition: getRandomPosition(),
-                    zIndex: 1,
-                    content: CellSketch,
-                },
-                {
-                    id: "2",
-                    sizeX: 400,
-                    sizeY: 400,
-                    screenPosition: getRandomPosition(),
-                    zIndex: 2,
-                    content: LavaSketch,
-                },
+                tab1,
+                tab2
             ])
         }, FIRST_RENDER_DELAY)
 

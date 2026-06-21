@@ -7,6 +7,7 @@ export type TabComponentProps = {
   prevX?: number
   prevY?: number
   prevPosition?: { x: number; y: number } | null
+  fadingOut?: true
 }
 
 export type Tab = TabComponentProps & {

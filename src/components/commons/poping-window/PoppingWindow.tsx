@@ -11,13 +11,16 @@ import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 
+// this is highly coupled with the Tab type.
 interface PoppingWindowProps {
   id: string
   sizeX: number
   sizeY: number
   screenPosition: { x: number; y: number } | null
+  zIndex: number
   children?: ReactNode
   style?: CSSProperties
+  fadingOut?: boolean
   [key: string]: any
 }
 
@@ -30,10 +33,12 @@ export default function PoppingWindow({
   sizeY,
   screenPosition,
   style,
+  zIndex,
   children,
+  fadingOut,
   ...rest
 }: PoppingWindowProps): React.ReactElement {
-  const { incrementTabZIndex, removeTab, maximizeTab, minimizeTab, updateTab } = use(TaskManagerContext)
+  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -74,12 +79,13 @@ export default function PoppingWindow({
   return (
     <section
       id={id}
-      className={styles.poppingWindow}
+      className={`${styles.poppingWindow} ${fadingOut ? styles.fadingOut : ''}`}
       style={{
         left: `${screenPosition!.x}%`,
         top: `${screenPosition!.y}%`,
         width: sizeX,
         height: sizeY,
+        zIndex,
         ...style,
       }}
       ref={ref}
@@ -92,7 +98,7 @@ export default function PoppingWindow({
         <UiButton><HideIcon /></UiButton>
         {isMaximized && <UiButton onClick={eventHandler(() => minimizeTab(id))}><MinimizeIcon /></UiButton>}
         {!isMaximized && <UiButton onClick={eventHandler(() => maximizeTab(id))}><MaximizeIcon /></UiButton>}
-        <UiButton className={styles.closeIcon} onClick={eventHandler(() => removeTab(id))}><CloseIcon /></UiButton>
+        <UiButton className={styles.closeIcon} onClick={eventHandler(() => fadeTab(id))}><CloseIcon /></UiButton>
       </header>
       <div className={styles.content}>{children}</div>
       {directions.map((dir) => (
