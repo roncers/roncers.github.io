@@ -6,10 +6,10 @@ import cellSketch from "@/p5/cell.p5-sketch"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 
-export default function CellSketch({ zIndex, ...props }: TabComponentProps) {
+export default function CellSketch({ ...props }: TabComponentProps) {
   const { t } = useTranslation()
   return (
-    <PoppingWindow style={{ zIndex }} {...props}>
+    <PoppingWindow {...props}>
       <TabCanvas sketch={cellSketch} label={t("sketches.cell")} />
     </PoppingWindow>
   )

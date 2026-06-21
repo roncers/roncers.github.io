@@ -6,6 +6,11 @@
   user-select: none;
   display: flex;
   flex-direction: column;
+  transition: opacity 1s ease allow-discrete, transform 1s ease allow-discrete;
+  @starting-style {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
   header {
     background: linear-gradient(
       to left top,
@@ -36,6 +41,11 @@
   &:active {
     background: color-mix(in srgb, var(--color-warning) 95%, transparent);
   }
+}
+
+.fadingOut {
+  opacity: 0;
+  transform: translateY(100%) scale(0.5);
 }
 
 /* TODO: only apply it to the header */

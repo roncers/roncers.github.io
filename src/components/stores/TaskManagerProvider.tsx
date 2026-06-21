@@ -17,6 +17,7 @@ interface TaskManagerContextType {
   incrementTabZIndex: (id: string) => void
   maximizeTab: (id: string) => void
   minimizeTab: (id: string) => void
+  fadeTab: (id: string) => void
 }
 
 export const TaskManagerContext = createContext<TaskManagerContextType>({
@@ -32,18 +33,24 @@ export const TaskManagerContext = createContext<TaskManagerContextType>({
   incrementTabZIndex: () => { },
   maximizeTab: () => { },
   minimizeTab: () => { },
+  fadeTab: () => { },
 })
 
 function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: string; payload: any }) {
   switch (action.type) {
     case "ADD_TAB":
       return { ...state, tabs: [...state.tabs, action.payload] }
+    case "FADE_OUT":
+      return {
+        ...state,
+        tabs: state.tabs.map((tab) => (tab.id === action.payload.id ? { ...tab, fadingOut: true } : tab)),
+      }
     case "REMOVE_TAB":
       return { ...state, tabs: state.tabs.filter((tab) => tab.id !== action.payload) }
     case "UPDATE_TAB":
       return {
         ...state,
-        tabs: state.tabs.map((tab) => (tab.id === action.payload.id ? {...tab, ...action.payload} : tab)),
+        tabs: state.tabs.map((tab) => (tab.id === action.payload.id ? { ...tab, ...action.payload } : tab)),
       }
     case "SET_TAB_SIZE":
       return {
@@ -151,8 +158,16 @@ export default function TaskManagerContextProvider({
     tabsStateDispatch({ type: "SET_TAB_PREV_POSITION", payload: { id } })
   }
 
+  function fadeTab(id: string) {
+    tabsStateDispatch({ type: "FADE_OUT", payload: { id } })
+    setTimeout(() => {
+      // removes it from the dom when a certain time passes
+      removeTab(id)
+    }, 5000)
+  }
+
   return (
-    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab }}>
+    <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab, fadeTab }}>
       {children}
     </TaskManagerContext.Provider>
   )
