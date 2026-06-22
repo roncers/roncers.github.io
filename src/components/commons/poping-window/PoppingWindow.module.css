@@ -19,11 +19,18 @@
       var(--color-dark),
       var(--color-darker)
     );
+    height: 2.5rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex: 0 0 auto;
-    height: 2.25rem;
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+      gap: 0.5rem;
+    }
   }
 }
 
@@ -65,10 +72,27 @@
   transform: scale(0);
 }
 
-/* TODO: only apply it to the header */
 .poppingWindow:active {
   header {
     cursor: grabbing;
+  }
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+
+  animation: subtleWobble 8s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes subtleWobble {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

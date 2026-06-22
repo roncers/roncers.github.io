@@ -148,9 +148,9 @@ export default function sketch(p: p5, parent: HTMLElement): void {
     })
   }
 
+  // TODO: Call noLoop here when the user has multiple canvas opened or the performance is bad.
   p.draw = () => {
     p.background(28, 28, 28)
-
     if (sprFactor < ATTRACTION_FORCE_MAX) {
       if (p.frameCount % DELAY === 0) {
         sprFactor += 0.0005

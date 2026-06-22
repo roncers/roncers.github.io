@@ -6,6 +6,7 @@ import MaximizeIcon from '@/components/icons/MaximizeIcon'
 import MinimizeIcon from '@/components/icons/MinimizeIcon'
 import HideIcon from '@/components/icons/HideIcon'
 import UiButton from '@/components/commons/ui-button/UiButton'
+import BlackHoleIcon from "@/components/icons/BlackHoleIcon"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
@@ -36,9 +37,12 @@ export default function PoppingWindow({
   zIndex,
   children,
   fadingOut,
+  prevPosition: _prevPosition,
+  prevX: _prevX,
+  prevY: _prevY,
   ...rest
 }: PoppingWindowProps): React.ReactElement {
-  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab, hideTab } = use(TaskManagerContext)
+  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab, hideTab, setTabPosition } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
   const [isToggling, setIsToggling] = useState(false)
@@ -58,9 +62,10 @@ export default function PoppingWindow({
   const { onDragStart } = useDraggable(ref, updateTabPos)
 
   function updateTabPos(screenPosition: { x: number; y: number }) {
-    screenPosition.x = (screenPosition.x / width) * 100
-    screenPosition.y = (screenPosition.y / height) * 100
-    updateTab({ id, screenPosition })
+    setTabPosition(id, {
+      x: (screenPosition.x / width) * 100,
+      y: (screenPosition.y / height) * 100,
+    })
   }
   function updateTabSize(
     size: { width: number; height: number },
@@ -108,10 +113,15 @@ export default function PoppingWindow({
       {...rest}
     >
       <header onMouseDown={onDragStart}>
-        <UiButton onClick={eventHandler(() => hideWithAnimation())}><HideIcon /></UiButton>
-        {isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => minimizeTab(id)))}><MinimizeIcon /></UiButton>}
-        {!isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => maximizeTab(id)))}><MaximizeIcon /></UiButton>}
-        <UiButton className={styles.closeIcon} onClick={eventHandler(() => fadeTab(id))}><CloseIcon /></UiButton>
+        <section>
+          <BlackHoleIcon className={styles.logoIcon} />
+        </section>
+        <section>
+          <UiButton onClick={eventHandler(() => hideWithAnimation())}><HideIcon /></UiButton>
+          {isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => minimizeTab(id)))}><MinimizeIcon /></UiButton>}
+          {!isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => maximizeTab(id)))}><MaximizeIcon /></UiButton>}
+          <UiButton className={styles.closeIcon} onClick={eventHandler(() => fadeTab(id))}><CloseIcon /></UiButton>
+        </section>
       </header>
       <div className={styles.content}>{children}</div>
       {directions.map((dir) => (
