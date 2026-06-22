@@ -3,7 +3,6 @@
   background: var(--color-darker);
   border-radius: 0.2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-  user-select: none;
   display: flex;
   flex-direction: column;
   transition:
@@ -14,6 +13,7 @@
     transform: translateY(200%) scale(0);
   }
   header {
+    user-select: none;
     background: linear-gradient(
       to left top,
       var(--color-dark),
@@ -83,7 +83,7 @@
   height: 2rem;
   margin-left: 0.5rem;
 
-  animation: subtleWobble 8s linear infinite;
+  animation: subtleWobble 20s linear infinite;
   transform-origin: center;
 }
 

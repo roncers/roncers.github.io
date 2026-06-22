@@ -6,23 +6,39 @@ import LavaSketch from "../p5/LavaSketch"
 import KaleidoscopeSketch from "../p5/KaleidoscopeSketch"
 import MyCv from "./MyCv"
 
-// import { useTranslation } from "@/i18n/useTranslation"
+import { useTranslation } from "@/i18n/useTranslation"
 
 export default function EntryPoint({ ...props }: TabComponentProps) {
   const createTab = useAddTab()
-//   const { t } = useTranslation()
+  const { t } = useTranslation()
+  const links = [
+    { label: t('sketches.cell'), component: CellSketch, title: 'cell p5' },
+    { label: t('info.title'), component: MyCv, title: 'my cv' },
+    { label: 'lava p5', component: LavaSketch, title: 'lava p5' },
+    { label: 'kaleidoscope p5', component: KaleidoscopeSketch, title: 'kaleidoscope p5' },
+  ];
+
   return (
     <PoppingWindow {...props}>
-        <p>Hello! I'm Martín</p>
-        <p>A software developer with a passion for creating innovative solutions</p>
-        <a href="" onClick={(e) => { e.preventDefault(); createTab(CellSketch, 'cell p5'); }}>cell p5</a>
-        <br />
-        <a href="" onClick={(e) => { e.preventDefault(); createTab(MyCv, 'my cv'); }}>my cv</a>
-        <br />
-        <a href="" onClick={(e) => { e.preventDefault(); createTab(LavaSketch, 'lava p5'); }}>lava p5</a>
-        <br />
-        <a href="" onClick={(e) => { e.preventDefault(); createTab(KaleidoscopeSketch, 'kaleidoscope p5'); }}>kaleidoscope p5</a>
+      <section data-name="entry-point" className="data-container flex flex-col gap-4">
+        <section data-name="intro">
+          <h1 className="default-header-1">{t('info.entryPoint.header')}</h1>
+          <p className="default-description">{t('info.entryPoint.description')}</p>
+        </section>
 
+        <h2 className="default-header-2">{t('info.entryPoint.linksDescription')}</h2>
+        <nav data-name="links">
+          <ul>
+            {links.map(({ label, component, title }) => (
+              <li key={title}>
+                <a onClick={(e) => { e.preventDefault(); createTab(component, title) }}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </section>
     </PoppingWindow>
   )
 }
