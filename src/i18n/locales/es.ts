@@ -11,6 +11,11 @@ const es: DeepString<typeof en> = {
   },
   info: {
     title: "Mi info",
+    entryPoint: {
+      header: "Hola! Soy Martín", 
+      description: "Disfruto el desarrollo frontend porque es donde la tecnología encuentra a las personas",
+      linksDescription: "Aquí tienes algunos de mis proyectos:",
+    },
   },
   window: {
     close: "Cerrar",
@@ -20,3 +25,4 @@ const es: DeepString<typeof en> = {
 }
 
 export default es
+
