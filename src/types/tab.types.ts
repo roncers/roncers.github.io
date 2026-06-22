@@ -1,5 +1,6 @@
 export type TabComponentProps = {
   id: string
+  label?: string
   sizeX: number
   sizeY: number
   screenPosition: { x: number; y: number } | null

@@ -133,7 +133,13 @@ export default function TaskManagerContextProvider({
   }
 
   function setTabPosition(id: string, screenPosition: { x: number; y: number } | null) {
-    tabsStateDispatch({ type: "SET_TAB_POSITION", payload: { id, screenPosition } })
+    const clamped = screenPosition
+      ? {
+          x: Math.min(Math.max(screenPosition.x, 0), 90),
+          y: Math.min(Math.max(screenPosition.y, 0), 90),
+        }
+      : null
+    tabsStateDispatch({ type: "UPDATE_TAB", payload: { id, screenPosition: clamped } })
   }
 
   function setTabs(tabs: Tab[]) {
@@ -155,7 +161,6 @@ export default function TaskManagerContextProvider({
   }
 
   function minimizeTab(id: string) {
-    console.log('mini')
     tabsStateDispatch({ type: "SET_TAB_PREV_SIZE", payload: { id } })
     tabsStateDispatch({ type: "SET_TAB_PREV_POSITION", payload: { id } })
   }
@@ -165,7 +170,7 @@ export default function TaskManagerContextProvider({
     setTimeout(() => {
       // removes it from the dom when a certain time passes
       removeTab(id)
-    }, 5000)
+    }, 1000)
   }
 
   function hideTab(id: string) {

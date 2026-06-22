@@ -21,8 +21,10 @@ export function useDraggable(
         x: e.clientX - rect.left,
         y: e.clientY - rect.top,
       }
-      let lastX = 0
-      let lastY = 0
+      const originalLeft = el.style.left
+      const originalTop = el.style.top
+      let lastX: number | null = null
+      let lastY: number | null = null
 
       const onMouseMove = (ev: MouseEvent) => {
         lastX = ev.clientX - dragOffset.current.x
@@ -34,7 +36,12 @@ export function useDraggable(
       const onMouseUp = () => {
         window.removeEventListener("mousemove", onMouseMove)
         window.removeEventListener("mouseup", onMouseUp)
-        if (lastX && lastY) updateSize({ x: lastX, y: lastY })
+        // restore the pre-drag inline styles so the DOM is back in sync with
+        // React's virtual DOM; updateSize then re-renders with the new value
+        // (or no-ops if the clamped value is unchanged, leaving the correct one)
+        el.style.left = originalLeft
+        el.style.top = originalTop
+        if (lastX !== null && lastY !== null) updateSize({ x: lastX, y: lastY })
       }
 
       window.addEventListener("mousemove", onMouseMove)

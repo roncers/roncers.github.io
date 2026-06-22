@@ -22,12 +22,11 @@ export default class TabFactory {
   createTab(
     zIndex: number,
     content: React.ComponentType<TabComponentProps>,
+    label?: string,
   ): Tab {
-    for (let i = 0; i < 10; i++) {
-      console.log(this.getRandomPosition())
-    }
     return {
       id: Math.random().toString(36).substring(2, 9),
+      label,
       sizeX: this.getSizeX(content),
       sizeY: this.getSizeY(content),
       screenPosition: this.getRandomPosition(),
