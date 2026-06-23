@@ -6,7 +6,7 @@ import type {
   ParticleUpdateOptions,
   TextPoint,
 } from "@/types/p5.types"
-import interThinFont from "@/assets/fonts/Inter/static/Inter_18pt-Thin.ttf"
+import interThinFont from "@/assets/fonts/Inter/static/Inter_18pt-Thin-martin-roncero.ttf"
 
 // Font path - update this to match your actual font file location normally 0.6
 export const ATTRACTION_FORCE_MAX = 0.1
@@ -135,7 +135,7 @@ export default function sketch(p: p5, parent: HTMLElement): void {
 
     p.createCanvas(w, h)
 
-    p.loadFont(interThinFont, (loadedFont) => {
+    p.loadFont(interThinFont, (loadedFont: any) => {
       font = loadedFont as ExtendedFont
 
       p.textFont(font)

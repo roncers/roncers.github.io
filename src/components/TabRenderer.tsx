@@ -1,6 +1,5 @@
 import { ReactElement, use, useEffect } from "react"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
-import EntryPoint from "@/components/tabs/main/EntryPoint"
 import { useAddTab } from "@/utils/hooks/useAddTab"
 
 const FIRST_RENDER_DELAY = 1000
@@ -12,7 +11,11 @@ function TabRenderer(): ReactElement {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      createTab(EntryPoint, "EntryPoint")
+      import("@/components/tabs/main/EntryPoint").then(
+        ({ default: EntryPoint }) => {
+          createTab(EntryPoint, "EntryPoint")
+        },
+      )
     }, FIRST_RENDER_DELAY)
 
     return () => clearTimeout(timeout)

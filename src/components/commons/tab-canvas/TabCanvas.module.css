@@ -6,7 +6,8 @@
 .label {
   font-size: var(--font-size-sm);
   font-weight: 150;
-  color: var(--color-grey);
+  color: var(--color-light);
+  user-select: auto;
 }
 
 .canvasWrapper {
