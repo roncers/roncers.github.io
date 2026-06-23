@@ -8,7 +8,7 @@ export default function EntryPoint({ ...props }: TabComponentProps) {
 //   const { t } = useTranslation()
   return (
     <PoppingWindow {...props}>
-        <iframe src={cv} width="100%" height="100%"></iframe>
+        <iframe src={cv} width="100%" height="100%" onClick={() => console.log('hello')} />
     </PoppingWindow>
   )
 }

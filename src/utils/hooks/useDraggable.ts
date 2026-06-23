@@ -32,6 +32,13 @@ export function useDraggable(
       let lastX: number | null = null
       let lastY: number | null = null
 
+      // Shield: a transparent overlay above any iframes so they don't
+      // swallow the mouse events that would otherwise freeze the drag.
+      const shield = document.createElement("div")
+      shield.style.cssText =
+        "position:fixed;inset:0;z-index:2147483647;cursor:grabbing;"
+      document.body.appendChild(shield)
+
       const onMouseMove = (ev: MouseEvent | TouchEvent) => {
         const clientX = "touches" in ev ? ev.touches[0].clientX : ev.clientX
         const clientY = "touches" in ev ? ev.touches[0].clientY : ev.clientY
@@ -46,6 +53,7 @@ export function useDraggable(
         window.removeEventListener("mouseup", onMouseUp)
         window.removeEventListener("touchmove", onMouseMove)
         window.removeEventListener("touchend", onMouseUp)
+        shield.remove()
         // restore the pre-drag inline styles so the DOM is back in sync with
         // React's virtual DOM; updateSize then re-renders with the new value
         // (or no-ops if the clamped value is unchanged, leaving the correct one)

@@ -51,6 +51,12 @@ export function useResizable(
       let lastLeft = startLeft
       let lastTop = startTop
 
+      // Shield: a transparent overlay above any iframes so they don't
+      // swallow the mouse events that would otherwise freeze the resize.
+      const shield = document.createElement("div")
+      shield.style.cssText = `position:fixed;inset:0;z-index:2147483647;cursor:${dir}-resize;`
+      document.body.appendChild(shield)
+
       const onMouseMove = (ev: MouseEvent) => {
         const dx = ev.clientX - startX
         const dy = ev.clientY - startY
@@ -80,6 +86,7 @@ export function useResizable(
       const onMouseUp = () => {
         window.removeEventListener("mousemove", onMouseMove)
         window.removeEventListener("mouseup", onMouseUp)
+        shield.remove()
         onResizeEnd?.(
           { width: lastW, height: lastH },
           { x: lastLeft, y: lastTop }

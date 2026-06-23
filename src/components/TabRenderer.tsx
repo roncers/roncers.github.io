@@ -13,6 +13,7 @@ function TabRenderer(): ReactElement {
     const timeout = setTimeout(() => {
       import("@/components/tabs/main/EntryPoint").then(
         ({ default: EntryPoint }) => {
+          console.log('entry-point-renderization')
           createTab(EntryPoint, "EntryPoint")
         },
       )

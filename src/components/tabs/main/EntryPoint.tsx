@@ -31,6 +31,21 @@ export default function EntryPoint({ ...props }: TabComponentProps) {
                 </a>
               </li>
             ))}
+            <li>
+              <a href="https://martin-roncero.com/uml-editor" target="_blank" rel="noopener noreferrer">
+                UML Editor
+              </a>
+            </li>
+            <li>
+              <a href="https://martin-roncero.com/word-randomizer" target="_blank" rel="noopener noreferrer">
+                Phrase randomizer
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/roncers" target="_blank" rel="noopener noreferrer">
+                Github
+              </a>
+            </li>
           </ul>
         </nav>
       </section>

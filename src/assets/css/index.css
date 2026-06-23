@@ -34,6 +34,39 @@ main {
   height: 100%;
   margin: 0;
   /* cursor: url('/src/assets/cursors/cursor.cur'), auto; */
+
+  /* selection */
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-grey) 60%, var(--color-darkest)); /* The highlight color */
+    color: var(--color-light); /* The text color when highlighted */
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 3px;
+    display: block;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-darker);
+    border-radius: 0px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-darker);
+  }
+
+  /* STEP 3: The Button Killer */
+  ::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 }
 
 /* TODO: edit the cursor and the scrolling bar */

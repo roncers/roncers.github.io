@@ -1,1 +1,0 @@
-export const loadP5 = () => import("p5").then((m) => m.default)
