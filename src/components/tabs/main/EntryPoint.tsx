@@ -1,21 +1,16 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useAddTab } from "@/utils/hooks/useAddTab"
-import CellSketch from "../p5/CellSketch"
-import LavaSketch from "../p5/LavaSketch"
-import KaleidoscopeSketch from "../p5/KaleidoscopeSketch"
-import MyCv from "./MyCv"
-
 import { useTranslation } from "@/i18n/useTranslation"
 
 export default function EntryPoint({ ...props }: TabComponentProps) {
   const createTab = useAddTab()
   const { t } = useTranslation()
   const links = [
-    { label: t('sketches.cell'), component: CellSketch, title: 'cell p5' },
-    { label: t('info.title'), component: MyCv, title: 'my cv' },
-    { label: 'lava p5', component: LavaSketch, title: 'lava p5' },
-    { label: 'kaleidoscope p5', component: KaleidoscopeSketch, title: 'kaleidoscope p5' },
+    { label: t('sketches.cell'), loader: () => import("../p5/CellSketch"), title: 'cell p5' },
+    { label: t('info.title'), loader: () => import("./MyCv"), title: 'my cv' },
+    { label: 'lava p5', loader: () => import("../p5/LavaSketch"), title: 'lava p5' },
+    { label: 'kaleidoscope p5', loader: () => import("../p5/KaleidoscopeSketch"), title: 'kaleidoscope p5' },
   ];
 
   return (
@@ -29,9 +24,9 @@ export default function EntryPoint({ ...props }: TabComponentProps) {
         <h2 className="default-header-2">{t('info.entryPoint.linksDescription')}</h2>
         <nav data-name="links">
           <ul>
-            {links.map(({ label, component, title }) => (
+            {links.map(({ label, loader, title }) => (
               <li key={title}>
-                <a onClick={(e) => { e.preventDefault(); createTab(component, title) }}>
+                <a onClick={(e) => { e.preventDefault(); loader().then(({ default: c }) => createTab(c, title)) }}>
                   {label}
                 </a>
               </li>

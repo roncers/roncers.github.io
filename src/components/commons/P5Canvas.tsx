@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import p5 from 'p5'
+import type p5 from 'p5'
 import type { Sketch } from '@/types/p5.types'
 
 interface P5CanvasProps {
@@ -21,13 +21,15 @@ export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps)
 
     // timeout is to fix a bug where 2 instances where getting mounted with React 19 strict mode
     timeoutId = setTimeout(() => {
-      instance = new p5((p: p5) => sketch(p, parent), parent)
+      import('p5').then(({ default: P5 }) => {
+        instance = new P5((p: p5) => sketch(p, parent), parent)
 
-      // forward container size changes to the sketch's windowResized hook
-      resizeObserver = new ResizeObserver(() => {
-        instance?.windowResized?.()
+        // forward container size changes to the sketch's windowResized hook
+        resizeObserver = new ResizeObserver(() => {
+          instance?.windowResized?.()
+        })
+        resizeObserver.observe(parent)
       })
-      resizeObserver.observe(parent)
     }, 0)
 
     return () => {

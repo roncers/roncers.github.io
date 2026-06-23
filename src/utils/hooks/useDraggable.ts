@@ -11,24 +11,32 @@ export function useDraggable(
   const dragOffset = useRef<{ x: number; y: number }>({ x: 0, y: 0 })
 
   const onDragStart = useCallback(
-    (e: React.MouseEvent) => {
+    (e: React.MouseEvent | React.TouchEvent) => {
       const el = ref.current
       if (!el) return
       e.preventDefault()
 
       const rect = el.getBoundingClientRect()
       dragOffset.current = {
-        x: e.clientX - rect.left,
-        y: e.clientY - rect.top,
+        x:
+          "clientX" in e
+            ? e.clientX - rect.left
+            : e.touches[0].clientX - rect.left,
+        y:
+          "clientY" in e
+            ? e.clientY - rect.top
+            : e.touches[0].clientY - rect.top,
       }
       const originalLeft = el.style.left
       const originalTop = el.style.top
       let lastX: number | null = null
       let lastY: number | null = null
 
-      const onMouseMove = (ev: MouseEvent) => {
-        lastX = ev.clientX - dragOffset.current.x
-        lastY = ev.clientY - dragOffset.current.y
+      const onMouseMove = (ev: MouseEvent | TouchEvent) => {
+        const clientX = "touches" in ev ? ev.touches[0].clientX : ev.clientX
+        const clientY = "touches" in ev ? ev.touches[0].clientY : ev.clientY
+        lastX = clientX - dragOffset.current.x
+        lastY = clientY - dragOffset.current.y
         el.style.left = `${lastX}px`
         el.style.top = `${lastY}px`
       }
@@ -36,6 +44,8 @@ export function useDraggable(
       const onMouseUp = () => {
         window.removeEventListener("mousemove", onMouseMove)
         window.removeEventListener("mouseup", onMouseUp)
+        window.removeEventListener("touchmove", onMouseMove)
+        window.removeEventListener("touchend", onMouseUp)
         // restore the pre-drag inline styles so the DOM is back in sync with
         // React's virtual DOM; updateSize then re-renders with the new value
         // (or no-ops if the clamped value is unchanged, leaving the correct one)
@@ -46,6 +56,8 @@ export function useDraggable(
 
       window.addEventListener("mousemove", onMouseMove)
       window.addEventListener("mouseup", onMouseUp)
+      window.addEventListener("touchmove", onMouseMove)
+      window.addEventListener("touchend", onMouseUp)
     },
     [ref, updateSize],
   )

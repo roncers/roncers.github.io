@@ -112,7 +112,7 @@ export default function PoppingWindow({
       }}
       {...rest}
     >
-      <header onMouseDown={onDragStart}>
+      <header onMouseDown={onDragStart} onTouchStart={onDragStart}>
         <section>
           <BlackHoleIcon className={styles.logoIcon} />
         </section>
