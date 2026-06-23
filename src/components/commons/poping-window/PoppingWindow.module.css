@@ -72,12 +72,6 @@
   transform: scale(0);
 }
 
-.poppingWindow:active {
-  header {
-    cursor: grabbing;
-  }
-}
-
 .logoIcon {
   width: 2rem;
   height: 2rem;
