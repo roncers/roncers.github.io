@@ -45,17 +45,18 @@ export default function PoppingWindow({
   const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab, hideTab, setTabPosition } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
-  const [isToggling, setIsToggling] = useState(false)
-  const [isHiding, setIsHiding] = useState(false)
+  const [wState, setWState] = useState<'normal' | 'isHiding' | 'isToggling'>('normal')
+  const isToggling = wState === 'isToggling'
+  const isHiding = wState === 'isHiding'
 
   function toggleWithAnimation(callback: () => void) {
-    setIsToggling(true)
+    setWState('isToggling')
     callback()
-    setTimeout(() => setIsToggling(false), 500)
+    setTimeout(() => setWState('normal'), 500)
   }
 
   function hideWithAnimation() {
-    setIsHiding(true)
+    setWState('isHiding')
     setTimeout(() => hideTab(id), 500)
   }
 
