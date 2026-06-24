@@ -4,7 +4,7 @@
 @import "./abstracts/fonts.css";
 
 :root {
-  --font-size-sm: 1.3rem;
+  --font-size-sm: 1.2rem;
   --default-font: "Inter", sans-serif;
   --color-grey: color-mix(in srgb, var(--color-dark) 40%, var(--color-light));
   /* @media (max-width: 1024px) {
