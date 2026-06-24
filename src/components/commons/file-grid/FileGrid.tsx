@@ -8,9 +8,6 @@ import CodeIcon from "@/components/icons/CodeIcon"
 import GlobeIcon from "@/components/icons/GlobeIcon"
 import { useState } from "react"
 
-
-
-
 function fromNumberToBytes(size: number) {
   const units = ["B", "KB", "MB", "GB", "TB"]
   let unitIndex = 0
@@ -23,7 +20,7 @@ function fromNumberToBytes(size: number) {
   return `${sizeValue} ${units[unitIndex]}`
 }
 
-function getIcon(type: TabType) {
+function TabIcon({ type }: { type: TabType }) {
   switch (type) {
     case "File":
       return <FileIcon />
@@ -118,7 +115,7 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
                   " flex gap-2"
                 }
               >
-                {getIcon(type)}
+                <TabIcon type={type} />
                 {label}
               </span>
               <span

@@ -1,4 +1,4 @@
-import { SVGProps } from 'react';
+import type { SVGProps } from 'react';
 // million-ignore
 export function BlackHole3Broken(props: SVGProps<SVGSVGElement>) {
   return (
