@@ -1,7 +1,6 @@
-import { ReactNode, CSSProperties, useRef, use, useState } from "react"
+import { type ReactNode, type CSSProperties, useRef, use, useState } from "react"
 import styles from "./PoppingWindow.module.css"
 import CloseIcon from '@/components/icons/CloseIcon'
-// import MinimizeIcon from '@/components/icons/MinimizeIcon'
 import MaximizeIcon from '@/components/icons/MaximizeIcon'
 import MinimizeIcon from '@/components/icons/MinimizeIcon'
 import HideIcon from '@/components/icons/HideIcon'
@@ -11,17 +10,11 @@ import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
+import type { TabComponentProps } from "@/types/tab.types"
 
-// this is highly coupled with the Tab type.
-interface PoppingWindowProps {
-  id: string
-  sizeX: number
-  sizeY: number
-  screenPosition: { x: number; y: number } | null
-  zIndex: number
+interface PoppingWindowProps extends TabComponentProps {
   children?: ReactNode
   style?: CSSProperties
-  fadingOut?: boolean
   [key: string]: any
 }
 
