@@ -8,11 +8,21 @@ const en = {
   },
   info: {
     title: "My info",
+    cv: {
+      title: "My CV",
+    },
     entryPoint: {
+      title: "My info",
       header: "Hello! I'm Martín",
-      description: "I enjoy Frontend development because it's where technology meets people",
+      description: "Frontend is one of my passions, let me show you some of my work:",
       linksDescription: "Here are some of my projects:",
     },
+  },
+  table: {
+    name: "Name",
+    modificationDate: "Modification date",
+    type: "Type",
+    size: "Size",
   },
   window: {
     close: "Close",

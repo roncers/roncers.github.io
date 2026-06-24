@@ -6,7 +6,7 @@ const FIRST_RENDER_DELAY = 1000
 
 function TabRenderer(): ReactElement {
   const { tabs } = use(TaskManagerContext)
-  const createTab = useAddTab()
+  const addTab = useAddTab()
   const availableTabs = tabs.filter((tab) => tab.screenPosition !== null)
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function TabRenderer(): ReactElement {
       import("@/components/tabs/main/EntryPoint").then(
         ({ default: EntryPoint }) => {
           console.log('entry-point-renderization')
-          createTab(EntryPoint, "EntryPoint")
+          addTab(EntryPoint, "EntryPoint")
         },
       )
     }, FIRST_RENDER_DELAY)

@@ -11,11 +11,21 @@ const es: DeepString<typeof en> = {
   },
   info: {
     title: "Mi info",
+    cv: {
+      title: "Mi CV",
+    },
     entryPoint: {
+      title: "Mi info",
       header: "Hola! Soy Martín", 
-      description: "Disfruto el desarrollo frontend porque es donde la tecnología encuentra a las personas",
+      description: "El frontend es una de mis pasiones, aquí dejo algunos de mis trabajos:",
       linksDescription: "Aquí tienes algunos de mis proyectos:",
     },
+  },
+  table: {
+    name: "Nombre",
+    modificationDate: "Fecha de modificación",
+    type: "Tipo",
+    size: "Tamaño",
   },
   window: {
     close: "Cerrar",

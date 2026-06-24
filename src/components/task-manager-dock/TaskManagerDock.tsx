@@ -1,50 +1,38 @@
-import { ReactElement, use, useState } from "react"
+import { ReactElement, use } from "react"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import styles from "./TaskManagerDock.module.css"
 import { OverflowMenuHorizontal } from "../icons/OverflowHIcon"
+import { useAddTab } from "@/utils/hooks/useAddTab"
+import { HELPER_TABS } from "@/types/available-tabs.types"
+import { useTranslation } from "@/i18n/useTranslation"
 
 function TaskManagerDock(): ReactElement {
   const { tabs, setTabPosition, incrementTabZIndex } = use(TaskManagerContext)
-  const [open, setOpen] = useState(false)
+  const addTab = useAddTab()
+  const { t } = useTranslation()
 
   function focusTab(id: string) {
     incrementTabZIndex(id)
   }
 
   function restoreTab(id: string) {
-    // re-open a hidden tab at a default position
     setTabPosition(id, { x: 30, y: 30 })
-    incrementTabZIndex(id)
+    focusTab(id)
   }
 
-  return (
-    <div className={styles.dock}>
-      {open && (
-        <ul className={styles.list}>
-          {tabs.length === 0 && <li className={styles.empty}>No tasks</li>}
-          {tabs.map((tab) => {
-            const isHidden = tab.screenPosition === null
-            return (
-              <li key={tab.id}>
-                <button
-                  className={`${styles.item} ${isHidden ? styles.hidden : styles.active}`}
-                  onClick={() => (isHidden ? restoreTab(tab.id) : focusTab(tab.id))}
-                >
-                  <span className={styles.statusDot} />
-                  <span className={styles.label}>{tab.label ?? tab.id}</span>
-                  <span className={styles.state}>{isHidden ? "hidden" : "open"}</span>
-                </button>
-              </li>
-            )
-          })}
-        </ul>
-      )}
+  const noTabs = tabs.length === 0
 
+  return (
+    <div className={`${styles.dock} ${noTabs ? "" : styles.hidden}`}>
       <button
         className={styles.button}
         aria-label="Toggle task manager"
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
+        aria-expanded={false}
+        onClick={() => {
+          HELPER_TABS.ENTRY_POINT.loader().then((e) =>
+            addTab(e, t(HELPER_TABS.ENTRY_POINT.i18key)),
+          )
+        }}
       >
         <OverflowMenuHorizontal />
       </button>
