@@ -29,8 +29,3 @@
   inherits: false;
   initial-value: #a12d1e;
 }
-
-@property --font-size-sm {
-  syntax: "<size>";
-  inherits: false;
-}

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef, ReactElement } from 'react'
 import type p5 from 'p5'
 import type { Sketch } from '@/types/p5.types'
 
@@ -8,7 +8,7 @@ interface P5CanvasProps {
   [key: string]: any
 }
 
-export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps): React.ReactElement {
+export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps): ReactElement {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

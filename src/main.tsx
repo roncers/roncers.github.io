@@ -4,7 +4,6 @@ import './assets/css/index.css'
 import "./App.css"
 import App from './App'
 import StoreProvider from './components/stores/StoreProvider'
-// deploy 6
 
 const rootElement = document.getElementById('root')
 if (!rootElement) {
