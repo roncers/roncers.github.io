@@ -1,4 +1,4 @@
-import { createContext, useReducer, use } from "react"
+import { createContext, useReducer, use, useEffect } from "react"
 import { Tab } from "@/types/tab.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 
@@ -68,7 +68,7 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
-            ? { ...tab, screenPosition: action.payload.screenPosition, prevPosition: { ...tab.screenPosition } }
+            ? { ...tab, screenPosition: action.payload.screenPosition, prevPosition: tab.screenPosition ?? null }
             : tab
         ),
       }
@@ -77,7 +77,7 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
-            ? { ...tab, sizeX: tab.prevX!, sizeY: tab.prevY! }
+            ? { ...tab, sizeX: Math.min(tab.prevX!, (action.payload.width - 10)), sizeY: Math.min(tab.prevY!, (action.payload.height - 10)) }
             : tab
         ),
       }
@@ -86,7 +86,7 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
-            ? { ...tab, screenPosition: tab.prevPosition! }
+            ? { ...tab, screenPosition: tab.prevPosition ?? { x: 10, y: 10 } }
             : tab
         ),
       }
@@ -102,6 +102,21 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: { type: strin
             ? { ...tab, zIndex: state.maxZ }
             : tab
         ),
+      }
+    case "FIT_TABS_TO_VIEWPORT":
+      return {
+        ...state,
+        tabs: state.tabs.map((tab) => {
+          const minX = Math.min(tab.sizeX, action.payload.width)
+          const minY = Math.min(tab.sizeY, action.payload.height)
+          return {
+          ...tab,
+          sizeX: minX,
+          sizeY: minY,
+          prevX: Math.min(tab.prevX ?? (minX - 100), minX),
+          prevY: Math.min(tab.prevY ?? (minY - 100), minY),
+        }
+      }),
       }
     default:
       return state
@@ -135,7 +150,7 @@ export default function TaskManagerContextProvider({
   function setTabPosition(id: string, screenPosition: { x: number; y: number } | null) {
     const clamped = screenPosition
       ? {
-          x: Math.min(Math.max(screenPosition.x, 0), 90),
+          x: Math.min(Math.max(screenPosition.x, -10), 90),
           y: Math.min(Math.max(screenPosition.y, 0), 90),
         }
       : null
@@ -151,6 +166,8 @@ export default function TaskManagerContextProvider({
   }
 
   function incrementTabZIndex(id: string) {
+    const tab = tabsState.tabs.find((t: Tab) => t.id === id)
+    if (tab && tab.zIndex === tabsState.maxZ) return
     incrementMaxZ()
     tabsStateDispatch({ type: "UPDATE_TAB_Z_INDEX", payload: { id } })
   }
@@ -161,7 +178,7 @@ export default function TaskManagerContextProvider({
   }
 
   function minimizeTab(id: string) {
-    tabsStateDispatch({ type: "SET_TAB_PREV_SIZE", payload: { id } })
+    tabsStateDispatch({ type: "SET_TAB_PREV_SIZE", payload: { id, width, height } })
     tabsStateDispatch({ type: "SET_TAB_PREV_POSITION", payload: { id } })
   }
 
@@ -176,6 +193,10 @@ export default function TaskManagerContextProvider({
   function hideTab(id: string) {
     updateTab({ id, screenPosition: null })
   }
+
+  useEffect(() => {
+    tabsStateDispatch({ type: "FIT_TABS_TO_VIEWPORT", payload: { width, height } })
+  }, [width, height])
 
   return (
     <TaskManagerContext.Provider value={{ maxZ: tabsState.maxZ, incrementMaxZ, tabs: tabsState.tabs, setTabs, addTab, removeTab, updateTab, setTabSize, setTabPosition, incrementTabZIndex, maximizeTab, minimizeTab, fadeTab, hideTab }}>

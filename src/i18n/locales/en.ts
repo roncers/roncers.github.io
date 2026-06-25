@@ -14,7 +14,8 @@ const en = {
     entryPoint: {
       title: "My info",
       header: "Hello! I'm Martín",
-      description: "Frontend is one of my passions, let me show you some of my work:",
+      description:
+        "Frontend is one of my passions, let me show you some of my work:",
       linksDescription: "Here are some of my projects:",
     },
   },
@@ -23,6 +24,12 @@ const en = {
     modificationDate: "Modification date",
     type: "Type",
     size: "Size",
+    types: {
+      file: "File",
+      script: "Script",
+      directory: "Directory",
+      link: "Link",
+    },
   },
   window: {
     close: "Close",

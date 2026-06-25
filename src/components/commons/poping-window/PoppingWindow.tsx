@@ -1,10 +1,16 @@
-import { type ReactNode, type CSSProperties, useRef, use, useState } from "react"
+import {
+  type ReactNode,
+  type CSSProperties,
+  useRef,
+  use,
+  useState,
+} from "react"
 import styles from "./PoppingWindow.module.css"
-import CloseIcon from '@/components/icons/CloseIcon'
-import MaximizeIcon from '@/components/icons/MaximizeIcon'
-import MinimizeIcon from '@/components/icons/MinimizeIcon'
-import HideIcon from '@/components/icons/HideIcon'
-import UiButton from '@/components/commons/ui-button/UiButton'
+import CloseIcon from "@/components/icons/CloseIcon"
+import MaximizeIcon from "@/components/icons/MaximizeIcon"
+import MinimizeIcon from "@/components/icons/MinimizeIcon"
+import HideIcon from "@/components/icons/HideIcon"
+import UiButton from "@/components/commons/ui-button/UiButton"
 import BlackHoleIcon from "@/components/icons/BlackHoleIcon"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
@@ -15,6 +21,7 @@ import type { TabComponentProps } from "@/types/tab.types"
 interface PoppingWindowProps extends TabComponentProps {
   children?: ReactNode
   style?: CSSProperties
+  onSemiClear?: () => void
   [key: string]: any
 }
 
@@ -33,23 +40,34 @@ export default function PoppingWindow({
   prevPosition: _prevPosition,
   prevX: _prevX,
   prevY: _prevY,
+  onSemiClear,
   ...rest
 }: PoppingWindowProps): React.ReactElement {
-  const { incrementTabZIndex, fadeTab, maximizeTab, minimizeTab, updateTab, hideTab, setTabPosition } = use(TaskManagerContext)
+  const {
+    incrementTabZIndex,
+    fadeTab,
+    maximizeTab,
+    minimizeTab,
+    updateTab,
+    hideTab,
+    setTabPosition,
+  } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
   const ref = useRef<HTMLDivElement>(null)
-  const [wState, setWState] = useState<'normal' | 'isHiding' | 'isToggling'>('normal')
-  const isToggling = wState === 'isToggling'
-  const isHiding = wState === 'isHiding'
+  const [wState, setWState] = useState<"normal" | "isHiding" | "isToggling">(
+    "normal",
+  )
+  const isToggling = wState === "isToggling"
+  const isHiding = wState === "isHiding"
 
   function toggleWithAnimation(callback: () => void) {
-    setWState('isToggling')
+    setWState("isToggling")
     callback()
-    setTimeout(() => setWState('normal'), 500)
+    setTimeout(() => setWState("normal"), 500)
   }
 
   function hideWithAnimation() {
-    setWState('isHiding')
+    setWState("isHiding")
     setTimeout(() => hideTab(id), 500)
   }
 
@@ -63,7 +81,7 @@ export default function PoppingWindow({
   }
   function updateTabSize(
     size: { width: number; height: number },
-    position: { x: number; y: number }
+    position: { x: number; y: number },
   ) {
     updateTab({
       id,
@@ -88,10 +106,14 @@ export default function PoppingWindow({
     }
   }
 
+  function onClickAction() {
+    onSemiClear?.()
+  }
+
   return (
     <section
       id={id}
-      className={`${styles.poppingWindow} ${fadingOut ? styles.fadingOut : ''} ${isToggling ? styles.fullScreenToggling : ''} ${isHiding ? styles.hiding : ''}`}
+      className={`${styles.poppingWindow} ${fadingOut ? styles.fadingOut : ""} ${isToggling ? styles.fullScreenToggling : ""} ${isHiding ? styles.hiding : ""}`}
       style={{
         left: `${screenPosition!.x}%`,
         top: `${screenPosition!.y}%`,
@@ -101,6 +123,7 @@ export default function PoppingWindow({
         ...style,
       }}
       ref={ref}
+      onClick={onClickAction}
       onMouseDown={() => {
         incrementTabZIndex(id)
       }}
@@ -111,10 +134,33 @@ export default function PoppingWindow({
           <BlackHoleIcon className={styles.logoIcon} />
         </section>
         <section>
-          <UiButton onClick={eventHandler(() => hideWithAnimation())}><HideIcon /></UiButton>
-          {isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => minimizeTab(id)))}><MinimizeIcon /></UiButton>}
-          {!isMaximized && <UiButton onClick={eventHandler(() => toggleWithAnimation(() => maximizeTab(id)))}><MaximizeIcon /></UiButton>}
-          <UiButton className={styles.closeIcon} onClick={eventHandler(() => fadeTab(id))}><CloseIcon /></UiButton>
+          <UiButton onClick={eventHandler(() => hideWithAnimation())}>
+            <HideIcon />
+          </UiButton>
+          {isMaximized && (
+            <UiButton
+              onClick={eventHandler(() =>
+                toggleWithAnimation(() => minimizeTab(id)),
+              )}
+            >
+              <MinimizeIcon />
+            </UiButton>
+          )}
+          {!isMaximized && (
+            <UiButton
+              onClick={eventHandler(() =>
+                toggleWithAnimation(() => maximizeTab(id)),
+              )}
+            >
+              <MaximizeIcon />
+            </UiButton>
+          )}
+          <UiButton
+            className={styles.closeIcon}
+            onClick={eventHandler(() => fadeTab(id))}
+          >
+            <CloseIcon />
+          </UiButton>
         </section>
       </header>
       <div className={styles.content}>{children}</div>

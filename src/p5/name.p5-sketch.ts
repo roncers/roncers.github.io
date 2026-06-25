@@ -74,7 +74,7 @@ export default function sketch(p: p5, parent: HTMLElement): void {
   }
 
   function setVariables(w: number, h: number): void {
-    mouseRepulsion = w * 0.05
+    mouseRepulsion = p.max(w * 0.05, h * 0.05)
     particleWeight = w > MOBILE_BREAKPOINT ? 3 : 2
     conglomerationFactor = p.max(p.max(w, h) * 0.00005, 0.12)
     noiseValue = w > MOBILE_BREAKPOINT ? 1 : 0.5

@@ -6,7 +6,10 @@ import FileIcon from "@/components/icons/FileIcon"
 import FolderIcon from "@/components/icons/FolderIcon"
 import CodeIcon from "@/components/icons/CodeIcon"
 import GlobeIcon from "@/components/icons/GlobeIcon"
-import { useState } from "react"
+import { use } from "react"
+import { TAB_TYPES } from "@/types/available-tabs.types"
+import { UiWindowContext } from "@/components/stores/UiWindowProvider"
+import { TableContext, SEMI_CLEAR_SUFFIX } from "@/components/stores/TableContextProvider"
 
 function fromNumberToBytes(size: number) {
   const units = ["B", "KB", "MB", "GB", "TB"]
@@ -22,13 +25,13 @@ function fromNumberToBytes(size: number) {
 
 function TabIcon({ type }: { type: TabType }) {
   switch (type) {
-    case "File":
+    case TAB_TYPES.FILE:
       return <FileIcon />
-    case "Script":
+    case TAB_TYPES.SCRIPT:
       return <CodeIcon />
-    case "Directory":
+    case TAB_TYPES.DIRECTORY:
       return <FolderIcon />
-    case "Link":
+    case TAB_TYPES.LINK:
       return <GlobeIcon />
     default:
       return <FileIcon />
@@ -38,11 +41,8 @@ function TabIcon({ type }: { type: TabType }) {
 export default function FileGrid({ links }: { links: TabEntry[] }) {
   const addTab = useAddTab()
   const { t } = useTranslation()
-  const [selectedElement, setSelectedElement] = useState<string | null>(null)
-
-  function setElementSelected(title: string) {
-    setSelectedElement(title)
-  }
+  const { isMobile } = use(UiWindowContext)
+  const { selectedElement, selectElement } = use(TableContext)
 
   return (
     <nav data-name="links" className={styles.nav}>
@@ -103,8 +103,18 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
                 e.preventDefault()
                 loader().then((c) => addTab(c, title))
               }}
-              onClick={() => setElementSelected(title)}
-              className={styles["grid-row"] + (selectedElement === title ? " " + styles["element-selected"] : "")}
+              onClick={(e) => {
+                e.stopPropagation()
+                selectElement(title)
+                if (isMobile) {
+                  loader().then((c) => addTab(c, title))
+                }
+              }}
+              className={
+                styles["grid-row"] +
+                (selectedElement === title ? " " + styles["element-selected"] : "") +
+                (selectedElement?.endsWith(title + SEMI_CLEAR_SUFFIX) ? " " + styles["element-semi-selected"] : "")
+              }
               style={{ "--_opacity-separator": "0.0" } as React.CSSProperties}
             >
               <span
@@ -126,7 +136,7 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
               <span
                 className={styles["grid-cell"] + " " + styles["type-column"]}
               >
-                {type}
+                {t(`table.types.${type}`)}
               </span>
               <span
                 className={styles["grid-cell"] + " " + styles["size-column"]}
