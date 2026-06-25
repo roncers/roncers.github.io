@@ -19,17 +19,27 @@
       var(--color-dark),
       var(--color-darker)
     );
-    height: 2.7rem;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: 0 0 auto;
+    @media (max-width: 767px) {
+      height: 4rem;
+    }
     section {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       height: 100%;
-      gap: 0.5rem;
+    }
+  }
+  svg {
+    width: 1.35rem;
+    height: 1.35rem;
+    @media (max-width: 767px) {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 }
@@ -72,13 +82,18 @@
   transform: scale(0);
 }
 
-.logoIcon {
-  width: 2rem;
-  height: 2rem;
+.logoIcon.logoIcon {
+  width: 1.9rem;
+  height: 1.9rem;
   margin-left: 0.5rem;
 
   animation: subtleWobble 20s linear infinite;
   transform-origin: center;
+  @media (max-width: 767px) {
+    margin-left: 0.9rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 @keyframes subtleWobble {
@@ -86,7 +101,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 

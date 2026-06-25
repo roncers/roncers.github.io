@@ -71,7 +71,7 @@ export default function PoppingWindow({
     setTimeout(() => hideTab(id), 500)
   }
 
-  const { onDragStart } = useDraggable(ref, updateTabPos)
+  const { onDragStart } = useDraggable(ref, updateTabPos, handleHeaderDbClick)
 
   function updateTabPos(screenPosition: { x: number; y: number }) {
     setTabPosition(id, {
@@ -106,8 +106,19 @@ export default function PoppingWindow({
     }
   }
 
-  function onClickAction() {
-    onSemiClear?.()
+  // Native double click doesn't work because of the workaround for touch devices & dragging over iframes
+  const lastClickTime = useRef(0)
+
+  function handleHeaderDbClick() {
+    const now = Date.now()
+    if (now - lastClickTime.current < 300) {
+      toggleWithAnimation(() =>
+        isMaximized ? minimizeTab(id) : maximizeTab(id),
+      )
+      lastClickTime.current = 0
+    } else {
+      lastClickTime.current = now
+    }
   }
 
   return (
@@ -123,13 +134,16 @@ export default function PoppingWindow({
         ...style,
       }}
       ref={ref}
-      onClick={onClickAction}
+      onClick={() => onSemiClear?.()}
       onMouseDown={() => {
         incrementTabZIndex(id)
       }}
       {...rest}
     >
-      <header onMouseDown={onDragStart} onTouchStart={onDragStart}>
+      <header
+        onMouseDown={onDragStart}
+        onTouchStart={onDragStart}
+      >
         <section>
           <BlackHoleIcon className={styles.logoIcon} />
         </section>
