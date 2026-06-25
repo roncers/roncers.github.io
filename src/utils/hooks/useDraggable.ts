@@ -7,6 +7,7 @@ import { useCallback, useRef, type RefObject } from "react"
 export function useDraggable(
   ref: RefObject<HTMLElement | null>,
   updateSize: (offset: { x: number; y: number }) => void,
+  handleHeaderDbClick: () => void,
 ) {
   const dragOffset = useRef<{ x: number; y: number }>({ x: 0, y: 0 })
 
@@ -59,7 +60,11 @@ export function useDraggable(
         // (or no-ops if the clamped value is unchanged, leaving the correct one)
         el.style.left = originalLeft
         el.style.top = originalTop
-        if (lastX !== null && lastY !== null) updateSize({ x: lastX, y: lastY })
+        if (lastX !== null && lastY !== null) {
+          updateSize({ x: lastX, y: lastY })
+        } else {
+          handleHeaderDbClick()
+        }
       }
 
       window.addEventListener("mousemove", onMouseMove)

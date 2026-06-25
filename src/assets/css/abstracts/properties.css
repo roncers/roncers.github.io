@@ -29,3 +29,24 @@
   inherits: false;
   initial-value: #a12d1e;
 }
+/* just for reference: */
+/* @property --breakpoint-mobile {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 767px;
+}
+@property --breakpoint-tablet {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 768px;
+}
+@property --breakpoint-desktop {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 1024px;
+}
+@property --breakpoint-big-screen {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 1440px;
+} */

@@ -4,7 +4,7 @@
 }
 
 .label {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   font-weight: 150;
   color: var(--color-light);
   user-select: auto;

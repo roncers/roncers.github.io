@@ -4,9 +4,21 @@
 @import "./abstracts/fonts.css";
 
 :root {
-  --font-size-sm: 1.2rem;
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.5rem;
+  --font-size-md: 2rem;
+  --font-size-lg: 2.5rem;
+  --font-size-xl: 3rem;
+  @media (max-width: 768px) {
+    --font-size-xs: 1.5rem;
+    --font-size-sm: 2rem;
+    --font-size-md: 2.5rem;
+    --font-size-lg: 3rem;
+    --font-size-xl: 3.5rem;
+  }
   --default-font: "Inter", sans-serif;
   --color-grey: color-mix(in srgb, var(--color-dark) 40%, var(--color-light));
+  --breakpoint-mobile: 768px;
   /* @media (max-width: 1024px) {
     font-size: 16px;
     } */

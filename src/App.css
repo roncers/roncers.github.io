@@ -4,17 +4,17 @@
 }
 /*TODO create variables for this */
 .default-header-1 {
-  font-size: 3rem;
+  font-size: var(--font-size-xl);
   font-weight: 200;
 }
 
 .default-header-2 {
-  font-size: 2rem;
+  font-size: var(--font-size-md);
   font-weight: 200;
 }
 
 .default-description {
-  font-size: 1.5rem;
+  font-size: var(--font-size-sm);
   font-weight: 200;
   /* text-indent: 2rem; */
 }
