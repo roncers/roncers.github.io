@@ -26,6 +26,12 @@ const es: DeepString<typeof en> = {
     modificationDate: "Fecha de modificación",
     type: "Tipo",
     size: "Tamaño",
+    types: {
+      file: 'Archivo',
+      script: 'Script',
+      directory: 'Directorio',
+      link: 'Enlace'
+    }
   },
   window: {
     close: "Cerrar",
