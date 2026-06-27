@@ -15,6 +15,7 @@ const es: DeepString<typeof en> = {
       title: "Mi CV",
     },
     entryPoint: {
+      contactMe: "Contacta conmigo",
       title: "Mi info",
       header: "Hola! Soy Martín", 
       description: "El frontend es una de mis pasiones, aquí dejo algunos de mis trabajos:",

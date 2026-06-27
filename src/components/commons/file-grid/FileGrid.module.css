@@ -68,6 +68,12 @@
   }
 }
 
+.name-column {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @container (max-width: 700px) {
   .date-column {
     display: none;

@@ -23,18 +23,18 @@ function fromNumberToBytes(size: number) {
   return `${sizeValue} ${units[unitIndex]}`
 }
 
-function TabIcon({ type }: { type: TabType }) {
+function TabIcon({ type, ...rest }: { type: TabType }) {
   switch (type) {
     case TAB_TYPES.FILE:
-      return <FileIcon />
+      return <FileIcon {...rest} />
     case TAB_TYPES.SCRIPT:
-      return <CodeIcon />
+      return <CodeIcon {...rest} />
     case TAB_TYPES.DIRECTORY:
-      return <FolderIcon />
+      return <FolderIcon {...rest} />
     case TAB_TYPES.LINK:
-      return <GlobeIcon />
+      return <GlobeIcon {...rest} />
     default:
-      return <FileIcon />
+      return <FileIcon {...rest} />
   }
 }
 
@@ -125,7 +125,7 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
                   " flex gap-2"
                 }
               >
-                <TabIcon type={type} />
+                <TabIcon type={type}/>
                 {label}
               </span>
               <span
