@@ -7,6 +7,7 @@ export const TAB_TYPES = {
   SCRIPT: "script",
   DIRECTORY: "directory",
   LINK: "link",
+  VIDEO: "video",
 } as const
 
 export type TabType = (typeof TAB_TYPES)[keyof typeof TAB_TYPES]
