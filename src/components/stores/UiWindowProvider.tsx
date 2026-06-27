@@ -17,6 +17,12 @@ export const UiWindowContext = createContext<UiWindowContextType>({
   isMobile: typeof window !== "undefined" ? checkIfMobile(window.navigator.userAgent) : false,
 })
 
+function updateAppHeight(height: number) {
+  document.documentElement.style.setProperty("--app-height", `${height}px`)
+}
+
+updateAppHeight(window.innerHeight)
+
 export default function UiWindowProvider({
   children,
 }: {
@@ -31,9 +37,12 @@ export default function UiWindowProvider({
     isMobile: typeof window !== "undefined" ? checkIfMobile(window.navigator.userAgent) : false,
   }
 
+
   useEffect(() => {
     const handleResize = debounce(() => {
-      setSize({ width: window.innerWidth, height: window.innerHeight })
+      const newHeight = window.innerHeight
+      setSize({ width: window.innerWidth, height: newHeight })
+      updateAppHeight(newHeight)
     }, 150)
 
     window.addEventListener("resize", handleResize)
