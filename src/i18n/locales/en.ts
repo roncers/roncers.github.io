@@ -12,6 +12,7 @@ const en = {
       title: "My CV",
     },
     entryPoint: {
+      contactMe: "Contact me",
       title: "My info",
       header: "Hello! I'm Martín",
       description:
