@@ -26,6 +26,11 @@ const es: DeepString<typeof en> = {
       phraseRandomizer: "Aleatorizador de frases",
       umlEditor: "Editor UML",
     },
+    experience: {
+      title: "Mi experiencia",
+      indra: "Indra",
+      nttData: "NTT Data",
+    },
   },
   table: {
     name: "Nombre",

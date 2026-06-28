@@ -1,7 +1,8 @@
 import { defineConfig } from "vite"
 import react from "@vitejs/plugin-react"
-import million from "million/compiler";
+import million from "million/compiler"
 import { fileURLToPath, URL } from "node:url"
+import { visualizer } from "rollup-plugin-visualizer"
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,7 +14,14 @@ export default defineConfig({
       },
     }),
     react(),
-  ],
+    process.env.ANALYZE === "true" &&
+      visualizer({
+        filename: "stats.html",
+        open: true,
+        gzipSize: true,
+        brotliSize: true,
+      }),
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
