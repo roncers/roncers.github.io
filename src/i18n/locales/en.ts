@@ -19,6 +19,11 @@ const en = {
         "Frontend is one of my passions, let me show you some of my work:",
       linksDescription: "Here are some of my projects:",
     },
+    projects: {
+      title: "My projects",
+      phraseRandomizer: "Phrase randomizer",
+      umlEditor: "UML editor",
+    },
   },
   table: {
     name: "Name",
