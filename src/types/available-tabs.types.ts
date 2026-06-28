@@ -30,6 +30,8 @@ export const TAB_TYPES = {
   VIDEO: "video",
 } as const
 
+// -- Tabs --
+
 export type TabType = (typeof TAB_TYPES)[keyof typeof TAB_TYPES]
 export const HELPER_TABS = {
   ENTRY_POINT: {
@@ -57,6 +59,14 @@ export const ENTRY_POINT_TABS = {
     i18key: "info.projects.title",
     type: TAB_TYPES.DIRECTORY,
     date: new Date("2026-06-28 02:25"),
+    size: 870,
+  },
+  MY_EXPERIENCE: {
+    loader: () =>
+      import("@/components/tabs/main/MyExperience").then((m) => m.default),
+    i18key: "info.experience.title",
+    type: TAB_TYPES.DIRECTORY,
+    date: new Date("2026-06-28 22:40"),
     size: 870,
   },
 } as const satisfies Record<string, TabDefinition>
@@ -99,6 +109,23 @@ export const PROJECTS_TABS = {
     type: TAB_TYPES.SCRIPT,
     date: new Date("2026-06-22 02:40"),
     size: 2677,
+  },
+} as const satisfies Record<string, TabDefinition>
+
+export const EXPERIENCE_TABS = {
+  INDRA: {
+    loader: linkLoader("https://www.indra.com/en"),
+    i18key: "info.experience.indra",
+    type: TAB_TYPES.DIRECTORY,
+    date: new Date("2026-06-28 22:40"),
+    size: 0,
+  },
+  NTT_DATA: {
+    loader: linkLoader("https://www.nttdata.com/es"),
+    i18key: "info.experience.nttData",
+    type: TAB_TYPES.DIRECTORY,
+    date: new Date("2026-06-28 22:40"),
+    size: 0,
   },
 } as const satisfies Record<string, TabDefinition>
 

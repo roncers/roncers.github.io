@@ -24,6 +24,11 @@ const en = {
       phraseRandomizer: "Phrase randomizer",
       umlEditor: "UML editor",
     },
+    experience: {
+      title: "My experience",
+      indra: "Indra",
+      nttData: "NTT Data",
+    },
   },
   table: {
     name: "Name",

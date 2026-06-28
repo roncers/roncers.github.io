@@ -75,7 +75,7 @@
   gap: 0.7rem;
 }
 
-@container (max-width: 700px) {
+@container (max-width: 800px) {
   .date-column {
     display: none;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@container (max-width: 550px) {
+@container (max-width: 600px) {
   .size-column {
     display: none;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@container (max-width: 350px) {
+@container (max-width: 400px) {
   .type-column {
     display: none;
   }
