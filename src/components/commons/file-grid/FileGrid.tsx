@@ -23,6 +23,8 @@ function fromNumberToBytes(size: number) {
   return `${sizeValue} ${units[unitIndex]}`
 }
 
+
+
 function TabIcon({ type, ...rest }: { type: TabType }) {
   switch (type) {
     case TAB_TYPES.FILE:
@@ -43,6 +45,11 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
   const { t } = useTranslation()
   const { isMobile } = use(UiWindowContext)
   const { selectedElement, selectElement } = use(TableContext)
+
+  function performOperation(tab: TabEntry) {
+    const { loader } = tab
+    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-")))
+  }
 
   return (
     <nav data-name="links" className={styles.nav}>
@@ -93,7 +100,8 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
             {t("table.size")}
           </span>
         </li>
-        {links.map(({ label, loader, date, type, size }) => {
+        {links.map((tab) => {
+          const { label, date, type, size } = tab
           const title = label.toLowerCase().replace(/\s+/g, "-")
           return (
             <li
@@ -101,13 +109,13 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
               id={title}
               onDoubleClick={(e) => {
                 e.preventDefault()
-                loader().then((c) => addTab(c, title))
+                performOperation(tab)
               }}
               onClick={(e) => {
                 e.stopPropagation()
                 selectElement(title)
                 if (isMobile) {
-                  loader().then((c) => addTab(c, title))
+                  performOperation(tab)
                 }
               }}
               className={
@@ -125,7 +133,7 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
                   " flex gap-2"
                 }
               >
-                <TabIcon type={type}/>
+                <TabIcon type={type} />
                 {label}
               </span>
               <span

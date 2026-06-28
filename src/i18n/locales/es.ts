@@ -21,6 +21,11 @@ const es: DeepString<typeof en> = {
       description: "El frontend es una de mis pasiones, aquí dejo algunos de mis trabajos:",
       linksDescription: "Aquí tienes algunos de mis proyectos:",
     },
+    projects: {
+      title: "Mis proyectos",
+      phraseRandomizer: "Aleatorizador de frases",
+      umlEditor: "Editor UML",
+    },
   },
   table: {
     name: "Nombre",
