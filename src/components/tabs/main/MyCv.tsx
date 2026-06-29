@@ -1,14 +1,29 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import type { TabComponentProps } from "@/types/tab.types"
-import cv from "@/assets/cv/es.pdf"
+import { useTranslation } from "@/i18n/useTranslation"
+import { useEffect, useState } from "react"
 
-// import { useTranslation } from "@/i18n/useTranslation"
+const CV_PATH = "/src/assets/cv"
+
+const cvModules = import.meta.glob<string>(`/src/assets/cv/*.pdf`, {
+  eager: false,
+  import: "default",
+  query: "?url",
+})
 
 export default function EntryPoint({ ...props }: TabComponentProps) {
-//   const { t } = useTranslation()
+  const { locale } = useTranslation()
+  const [cvUrl, setCvUrl] = useState<string | null>(null)
+
+  useEffect(() => {
+    const loader = cvModules[`${CV_PATH}/${locale}.pdf`]
+    if (!loader) return
+    loader().then((url) => setCvUrl(url))
+  }, [locale])
+
   return (
     <PoppingWindow {...props}>
-        <iframe src={cv} width="100%" height="100%" />
+      {cvUrl && <iframe src={cvUrl} width="100%" height="100%" />}
     </PoppingWindow>
   )
 }
