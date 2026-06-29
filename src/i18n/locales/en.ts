@@ -14,9 +14,9 @@ const en = {
     entryPoint: {
       contactMe: "Contact me",
       title: "My info",
-      header: "Hello! I'm Martín",
+      header: "I'm Martín",
       description:
-        "Frontend is one of my passions, let me show you some of my work:",
+        "In reality I'm just information.",
       linksDescription: "Here are some of my projects:",
     },
     projects: {
