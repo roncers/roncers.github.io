@@ -1,7 +1,7 @@
 import FileGrid from "@/components/commons/file-grid/FileGrid"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
-import { PROJECTS_TABS } from "@/types/available-tabs.types.ts"
+import { PROJECTS_TABS } from "@/types/available-tabs/tabs-index.types"
 import { withTabStructure } from "../hocs/tabWithTable"
 
 function MyProjectsContent(_: TabComponentProps) {

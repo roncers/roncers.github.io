@@ -1,7 +1,7 @@
 import FileGrid from "@/components/commons/file-grid/FileGrid"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
-import { ENTRY_POINT_TABS } from "@/types/available-tabs.types.ts"
+import { ENTRY_POINT_TABS } from "@/types/available-tabs/tabs-index.types"
 import { withTabStructure } from "../hocs/tabWithTable"
 
 function EntryPointContent(_: TabComponentProps) {
@@ -18,7 +18,7 @@ function EntryPointContent(_: TabComponentProps) {
     >
       <section data-name="intro">
         <h1 className="default-header-1">{t("info.entryPoint.header")}</h1>
-        <p className="default-description">
+        <p className="default-description mt-1">
           {t("info.entryPoint.description")}
         </p>
       </section>

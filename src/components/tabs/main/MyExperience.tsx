@@ -1,7 +1,7 @@
 import FileGrid from "@/components/commons/file-grid/FileGrid"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
-import { EXPERIENCE_TABS } from "@/types/available-tabs.types.ts"
+import { EXPERIENCE_TABS } from "@/types/available-tabs/tabs-index.types"
 import { withTabStructure } from "../hocs/tabWithTable"
 
 function MyExperienceContent(_: TabComponentProps) {
