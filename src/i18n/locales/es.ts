@@ -25,11 +25,22 @@ const es: DeepString<typeof en> = {
       title: "Mis proyectos",
       phraseRandomizer: "Aleatorizador de frases",
       umlEditor: "Editor UML",
+      atv: "Avoid the void",
     },
     experience: {
       title: "Mi experiencia",
-      indra: "Indra",
-      nttData: "NTT Data",
+      indra: { 
+        title: "Indra",
+        period: "01/2025 - Actualidad",
+        description:
+          "Actualmente me encuentro trabajando en indra en la BU de Ciberdefensa. Llevando labores de desarrollo front-end con Vue.js y TypeScript.",
+      },
+      nttData: {
+        title: "NTT Data",
+        period: "09/2023 - 12/2023",
+        description:
+          "Trabajé en NTT Data como desarrollador full-stack en prácticas. Realicé varias tareas relacionadas con Backend y Frontend. Dejé de trabajar ahí para centrarme en terminar la carrera.",
+      },
     },
   },
   table: {
@@ -41,7 +52,8 @@ const es: DeepString<typeof en> = {
       file: 'Archivo',
       script: 'Script',
       directory: 'Directorio',
-      link: 'Enlace'
+      link: 'Enlace',
+      video: 'Video'
     }
   },
   window: {

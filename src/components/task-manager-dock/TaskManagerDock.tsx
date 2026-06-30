@@ -3,7 +3,7 @@ import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import styles from "./TaskManagerDock.module.css"
 import { OverflowMenuHorizontal } from "../icons/OverflowHIcon"
 import { useAddTab } from "@/utils/hooks/useAddTab"
-import { HELPER_TABS } from "@/types/available-tabs.types"
+import { HELPER_TABS } from "@/types/available-tabs/tabs-index.types"
 import { useTranslation } from "@/i18n/useTranslation"
 
 function TaskManagerDock(): ReactElement {
@@ -19,6 +19,8 @@ function TaskManagerDock(): ReactElement {
     setTabPosition(id, { x: 30, y: 30 })
     focusTab(id)
   }
+
+  console.log(restoreTab)
 
   const noTabs = tabs.length === 0
 

@@ -14,7 +14,6 @@
 }
 
 .default-description {
-  margin-top: 1rem;
   font-size: var(--font-size-sm);
   font-weight: 200;
   /* text-indent: 2rem; */

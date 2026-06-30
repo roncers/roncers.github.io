@@ -1,0 +1,24 @@
+import type { TabComponentProps } from "@/types/tab.types"
+import { useTranslation } from "@/i18n/useTranslation"
+import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
+
+export default function EntryPointContent(props: TabComponentProps) {
+  const { t } = useTranslation()
+
+  return (
+    <PoppingWindow {...props}>
+    <section
+      data-name="entry-point"
+      className="data-container w-full h-full flex flex-col gap-4"
+    >
+      <section data-name="intro">
+        <h1 className="default-header-1">{t("info.experience.nttData.title")}</h1>
+        <h2 className="default-header-2 mt-1">{t("info.experience.nttData.period")}</h2>
+        <p className="default-description mt-1">
+          {t("info.experience.nttData.description")}
+        </p>
+      </section>
+    </section>
+    </PoppingWindow>
+  )
+}
