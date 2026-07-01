@@ -20,7 +20,7 @@ export default function EntryPointContent(props: TabComponentProps) {
           <h2 className="default-header-2 mt-1">
             {t("info.experience.indra.period")}
           </h2>
-          <p className="default-description mt-1">
+          <p className="default-description mt-2">
             {t("info.experience.indra.description")}
           </p>
           <button
