@@ -2,6 +2,7 @@
 @import "./abstracts/utility-classes.css";
 @import "./abstracts/properties.css";
 @import "./abstracts/fonts.css";
+@import "./abstracts/keyframes.css";
 
 :root {
   --font-size-xs: 1.2rem;

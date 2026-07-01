@@ -9,7 +9,7 @@ export default function IndraTasks(props: TabComponentProps) {
         data-name="tasks"
         className="data-container w-full h-full flex flex-col gap-4"
       >
-        <pre className="whitespace-pre-wrap default-description">
+        <pre className="default-description">
           {tasks}
         </pre>
       </section>

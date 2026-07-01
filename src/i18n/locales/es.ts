@@ -34,6 +34,7 @@ const es: DeepString<typeof en> = {
         period: "01/2025 - Actualidad",
         description:
           "Actualmente me encuentro trabajando en indra en la BU de Ciberdefensa. Llevando labores de desarrollo front-end con Vue.js y TypeScript.",
+        tasksButton: "Ver mis tareas",
       },
       nttData: {
         title: "NTT Data",

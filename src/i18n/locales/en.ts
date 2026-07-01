@@ -31,6 +31,7 @@ const en = {
         period: "01/2025 - Present",
         description:
           "I'm currently working at Indra in the Ciberdefensa BU. I'm carrying out front-end development tasks with Vue.js and TypeScript.",
+        tasksButton: "See my tasks",
       },
       nttData: {
         title: "NTT Data",
