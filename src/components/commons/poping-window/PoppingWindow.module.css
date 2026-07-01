@@ -97,15 +97,6 @@
   }
 }
 
-@keyframes subtleWobble {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
 .handle {
   position: absolute;
   z-index: 1;
