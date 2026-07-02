@@ -2,14 +2,15 @@ import styles from "./FileGrid.module.css"
 import { useAddTab } from "@/utils/hooks/useAddTab"
 import { useTranslation } from "@/i18n/useTranslation"
 import type { TabEntry, TabType } from "@/types/available-tabs/commons.types"
-import FileIcon from "@/components/icons/FileIcon"
-import FolderIcon from "@/components/icons/FolderIcon"
-import CodeIcon from "@/components/icons/CodeIcon"
-import GlobeIcon from "@/components/icons/GlobeIcon"
 import { use } from "react"
 import { TAB_TYPES } from "@/types/available-tabs/tabs-index.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 import { TableContext, SEMI_CLEAR_SUFFIX } from "@/components/stores/TableContextProvider"
+import FileIcon from "@/components/icons/FileIcon"
+import FolderIcon from "@/components/icons/FolderIcon"
+import CodeIcon from "@/components/icons/CodeIcon"
+import GlobeIcon from "@/components/icons/GlobeIcon"
+import NvidiaIcon from "@/components/icons/NvidiaIcon"
 
 function fromNumberToBytes(size: number) {
   const units = ["B", "KB", "MB", "GB", "TB"]
@@ -35,6 +36,8 @@ function TabIcon({ type, ...rest }: { type: TabType }) {
       return <FolderIcon {...rest} />
     case TAB_TYPES.LINK:
       return <GlobeIcon {...rest} />
+    case TAB_TYPES.SHADER:
+      return <NvidiaIcon {...rest} />
     default:
       return <FileIcon {...rest} />
   }
@@ -158,39 +161,6 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
             </li>
           )
         })}
-        {/* <li>
-          <span
-            onClick={(e) => {
-              e.preventDefault()
-              window.open("https://martin-roncero.com/uml-editor", "_blank")
-            }}
-          >
-            UML Editor
-          </span>
-        </li>
-        <li>
-          <span
-            onClick={(e) => {
-              e.preventDefault()
-              window.open(
-                "https://martin-roncero.com/word-randomizer",
-                "_blank",
-              )
-            }}
-          >
-            Phrase randomizer
-          </span>
-        </li>
-        <li>
-          <span
-            onClick={(e) => {
-              e.preventDefault()
-              window.open("https://github.com/roncers", "_blank")
-            }}
-          >
-            Github
-          </span>
-        </li> */}
       </ul>
     </nav>
   )

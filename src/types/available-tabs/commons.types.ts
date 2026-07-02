@@ -9,6 +9,7 @@ export const TAB_TYPES = {
   DIRECTORY: "directory",
   LINK: "link",
   VIDEO: "video",
+  SHADER: "shader",
 } as const
 
 export type TabType = (typeof TAB_TYPES)[keyof typeof TAB_TYPES]

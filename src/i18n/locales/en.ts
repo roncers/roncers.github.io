@@ -5,6 +5,7 @@ const en = {
     lava: "Lava sketch",
     name: "Name sketch",
     kaleidoscope: "Kaleidoscope sketch",
+    ringsZooming: "Rings Zooming",
   },
   info: {
     title: "My info",
@@ -23,14 +24,17 @@ const en = {
       phraseRandomizer: "Phrase randomizer",
       umlEditor: "UML editor",
       atv: "Avoid the void",
+      creativeCoding: "Creative coding",
     },
     experience: {
       title: "My experience",
-      indra: { 
+      indra: {
         title: "Indra",
         period: "01/2025 - Present",
-        description:
+        description1:
           "I'm currently working at Indra in the Ciberdefensa BU. I'm carrying out front-end development tasks with Vue.js and TypeScript.",
+        description2: "I mainly develop screens for the army's command and control team. This function requires developing reusable components for visualizing complex data.",
+        description3: "I leave a document listing some of the tasks I have performed during my stay at Indra. Although they are encrypted because they are for ciberdefense projects:",
         tasksButton: "See my tasks",
       },
       nttData: {
@@ -52,12 +56,21 @@ const en = {
       directory: "Directory",
       link: "Link",
       video: "Video",
+      shader: "Shader",
     },
   },
   window: {
     close: "Close",
     minimize: "Minimize",
     maximize: "Maximize",
+  },
+  creativeCoding: {
+    p5Scripts: {
+      title: "My P5js scripts",
+    },
+    glsl: {
+      title: "My GLSL shaders",
+    },
   },
 } as const
 
