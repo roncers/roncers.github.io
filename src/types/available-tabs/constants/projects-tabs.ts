@@ -23,28 +23,12 @@ export const PROJECTS_TABS = {
     size: 4500,
     disabled: true
   },
-  CELL_SKETCH: {
+  CREATIVE_CODING: {
     loader: () =>
-      import("@/components/tabs/p5/CellSketch").then((m) => m.default),
-    i18key: "sketches.cell",
-    type: TAB_TYPES.SCRIPT,
+      import("@/components/tabs/projects/CreativeCoding").then((m) => m.default),
+    i18key: "info.projects.creativeCoding",
+    type: TAB_TYPES.DIRECTORY,
     date: new Date("2026-03-29 18:23"),
     size: 1287,
-  },
-  LAVA_SKETCH: {
-    loader: () =>
-      import("@/components/tabs/p5/LavaSketch").then((m) => m.default),
-    i18key: "sketches.lava",
-    type: TAB_TYPES.SCRIPT,
-    date: new Date("2026-06-14 00:23"),
-    size: 1194,
-  },
-  KALEIDOSCOPE_SKETCH: {
-    loader: () =>
-      import("@/components/tabs/p5/KaleidoscopeSketch").then((m) => m.default),
-    i18key: "sketches.kaleidoscope",
-    type: TAB_TYPES.SCRIPT,
-    date: new Date("2026-06-22 02:40"),
-    size: 2677,
-  },
+  }
 } as const satisfies Record<string, TabDefinition>

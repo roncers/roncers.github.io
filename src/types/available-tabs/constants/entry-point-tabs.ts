@@ -23,6 +23,6 @@ export const ENTRY_POINT_TABS = {
     i18key: "info.experience.title",
     type: TAB_TYPES.DIRECTORY,
     date: new Date("2026-06-28 22:40"),
-    size: 870,
+    size: 888,
   },
 } as const satisfies Record<string, TabDefinition>

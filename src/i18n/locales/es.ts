@@ -8,6 +8,7 @@ const es: DeepString<typeof en> = {
     lava: "Lámpara de lava",
     name: "Sketch de nombre",
     kaleidoscope: "Kaleidoscopio",
+    ringsZooming: "Anillos",
   },
   info: {
     title: "Mi info",
@@ -26,15 +27,18 @@ const es: DeepString<typeof en> = {
       phraseRandomizer: "Aleatorizador de frases",
       umlEditor: "Editor UML",
       atv: "Avoid the void",
+      creativeCoding: "Creative coding",
     },
     experience: {
       title: "Mi experiencia",
       indra: { 
         title: "Indra",
         period: "01/2025 - Actualidad",
-        description:
-          "Actualmente me encuentro trabajando en indra en la BU de Ciberdefensa. Llevando labores de desarrollo front-end con Vue.js y TypeScript.",
-        tasksButton: "Ver mis tareas",
+        description1:
+          "Actualmente me encuentro trabajando en Indra en la BU de Ciberdefensa. Llevando a cabo labores de desarrollo front-end con Vue.js y TypeScript. Además de coordinación de datos con Backend y DevOps.",
+        description2: "Principalmente desarrollo pantallas para la unidad de mando y control dentro del ejército. Esta función requiere desarrollar componentes reutilizables para la visualización de datos complejos.",
+        description3: "Dejo un documento listando algunas de las tareas que he realizado durante mi estancia en Indra. Aunque vienen cifradas porque son de proyectos de ciberdefensa:",
+        tasksButton: "Mis Tareas",
       },
       nttData: {
         title: "NTT Data",
@@ -54,13 +58,22 @@ const es: DeepString<typeof en> = {
       script: 'Script',
       directory: 'Directorio',
       link: 'Enlace',
-      video: 'Video'
+      video: 'Video',
+      shader: 'Shader',
     }
   },
   window: {
     close: "Cerrar",
     minimize: "Minimizar",
     maximize: "Maximizar",
+  },
+  creativeCoding: {
+    p5Scripts: {
+      title: "Mis scripts P5js",
+    },
+    glsl: {
+      title: "Mis shaders GLSL",
+    },
   },
 }
 

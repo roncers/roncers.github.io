@@ -21,18 +21,26 @@ export default function EntryPointContent(props: TabComponentProps) {
             {t("info.experience.indra.period")}
           </h2>
           <p className="default-description mt-2">
-            {t("info.experience.indra.description")}
+            {t("info.experience.indra.description1")}
           </p>
-          <button
-            className="mt-2 default-button"
-            onClick={() =>
-              import("./IndraTasks").then((module) =>
-                addTab(module.default, "Indra Tasks"),
-              )
-            }
-          >
-            {t("info.experience.indra.tasksButton")}
-          </button>
+          <p className="default-description mt-2">
+            {t("info.experience.indra.description2")}
+          </p>
+          <p className="default-description mt-2">
+            {t("info.experience.indra.description3")}
+          </p>
+          <div className="flex justify-center mt-2">
+            <button
+              className="default-button"
+              onClick={() =>
+                import("./IndraTasks").then((module) =>
+                  addTab(module.default, "Indra Tasks"),
+                )
+              }
+            >
+              {t("info.experience.indra.tasksButton")}
+            </button>
+          </div>
         </section>
       </section>
     </PoppingWindow>
