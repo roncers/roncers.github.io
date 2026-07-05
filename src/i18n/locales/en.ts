@@ -26,6 +26,15 @@ const en = {
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
     },
+    technologies: {
+      title: "My skills",
+    },
+    contact: {
+      title: "Contact me",
+      mail: "Mail",
+      linkdin: "Linkdin",
+      github: "Github",
+    },
     experience: {
       title: "My experience",
       indra: {

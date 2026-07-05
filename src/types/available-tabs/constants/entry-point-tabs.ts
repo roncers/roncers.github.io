@@ -1,6 +1,6 @@
 import { TAB_TYPES, type TabDefinition } from "../commons.types"
 
-// my experience, my projects, my skills, contact me, miscellaneous
+// contact me, miscellaneous
 export const ENTRY_POINT_TABS = {
   MY_CV: {
     loader: () => import("@/components/tabs/main/MyCv").then((m) => m.default),
@@ -24,5 +24,21 @@ export const ENTRY_POINT_TABS = {
     type: TAB_TYPES.DIRECTORY,
     date: new Date("2026-06-28 22:40"),
     size: 888,
+  },
+  MY_TECHNOLOGIES: {
+    loader: () =>
+      import("@/components/tabs/main/MyTechnologies").then((m) => m.default),
+    i18key: "info.technologies.title",
+    type: TAB_TYPES.FILE,
+    date: new Date("2026-07-05 18:57"),
+    size: 2103,
+  },
+  CONTACT_ME: {
+    loader: () =>
+      import("@/components/tabs/main/ContactMe").then((m) => m.default),
+    i18key: "info.contact.title",
+    type: TAB_TYPES.FILE,
+    date: new Date("2026-07-05 19:36"),
+    size: 1500,
   },
 } as const satisfies Record<string, TabDefinition>

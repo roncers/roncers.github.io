@@ -29,6 +29,15 @@ const es: DeepString<typeof en> = {
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
     },
+    technologies: {
+      title: "Mis tecnologías",
+    },
+    contact: {
+      title: "Contactame",
+      mail: "Correo",
+      linkdin: "Linkdin",
+      github: "Github",
+    },
     experience: {
       title: "Mi experiencia",
       indra: { 
