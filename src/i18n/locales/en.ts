@@ -28,6 +28,7 @@ const en = {
     },
     technologies: {
       title: "My skills",
+      randomize: "Randomize",
     },
     contact: {
       title: "Contact me",

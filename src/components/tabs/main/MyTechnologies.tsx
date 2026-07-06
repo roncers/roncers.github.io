@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
+
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
+
 import { Css } from "@/components/icons/my-technologies/CSSIcon"
 import { Git } from "@/components/icons/my-technologies/GitIcon"
 import { Html } from "@/components/icons/my-technologies/HTMLIcon"
@@ -11,6 +15,8 @@ import { Sass } from "@/components/icons/my-technologies/SassIcon"
 import { Typescript } from "@/components/icons/my-technologies/TypeScriptIcon"
 import { Vue } from "@/components/icons/my-technologies/VueIcon"
 import { Vitejs } from "@/components/icons/my-technologies/ViteIcon"
+
+// TODO: fix the bug when moving the window it retriggers the animation, it shouldn't.
 
 const TECH_ICONS = [
   { icon: Javascript, label: "JavaScript" },
@@ -25,27 +31,78 @@ const TECH_ICONS = [
   { icon: Java, label: "Java" },
 ]
 
+function shuffle<T>(array: T[]): T[] {
+  let shuffled: T[]
+
+  do {
+    shuffled = [...array]
+
+    // Fisher-Yates shuffle
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+        ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+  } while (shuffled.some((item, index) => item === array[index]))
+
+  return shuffled
+}
+
+function rotateForward<T>(array: T[]): T[] {
+  if (array.length < 2) return [...array]
+
+  return [array[array.length - 1], ...array.slice(0, -1)]
+}
+
 export default function EntryPointContent(props: TabComponentProps) {
   const { t } = useTranslation()
+  const [icons, setIcons] = useState(TECH_ICONS)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIcons(rotateForward)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <PoppingWindow {...props}>
-    <section
-      data-name="entry-point"
-      className="data-container w-full h-full flex flex-col gap-4"
-    >
-      <section data-name="intro">
-        <h1 className="default-header-1">{t("info.technologies.title")}</h1>
+      <section className="data-container w-full flex flex-col gap-4">
+        <section className="flex items-center justify-between">
+          <h1 className="default-header-1">
+            {t("info.technologies.title")}
+          </h1>
+        </section>
+
+        <section className="grid grid-cols-auto-fill gap-4 mt-2">
+          {icons.map(({ icon: Icon, label }) => (
+            <motion.div
+              key={label}
+              layout
+              transition={{
+                layout: {
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 25,
+                },
+              }}
+              className="flex flex-col items-center gap-2"
+            >
+              <Icon className="w-12 h-12" />
+              <span className="text-sm">{label}</span>
+            </motion.div>
+          ))}
+        </section>
       </section>
-      <section data-name="technologies-grid" className="grid grid-cols-auto-fill gap-4 mt-2">
-        {TECH_ICONS.map(({ icon: Icon, label }) => (
-          <div key={label} className="flex flex-col items-center gap-2">
-            <Icon className="w-12 h-12" />
-            <span className="text-sm">{label}</span>
-          </div>
-        ))}
+      <section className="flex justify-center">
+        <button
+          onClick={() => setIcons(shuffle)}
+          className="default-button"
+        >
+          {t("info.technologies.randomize")}
+        </button>
+
       </section>
-    </section>
     </PoppingWindow>
   )
 }

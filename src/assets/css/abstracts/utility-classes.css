@@ -62,6 +62,10 @@
   margin-left: auto;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .grid {
   display: grid;
 }
