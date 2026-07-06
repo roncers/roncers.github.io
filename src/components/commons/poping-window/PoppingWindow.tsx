@@ -49,7 +49,7 @@ export default function PoppingWindow({
     maximizeTab,
     minimizeTab,
     updateTab,
-    hideTab,
+    // hideTab,
     setTabPosition,
   } = use(TaskManagerContext)
   const { width, height } = use(UiWindowContext)
@@ -66,10 +66,10 @@ export default function PoppingWindow({
     setTimeout(() => setWState("normal"), 500)
   }
 
-  function hideWithAnimation() {
-    setWState("isHiding")
-    setTimeout(() => hideTab(id), 500)
-  }
+  // function hideWithAnimation() {
+  //   setWState("isHiding")
+  //   setTimeout(() => hideTab(id), 500)
+  // }
 
   const { onDragStart } = useDraggable(ref, updateTabPos, handleHeaderDbClick)
 

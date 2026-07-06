@@ -7,20 +7,19 @@ import { HELPER_TABS } from "@/types/available-tabs/tabs-index.types"
 import { useTranslation } from "@/i18n/useTranslation"
 
 function TaskManagerDock(): ReactElement {
-  const { tabs, setTabPosition, incrementTabZIndex } = use(TaskManagerContext)
+  // const { tabs, setTabPosition, incrementTabZIndex } = use(TaskManagerContext)
+  const { tabs } = use(TaskManagerContext)
   const addTab = useAddTab()
   const { t } = useTranslation()
 
-  function focusTab(id: string) {
-    incrementTabZIndex(id)
-  }
+  // function focusTab(id: string) {
+  //   incrementTabZIndex(id)
+  // }
 
-  function restoreTab(id: string) {
-    setTabPosition(id, { x: 30, y: 30 })
-    focusTab(id)
-  }
-
-  console.log(restoreTab)
+  // function restoreTab(id: string) {
+  //   setTabPosition(id, { x: 30, y: 30 })
+  //   focusTab(id)
+  // }
 
   const noTabs = tabs.length === 0
 

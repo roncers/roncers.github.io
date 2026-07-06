@@ -13,8 +13,8 @@ export default function TabCanvas({
   label,
 }: TabCanvasProps): ReactElement {
   return (
-    <div className={`w-full h-full flex flex-col ${style.tabContainer}`}>
-      <label className={style.label}>{label}</label>
+    <div className={`w-full h-full flex flex-col gap-1 ${style.tabContainer}`}>
+      <label className="default-label">{label}</label>
       <P5Canvas className={style.canvasWrapper} sketch={sketch} />
     </div>
   )

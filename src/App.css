@@ -13,6 +13,13 @@
   font-weight: 200;
 }
 
+.default-label {
+    font-size: var(--font-size-xs-sm);
+    font-weight: 150;
+    color: var(--color-light);
+    user-select: auto;
+}
+
 .default-description {
   font-size: var(--font-size-sm);
   font-weight: 200;

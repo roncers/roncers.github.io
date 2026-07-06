@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, memo } from "react"
 import { motion } from "framer-motion"
 
 import type { TabComponentProps } from "@/types/tab.types"
@@ -15,8 +15,6 @@ import { Sass } from "@/components/icons/my-technologies/SassIcon"
 import { Typescript } from "@/components/icons/my-technologies/TypeScriptIcon"
 import { Vue } from "@/components/icons/my-technologies/VueIcon"
 import { Vitejs } from "@/components/icons/my-technologies/ViteIcon"
-
-// TODO: fix the bug when moving the window it retriggers the animation, it shouldn't.
 
 const TECH_ICONS = [
   { icon: Javascript, label: "JavaScript" },
@@ -53,7 +51,7 @@ function rotateForward<T>(array: T[]): T[] {
   return [array[array.length - 1], ...array.slice(0, -1)]
 }
 
-export default function EntryPointContent(props: TabComponentProps) {
+const TechnologiesGrid = memo(function TechnologiesGrid() {
   const { t } = useTranslation()
   const [icons, setIcons] = useState(TECH_ICONS)
 
@@ -66,7 +64,7 @@ export default function EntryPointContent(props: TabComponentProps) {
   }, [])
 
   return (
-    <PoppingWindow {...props}>
+    <>
       <section className="data-container w-full flex flex-col gap-4">
         <section className="flex items-center justify-between">
           <h1 className="default-header-1">
@@ -101,8 +99,15 @@ export default function EntryPointContent(props: TabComponentProps) {
         >
           {t("info.technologies.randomize")}
         </button>
-
       </section>
+    </>
+  )
+})
+
+export default function EntryPointContent(props: TabComponentProps) {
+  return (
+    <PoppingWindow {...props}>
+      <TechnologiesGrid />
     </PoppingWindow>
   )
 }

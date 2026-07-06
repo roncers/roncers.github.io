@@ -24,8 +24,13 @@
   align-items: center;
   justify-content: center;
   svg {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
+    /* TODO: pass this to a css variable, so the media query is unifyied */
+    @media (max-width: 768px) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
