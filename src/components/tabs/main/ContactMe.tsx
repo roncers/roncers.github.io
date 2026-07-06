@@ -7,8 +7,8 @@ const CONTACT_WAYS = [
     { i18nKey: "linkdin", value: "https://www.linkedin.com/in/martin-roncero" },
     { i18nKey: "github", value: "https://github.com/roncers" },
 ] as const
-// TODO: use stylized labels for the titles of each contact way.
 
+// TODO: copy functionality
 export default function ContactMe(props: TabComponentProps) {
     const { t } = useTranslation()
 
@@ -28,8 +28,8 @@ export default function ContactMe(props: TabComponentProps) {
                             const hrefValue = isMail ? `mailto:${value}` : value;
 
                             return (
-                                <li key={i18nKey}>
-                                    <label htmlFor={i18nKey}>{t(`info.contact.${i18nKey}`)}</label>
+                                <li key={i18nKey} className="flex flex-col gap-1">
+                                    <label htmlFor={i18nKey} className="default-label">{t(`info.contact.${i18nKey}`)}</label>
                                     <a
                                         className="default-anchor"
                                         href={hrefValue}
