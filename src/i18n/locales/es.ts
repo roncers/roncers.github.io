@@ -31,6 +31,7 @@ const es: DeepString<typeof en> = {
     },
     technologies: {
       title: "Mis tecnologías",
+      randomize: "Randomizar",
     },
     contact: {
       title: "Contactame",

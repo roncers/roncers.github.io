@@ -7,6 +7,7 @@ const CONTACT_WAYS = [
     { i18nKey: "linkdin", value: "https://www.linkedin.com/in/martin-roncero" },
     { i18nKey: "github", value: "https://github.com/roncers" },
 ] as const
+// TODO: use stylized labels for the titles of each contact way.
 
 export default function ContactMe(props: TabComponentProps) {
     const { t } = useTranslation()
