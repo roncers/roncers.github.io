@@ -29,7 +29,7 @@ export default function ContactMe(props: TabComponentProps) {
 
                             return (
                                 <li key={i18nKey}>
-                                    {t(`info.contact.${i18nKey}`)}:{" "}
+                                    <label htmlFor={i18nKey}>{t(`info.contact.${i18nKey}`)}</label>
                                     <a
                                         className="default-anchor"
                                         href={hrefValue}
