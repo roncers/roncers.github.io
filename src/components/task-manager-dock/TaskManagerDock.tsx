@@ -21,10 +21,10 @@ function TaskManagerDock(): ReactElement {
   //   focusTab(id)
   // }
 
-  const noTabs = tabs.length === 0
+  const entryClosed = !tabs.find((tab) => tab.label === t(HELPER_TABS.ENTRY_POINT.i18key))
 
   return (
-    <div className={`${styles.dock} ${noTabs ? "" : styles.hidden}`}>
+    <div className={`${styles.dock} ${entryClosed ? "" : styles.hidden}`}>
       <button
         className={styles.button}
         aria-label="Toggle task manager"
