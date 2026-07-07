@@ -58,7 +58,7 @@ const TechnologiesGrid = memo(function TechnologiesGrid() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIcons(rotateForward)
-    }, 3000)
+    }, 2500)
 
     return () => clearInterval(interval)
   }, [])

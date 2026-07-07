@@ -43,8 +43,10 @@ const en = {
         period: "01/2025 - Present",
         description1:
           "I'm currently working at Indra in the Ciberdefensa BU. I'm carrying out front-end development tasks with Vue.js and TypeScript.",
-        description2: "I mainly develop screens for the army's command and control team. This function requires developing reusable components for visualizing complex data.",
-        description3: "I leave a document listing some of the tasks I have performed during my stay at Indra. Although they are encrypted because they are for ciberdefense projects:",
+        description2:
+          "I mainly develop screens for the army's command and control team. This function requires developing reusable components for visualizing complex data.",
+        description3:
+          "I leave a document listing some of the tasks I have performed during my stay at Indra. Although they are encrypted because they are for ciberdefense projects:",
         tasksButton: "See my tasks",
       },
       nttData: {
@@ -53,6 +55,11 @@ const en = {
         description:
           "I worked in NTT Data as a full-stack developer intern. I carried out several tasks related to Backend and Frontend. I stopped working there to focus on finishing my degree.",
       },
+    },
+    miscellaneous: {
+      title: "Miscellaneous",
+      description: "Random stuff I've created or that I like.",
+      tearsIntheRain: "Tears in the rain",
     },
   },
   table: {

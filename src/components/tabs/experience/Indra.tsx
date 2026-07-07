@@ -34,7 +34,7 @@ export default function EntryPointContent(props: TabComponentProps) {
               className="default-button"
               onClick={() =>
                 import("./IndraTasks").then((module) =>
-                  addTab(module.default, "Indra Tasks"),
+                  addTab(module.default, t("info.experience.indra.tasksButton")),
                 )
               }
             >

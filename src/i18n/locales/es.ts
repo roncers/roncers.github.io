@@ -57,6 +57,11 @@ const es: DeepString<typeof en> = {
           "Trabajé en NTT Data como desarrollador full-stack en prácticas. Realicé varias tareas relacionadas con Backend y Frontend. Dejé de trabajar ahí para centrarme en terminar la carrera.",
       },
     },
+    miscellaneous: {
+      title: "Misceláneo",
+      description: "Cosas random que he creado o que me gustan.",
+      tearsIntheRain: "Lágrimas en la lluvia",
+    },
   },
   table: {
     name: "Nombre",

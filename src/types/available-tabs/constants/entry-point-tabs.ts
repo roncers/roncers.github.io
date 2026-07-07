@@ -41,12 +41,12 @@ export const ENTRY_POINT_TABS = {
     date: new Date("2026-07-05 19:36"),
     size: 1500,
   },
-  // MISCELLANEOUS: {
-  //   loader: () =>
-  //     import("@/components/tabs/main/Miscellaneous").then((m) => m.default),
-  //   i18key: "info.miscellaneous.title",
-  //   type: TAB_TYPES.DIRECTORY,
-  //   date: new Date("2026-07-05 20:00"),
-  //   size: 0,
-  // },
+  MISCELLANEOUS: {
+    loader: () =>
+      import("@/components/tabs/main/Miscellaneous").then((m) => m.default),
+    i18key: "info.miscellaneous.title",
+    type: TAB_TYPES.DIRECTORY,
+    date: new Date("2026-07-05 20:00"),
+    size: 0,
+  },
 } as const satisfies Record<string, TabDefinition>
