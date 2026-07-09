@@ -61,6 +61,7 @@ const es: DeepString<typeof en> = {
       title: "Misceláneo",
       description: "Cosas random que he creado o que me gustan.",
       tearsIntheRain: "Lágrimas en la lluvia",
+      ourTimeHasPassed: "Nuestro tiempo ha pasado",
     },
   },
   table: {
