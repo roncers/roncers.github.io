@@ -1,3 +1,5 @@
+import OurTimeHasPassed from "@/components/tabs/misc/speeches/OurTimeHasPassed"
+
 const en = {
   sketches: {
     title: "P5 sketch",
@@ -60,6 +62,7 @@ const en = {
       title: "Miscellaneous",
       description: "Random stuff I've created or that I like.",
       tearsIntheRain: "Tears in the rain",
+      ourTimeHasPassed: "Our time has passed",
     },
   },
   table: {
