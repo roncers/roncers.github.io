@@ -1,5 +1,6 @@
 import type { SVGProps } from "react"
 
+// million-ignore
 export function Folder(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

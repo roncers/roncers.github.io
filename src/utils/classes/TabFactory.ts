@@ -9,26 +9,19 @@ export default class TabFactory {
     return { x: left, y: top }
   }
 
-  // maybe depending on the screen size, so this class should pick up the screen size as reactive attrs
-  private getSizeX(width: number, mode: SizeMode) {
-    switch(mode) {
-      case 'default':
-        return Math.min(400, width * 0.8)
-      case '16:9':
-        return Math.min(400, 10000)
+ private getSize({ width, height }: { width: number; height: number }, mode: SizeMode) {
+  switch (mode) {
+    case "16:9": {
+      const w = Math.min(500, width * 0.8, (height * 0.8) * (16 / 9))
+      return { sizeX: w, sizeY: w * (9 / 16) }
     }
-    // TODO: mode for 16:9 aspect ratio
-  }
-
-  private getSizeY(height: number, mode: SizeMode) {
-    switch(mode) {
-      case 'default':
-        return Math.min(400, height * 0.8)
-      case '16:9':
-        return Math.min(400 * (9 / 16), 10000)
+    case "default":
+    default: {
+      const size = Math.min(400, width * 0.8, height * 0.8)
+      return { sizeX: size, sizeY: size }
     }
-    // TODO: mode for 16:9 aspect ratio
   }
+}
 
   createTab(
     zIndex: number,
@@ -37,8 +30,7 @@ export default class TabFactory {
     {height, width}: {height: number, width: number},
     sizeMode: SizeMode = 'default'
   ): Tab {
-    const sizeX = this.getSizeX(width, sizeMode)
-    const sizeY = this.getSizeY(height, sizeMode)
+    const {sizeX, sizeY} = this.getSize({height, width}, sizeMode)
     const screenPosition = this.getRandomPosition({sizeX, sizeY, width, height})
     return {
       id: Math.random().toString(36).substring(2, 9),
