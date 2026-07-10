@@ -46,6 +46,15 @@ function TabIcon({ type, ...rest }: { type: TabType }) {
   }
 }
 
+function getTabSizeType(type: TabType) {
+  switch (type) {
+    case TAB_TYPES.VIDEO:
+      return "16:9"
+    default:
+      return "default"
+  }
+}
+
 export default function FileGrid({ links }: { links: TabEntry[] }) {
   const addTab = useAddTab()
   const { t } = useTranslation()
@@ -54,7 +63,7 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
 
   function performOperation(tab: TabEntry) {
     const { loader } = tab
-    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-")))
+    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-"), getTabSizeType(tab.type)))
   }
 
   return (
@@ -115,12 +124,12 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
               id={title}
               onDoubleClick={(e) => {
                 e.preventDefault()
-                if(disabled) return
+                if (disabled) return
                 performOperation(tab)
               }}
               onClick={(e) => {
                 e.stopPropagation()
-                if(disabled) return
+                if (disabled) return
                 selectElement(title)
                 if (isMobile) {
                   performOperation(tab)

@@ -63,6 +63,7 @@ const en = {
       description: "Random stuff I've created or that I like.",
       tearsIntheRain: "Tears in the rain",
       ourTimeHasPassed: "Our time has passed",
+      sweatOfHisBrow: "Sweat of his brow",
     },
   },
   table: {
