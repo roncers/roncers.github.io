@@ -1,4 +1,4 @@
-import { Tab, TabComponentProps } from "@/types/tab.types"
+import { Tab, TabComponentProps, SizeMode } from "@/types/tab.types"
 
 export default class TabFactory {
   constructor() {}
@@ -10,22 +10,35 @@ export default class TabFactory {
   }
 
   // maybe depending on the screen size, so this class should pick up the screen size as reactive attrs
-  private getSizeX(width: number) {
-    return Math.min(400, width * 0.8)
+  private getSizeX(width: number, mode: SizeMode) {
+    switch(mode) {
+      case 'default':
+        return Math.min(400, width * 0.8)
+      case '16:9':
+        return Math.min(400, 10000)
+    }
+    // TODO: mode for 16:9 aspect ratio
   }
 
-  private getSizeY(height: number) {
-    return Math.min(400, height * 0.8)
+  private getSizeY(height: number, mode: SizeMode) {
+    switch(mode) {
+      case 'default':
+        return Math.min(400, height * 0.8)
+      case '16:9':
+        return Math.min(400 * (9 / 16), 10000)
+    }
+    // TODO: mode for 16:9 aspect ratio
   }
 
   createTab(
     zIndex: number,
     content: React.ComponentType<TabComponentProps>,
     label: string,
-    {height, width}: {height: number, width: number}
+    {height, width}: {height: number, width: number},
+    sizeMode: SizeMode = 'default'
   ): Tab {
-    const sizeX = this.getSizeX(width)
-    const sizeY = this.getSizeY(height)
+    const sizeX = this.getSizeX(width, sizeMode)
+    const sizeY = this.getSizeY(height, sizeMode)
     const screenPosition = this.getRandomPosition({sizeX, sizeY, width, height})
     return {
       id: Math.random().toString(36).substring(2, 9),

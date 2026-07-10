@@ -3,12 +3,12 @@ import { useTranslation } from "@/i18n/useTranslation"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import VideoRenderer from "@/components/commons/VideoRenderer"
 
-export default function TearsInTheRain(props: TabComponentProps) {
+export default function SweatOfHisBrow(props: TabComponentProps) {
     const { t } = useTranslation()
 
     return (
         <PoppingWindow {...props}>
-            <VideoRenderer embedUrl="HU7Ga7qTLDU" title={t("info.miscellaneous.tearsIntheRain")} />
+            <VideoRenderer embedUrl="hyur9r0ekZY" title={t("info.miscellaneous.sweatOfHisBrow")} />
         </PoppingWindow>
     )
 }

@@ -95,7 +95,7 @@ const TechnologiesGrid = memo(function TechnologiesGrid() {
       <section className="flex justify-center">
         <button
           onClick={() => setIcons(shuffle)}
-          className="default-button"
+          className="default-button mb-4"
         >
           {t("info.technologies.randomize")}
         </button>

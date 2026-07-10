@@ -14,3 +14,5 @@ export type TabComponentProps = {
 export type Tab = TabComponentProps & {
   content: React.ComponentType<TabComponentProps>
 }
+
+export type SizeMode = 'default' | '16:9'
