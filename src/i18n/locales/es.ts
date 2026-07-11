@@ -4,7 +4,7 @@ import type { DeepString } from "@/i18n/types"
 const es: DeepString<typeof en> = {
   sketches: {
     title: "Sketch P5js",
-    cell: "Celula creciendo",
+    cell: "Fungi creciendo",
     lava: "Lámpara de lava",
     name: "Sketch de nombre",
     kaleidoscope: "Kaleidoscopio",
