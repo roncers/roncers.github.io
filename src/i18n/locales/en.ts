@@ -3,7 +3,7 @@ import OurTimeHasPassed from "@/components/tabs/misc/speeches/OurTimeHasPassed"
 const en = {
   sketches: {
     title: "P5 sketch",
-    cell: "Cell sketch",
+    cell: "Fungi growth sketch",
     lava: "Lava sketch",
     name: "Name sketch",
     kaleidoscope: "Kaleidoscope sketch",
