@@ -8,7 +8,7 @@ export default function SweatOfHisBrow(props: TabComponentProps) {
 
     return (
         <PoppingWindow {...props}>
-            <VideoRenderer embedUrl="hyur9r0ekZY" title={t("info.miscellaneous.sweatOfHisBrow")} />
+            <VideoRenderer embedUrl="hyur9r0ekZY" title={t("info.miscellaneous.speeches.sweatOfHisBrow")} />
         </PoppingWindow>
     )
 }

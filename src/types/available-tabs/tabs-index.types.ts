@@ -9,5 +9,6 @@ export * from "./constants/experience-tabs"
 export * from "./constants/glsl-tabs"
 export * from "./constants/p5js-tabs"
 export * from "./constants/misc-tabs"
+export * from "./constants/speeches-tabs"
 
 export type TabKey = keyof typeof ENTRY_POINT_TABS | keyof typeof HELPER_TABS

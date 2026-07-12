@@ -9,6 +9,7 @@ const es: DeepString<typeof en> = {
     name: "Sketch de nombre",
     kaleidoscope: "Kaleidoscopio",
     ringsZooming: "Anillos",
+    movingFloor: "Suelo movil",
   },
   info: {
     title: "Mi info",
@@ -60,9 +61,13 @@ const es: DeepString<typeof en> = {
     miscellaneous: {
       title: "Misceláneo",
       description: "Cosas random que he creado o que me gustan.",
-      tearsIntheRain: "Lágrimas en la lluvia",
-      ourTimeHasPassed: "Nuestro tiempo ha pasado",
-      sweatOfHisBrow: "El sudor de su frente",
+      speeches: {
+        title: "Discursos / monólogos",
+        description: "Algunos discursos / monólogos que me gustan / encuentro interesantes.",
+        tearsIntheRain: "Lágrimas en la lluvia",
+        ourTimeHasPassed: "Nuestro tiempo ha pasado",
+        sweatOfHisBrow: "El sudor de su frente",
+      }
     },
   },
   table: {

@@ -8,7 +8,7 @@ export default function TearsInTheRain(props: TabComponentProps) {
 
     return (
         <PoppingWindow {...props}>
-            <VideoRenderer embedUrl="HU7Ga7qTLDU" title={t("info.miscellaneous.tearsIntheRain")} />
+            <VideoRenderer embedUrl="HU7Ga7qTLDU" title={t("info.miscellaneous.speeches.tearsIntheRain")} />
         </PoppingWindow>
     )
 }

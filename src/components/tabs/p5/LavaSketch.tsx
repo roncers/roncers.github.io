@@ -1,6 +1,6 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow";
 import TabCanvas from "@/components/commons/tab-canvas/TabCanvas";
-import lavaSketch from "@/p5/glsl/lava.p5-sketch.glsl";
+import lavaSketch from "@/p5/glsl/lava.glsl";
 import type { TabComponentProps } from "@/types/tab.types";
 import { useTranslation } from "@/i18n/useTranslation";
 
