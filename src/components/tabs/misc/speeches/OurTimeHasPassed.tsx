@@ -9,7 +9,7 @@ export default function OurTimeHasPassed(props: TabComponentProps) {
 
     return (
         <PoppingWindow {...props}>
-            <VideoRenderer embedUrl="4IWN-6zBO2Q" title={t("info.miscellaneous.ourTimeHasPassed")} />
+            <VideoRenderer embedUrl="4IWN-6zBO2Q" title={t("info.miscellaneous.speeches.ourTimeHasPassed")} />
         </PoppingWindow>
     )
 }

@@ -1,5 +1,3 @@
-import OurTimeHasPassed from "@/components/tabs/misc/speeches/OurTimeHasPassed"
-
 const en = {
   sketches: {
     title: "P5 sketch",
@@ -8,6 +6,7 @@ const en = {
     name: "Name sketch",
     kaleidoscope: "Kaleidoscope sketch",
     ringsZooming: "Rings Zooming",
+    movingFloor: "Moving floor",
   },
   info: {
     title: "My info",
@@ -61,9 +60,13 @@ const en = {
     miscellaneous: {
       title: "Miscellaneous",
       description: "Random stuff I've created or that I like.",
-      tearsIntheRain: "Tears in the rain",
-      ourTimeHasPassed: "Our time has passed",
-      sweatOfHisBrow: "Sweat of his brow",
+      speeches: {
+        title: "Speeches / monologues",
+        description: "Some speeches / monologues I like / find interesting.",
+        tearsIntheRain: "Tears in the rain",
+        ourTimeHasPassed: "Our time has passed",
+        sweatOfHisBrow: "Sweat of his brow",
+      },
     },
   },
   table: {

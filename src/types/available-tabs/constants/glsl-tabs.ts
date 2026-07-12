@@ -18,4 +18,12 @@ export const GLSL_TABS = {
     date: new Date("2026-07-02 19:50"),
     size: 1474,
   },
+  MOVING_FLOOR: {
+    loader: () =>
+      import("@/components/tabs/p5/MovingFloor").then((m) => m.default),
+    i18key: "sketches.movingFloor",
+    type: TAB_TYPES.SHADER,
+    date: new Date("2026-07-12 13:50"),
+    size: 1574,
+  },
 } as const satisfies Record<string, TabDefinition>
