@@ -35,7 +35,7 @@ const es: DeepString<typeof en> = {
       randomize: "Randomizar",
     },
     contact: {
-      title: "Contactame",
+      title: "Contáctame",
       mail: "Correo",
       linkdin: "Linkdin",
       github: "Github",
@@ -67,6 +67,10 @@ const es: DeepString<typeof en> = {
         tearsIntheRain: "Lágrimas en la lluvia",
         ourTimeHasPassed: "Nuestro tiempo ha pasado",
         sweatOfHisBrow: "El sudor de su frente",
+      },
+      myTexts: {
+        title: "Mis textos",
+        description: "Algunos textos que he escrito.",
       }
     },
   },

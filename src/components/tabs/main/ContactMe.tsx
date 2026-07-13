@@ -1,6 +1,7 @@
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
+import styles from "./ContactMe.module.css"
 
 const CONTACT_WAYS = [
     { i18nKey: "mail", value: "martin.roncero.l@gmail.com" },
@@ -23,13 +24,19 @@ export default function ContactMe(props: TabComponentProps) {
                 </section>
                 <section data-name="contact-list">
                     <ul className="default-description flex flex-col items-start gap-4">
-                        {CONTACT_WAYS.map(({ i18nKey, value }) => {
+                        {CONTACT_WAYS.map(({ i18nKey, value }, index) => {
                             const isMail = i18nKey === "mail";
                             const hrefValue = isMail ? `mailto:${value}` : value;
 
                             return (
                                 <li key={i18nKey} className="flex flex-col gap-1">
-                                    <label htmlFor={i18nKey} className="default-label">{t(`info.contact.${i18nKey}`)}</label>
+                                    <label
+                                        htmlFor={i18nKey}
+                                        style={{ "--_delay": `${index}s` } as React.CSSProperties}
+                                        className={`default-label ${styles.animate}`}
+                                    >
+                                        {t(`info.contact.${i18nKey}`)}
+                                    </label>
                                     <a
                                         className="default-anchor"
                                         href={hrefValue}

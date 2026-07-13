@@ -1,0 +1,21 @@
+.animate {
+     background-image: linear-gradient(
+        90deg,
+        var(--color-light) 0%,
+        var(--color-light) 40%,
+        /* use google color gradient for mail, blue for linkdin and grey for github */
+        grey 50%,
+        var(--color-light) 60%,
+        var(--color-light) 100%
+    );
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s linear infinite var(--_delay);
+}
+
+@keyframes shine {
+    0%, 33%, 100% { background-position: 180% 0; }
+    16% { background-position: -80% 0; }
+}

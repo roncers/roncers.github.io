@@ -1,3 +1,5 @@
+import MyTexts from "@/components/tabs/misc/MyTexts"
+
 const en = {
   sketches: {
     title: "P5 sketch",
@@ -66,6 +68,10 @@ const en = {
         tearsIntheRain: "Tears in the rain",
         ourTimeHasPassed: "Our time has passed",
         sweatOfHisBrow: "Sweat of his brow",
+      },
+      myTexts: {
+        title: "My texts",
+        description: "Some texts I've written.",
       },
     },
   },
