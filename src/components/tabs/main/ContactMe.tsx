@@ -39,16 +39,15 @@ export default function ContactMe(props: TabComponentProps) {
                             const hrefValue = isMail ? `mailto:${value}` : value;
 
                             return (
-                                <li key={i18nKey} className="flex flex-col gap-1">
+                                <li key={i18nKey} className="flex flex-col gap-1" style={{ "--_delay": `${index * 2}s`, ...SHINE_COLORS[i18nKey] } as React.CSSProperties}>
                                     <label
                                         htmlFor={i18nKey}
-                                        style={{ "--_delay": `${index * 2}s`, ...SHINE_COLORS[i18nKey] } as React.CSSProperties}
                                         className={`default-label ${styles.animate}`}
                                     >
                                         {t(`info.contact.${i18nKey}`)}
                                     </label>
                                     <a
-                                        className="default-anchor"
+                                        className={`default-anchor ${styles.animate}`}
                                         href={hrefValue}
                                         target="_blank"
                                         rel="noreferrer noopener"
