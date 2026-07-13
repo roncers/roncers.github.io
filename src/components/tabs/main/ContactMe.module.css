@@ -3,8 +3,10 @@
         90deg,
         var(--color-light) 0%,
         var(--color-light) 40%,
-        /* use google color gradient for mail, blue for linkdin and grey for github */
-        grey 50%,
+        var(--_shine-1, var(--_shine, grey)) 44%,
+        var(--_shine-2, var(--_shine, grey)) 49%,
+        var(--_shine-3, var(--_shine, grey)) 53%,
+        var(--_shine-4, var(--_shine, grey)) 57%,
         var(--color-light) 60%,
         var(--color-light) 100%
     );

@@ -9,7 +9,17 @@ const CONTACT_WAYS = [
     { i18nKey: "github", value: "https://github.com/roncers" },
 ] as const
 
-// TODO: copy functionality
+const SHINE_COLORS: Record<string, React.CSSProperties> = {
+    mail: {
+        "--_shine-1": "#4285F4",
+        "--_shine-2": "#EA4335",
+        "--_shine-3": "#FBBC05",
+        "--_shine-4": "#34A853",
+    } as React.CSSProperties,
+    linkdin: { "--_shine": "#0A66C2" } as React.CSSProperties,
+    github: { "--_shine": "grey" } as React.CSSProperties,
+}
+
 export default function ContactMe(props: TabComponentProps) {
     const { t } = useTranslation()
 
@@ -32,7 +42,7 @@ export default function ContactMe(props: TabComponentProps) {
                                 <li key={i18nKey} className="flex flex-col gap-1">
                                     <label
                                         htmlFor={i18nKey}
-                                        style={{ "--_delay": `${index}s` } as React.CSSProperties}
+                                        style={{ "--_delay": `${index * 2}s`, ...SHINE_COLORS[i18nKey] } as React.CSSProperties}
                                         className={`default-label ${styles.animate}`}
                                     >
                                         {t(`info.contact.${i18nKey}`)}
