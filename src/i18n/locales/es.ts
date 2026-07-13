@@ -1,5 +1,7 @@
 import type en from "./en"
 import type { DeepString } from "@/i18n/types"
+import farmerAndVagabond from "@/i18n/long-texts/farmer-and-vagabond/es"
+import stagecoachReview from "@/i18n/long-texts/stagecoach-review/es"
 
 const es: DeepString<typeof en> = {
   sketches: {
@@ -71,6 +73,14 @@ const es: DeepString<typeof en> = {
       myTexts: {
         title: "Mis textos",
         description: "Algunos textos que he escrito.",
+        farmerAndVagabond: {
+          title: "El ganadero y el vagabundo",
+          story: farmerAndVagabond,
+        },
+        stagecoachReview: {
+          title: "Reseña de la Diligencia (1939)",
+          story: stagecoachReview,
+        }
       }
     },
   },

@@ -1,5 +1,5 @@
 import { TAB_TYPES, type TabDefinition } from "../commons.types"
-
+// TODO: Update size
 export const EXPERIENCE_TABS = {
   INDRA: {
     loader: () =>
