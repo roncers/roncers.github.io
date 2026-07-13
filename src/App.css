@@ -18,6 +18,7 @@
     font-weight: 150;
     color: var(--color-light);
     user-select: auto;
+    width: fit-content;
 }
 
 .default-description {
