@@ -1,4 +1,5 @@
-import MyTexts from "@/components/tabs/misc/MyTexts"
+import farmerAndVagabond from "@/i18n/long-texts/farmer-and-vagabond/es"
+import stagecoachReview from "@/i18n/long-texts/stagecoach-review/en"
 
 const en = {
   sketches: {
@@ -72,6 +73,14 @@ const en = {
       myTexts: {
         title: "My texts",
         description: "Some texts I've written.",
+        farmerAndVagabond: {
+          title: "The cattleman and the vagabond",
+          story: farmerAndVagabond,
+        },
+        stagecoachReview: {
+          title: "Review of Stagecoach (1939)",
+          story: stagecoachReview,
+        }
       },
     },
   },

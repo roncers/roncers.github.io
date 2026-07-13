@@ -16,4 +16,6 @@ export const MISC_TABS = {
     date: new Date("2026-07-13 19:26"),
     size: 232,
   },
+  // Fav songs -> wish you were here, simple twist of fate BD, 
+  // Clock
 } as const satisfies Record<string, TabDefinition>
