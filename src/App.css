@@ -2,7 +2,6 @@
   padding: 2rem;
   overflow: auto;
 }
-/*TODO create variables for this */
 .default-header-1 {
   font-size: var(--font-size-xl);
   font-weight: 200;
@@ -24,7 +23,6 @@
 .default-description {
   font-size: var(--font-size-sm);
   font-weight: 200;
-  /* text-indent: 2rem; */
 }
 
 .default-anchor {
