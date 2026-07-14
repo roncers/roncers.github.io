@@ -20,7 +20,7 @@ const en = {
       contactMe: "Contact me",
       title: "My info",
       header: "I'm Martín",
-      description: "In reality I'm just information.",
+      description: "I like to create.",
       linksDescription: "Here are some of my projects:",
     },
     projects: {

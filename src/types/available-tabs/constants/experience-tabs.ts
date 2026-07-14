@@ -1,5 +1,4 @@
 import { TAB_TYPES, type TabDefinition } from "../commons.types"
-// TODO: Update size
 export const EXPERIENCE_TABS = {
   INDRA: {
     loader: () =>
@@ -7,7 +6,7 @@ export const EXPERIENCE_TABS = {
     i18key: "info.experience.indra.title",
     type: TAB_TYPES.FILE,
     date: new Date("2026-06-28 22:40"),
-    size: 0,
+    size: 1693,
   },
   NTT_DATA: {
     loader: () =>
@@ -15,6 +14,6 @@ export const EXPERIENCE_TABS = {
     i18key: "info.experience.nttData.title",
     type: TAB_TYPES.FILE,
     date: new Date("2023-12-15 22:40"),
-    size: 0,
+    size: 856,
   },
 } as const satisfies Record<string, TabDefinition>
