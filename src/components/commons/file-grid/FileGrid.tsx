@@ -12,6 +12,7 @@ import CodeIcon from "@/components/icons/CodeIcon"
 import GlobeIcon from "@/components/icons/GlobeIcon"
 import NvidiaIcon from "@/components/icons/NvidiaIcon"
 import VideoIcon from "@/components/icons/VideoIcon"
+import ImageIcon from "@/components/icons/ImageIcon"
 
 function fromNumberToBytes(size: number) {
   const units = ["B", "KB", "MB", "GB", "TB"]
@@ -41,6 +42,8 @@ function TabIcon({ type, ...rest }: { type: TabType }) {
       return <NvidiaIcon {...rest} />
     case TAB_TYPES.VIDEO:
       return <VideoIcon {...rest} />
+    case TAB_TYPES.IMAGE:
+      return <ImageIcon {...rest} />
     default:
       return <FileIcon {...rest} />
   }

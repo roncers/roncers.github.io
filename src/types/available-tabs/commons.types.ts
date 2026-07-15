@@ -10,6 +10,7 @@ export const TAB_TYPES = {
   LINK: "link",
   VIDEO: "video",
   SHADER: "shader",
+  IMAGE: "image",
 } as const
 
 export type TabType = (typeof TAB_TYPES)[keyof typeof TAB_TYPES]

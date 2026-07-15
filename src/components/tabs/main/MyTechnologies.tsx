@@ -15,6 +15,7 @@ import { Sass } from "@/components/icons/my-technologies/SassIcon"
 import { Typescript } from "@/components/icons/my-technologies/TypeScriptIcon"
 import { Vue } from "@/components/icons/my-technologies/VueIcon"
 import { Vitejs } from "@/components/icons/my-technologies/ViteIcon"
+import { Npm } from "@/components/icons/my-technologies/NPMIcon"
 
 const TECH_ICONS = [
   { icon: Javascript, label: "JavaScript" },
@@ -27,6 +28,7 @@ const TECH_ICONS = [
   { icon: Sass, label: "Sass" },
   { icon: Vitejs, label: "Vite" },
   { icon: Java, label: "Java" },
+  { icon: Npm, label: "npm" },
 ]
 
 function shuffle<T>(array: T[]): T[] {

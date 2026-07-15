@@ -1,6 +1,6 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import TabCanvas from "@/components/commons/tab-canvas/TabCanvas"
-import kaleidoscopeSketch from "@/p5/kaleidoscope.p5-sketch"
+import kaleidoscopeSketch from "@/p5/base/kaleidoscope.p5"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 

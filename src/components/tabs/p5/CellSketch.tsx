@@ -1,6 +1,6 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import TabCanvas from "@/components/commons/tab-canvas/TabCanvas"
-import cellSketch from "@/p5/cell.p5-sketch"
+import cellSketch from "@/p5/base/cell.p5"
 import type { TabComponentProps } from "@/types/tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 
