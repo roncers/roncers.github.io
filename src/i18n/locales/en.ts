@@ -10,11 +10,12 @@ const en = {
     kaleidoscope: "Kaleidoscope sketch",
     ringsZooming: "Rings Zooming",
     movingFloor: "Moving floor",
+    romboidRainbow: "Romboid rainbow",
   },
   info: {
     title: "My info",
     cv: {
-      title: "My CV",
+      title: "CV",
     },
     entryPoint: {
       contactMe: "Contact me",
@@ -24,14 +25,14 @@ const en = {
       linksDescription: "Here are some of my projects:",
     },
     projects: {
-      title: "My projects",
+      title: "Projects",
       phraseRandomizer: "Phrase randomizer",
       umlEditor: "UML editor",
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
     },
     technologies: {
-      title: "My skills",
+      title: "Skills",
       randomize: "Randomize",
     },
     contact: {
@@ -41,7 +42,7 @@ const en = {
       github: "Github",
     },
     experience: {
-      title: "My experience",
+      title: "Experience",
       indra: {
         title: "Indra",
         period: "01/2025 - Present",
@@ -64,8 +65,8 @@ const en = {
       title: "Miscellaneous",
       description: "Random stuff I've created or that I like.",
       speeches: {
-        title: "Speeches / monologues",
-        description: "Some speeches / monologues I like / find interesting.",
+        title: "Speeches",
+        description: "Some speeches that have marked me.",
         tearsIntheRain: "Tears in the rain",
         ourTimeHasPassed: "Our time has passed",
         sweatOfHisBrow: "Sweat of his brow",
@@ -82,6 +83,13 @@ const en = {
           story: stagecoachReview,
         }
       },
+      clock: {
+        title: "Clock",
+      },
+      gallery: {
+        title: "Gallery",
+        description: "Some random pictures",
+      },
     },
   },
   table: {
@@ -96,6 +104,7 @@ const en = {
       link: "Link",
       video: "Video",
       shader: "Shader",
+      image: "Image",
     },
   },
   window: {

@@ -12,11 +12,12 @@ const es: DeepString<typeof en> = {
     kaleidoscope: "Kaleidoscopio",
     ringsZooming: "Anillos",
     movingFloor: "Suelo movil",
+    romboidRainbow: "Romboide arcoíris",
   },
   info: {
     title: "Mi info",
     cv: {
-      title: "Mi CV",
+      title: "CV",
     },
     entryPoint: {
       contactMe: "Contacta conmigo",
@@ -26,14 +27,14 @@ const es: DeepString<typeof en> = {
       linksDescription: "Aquí tienes algunos de mis proyectos:",
     },
     projects: {
-      title: "Mis proyectos",
+      title: "Proyectos",
       phraseRandomizer: "Aleatorizador de frases",
       umlEditor: "Editor UML",
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
     },
     technologies: {
-      title: "Mis tecnologías",
+      title: "Tecnologías",
       randomize: "Randomizar",
     },
     contact: {
@@ -43,7 +44,7 @@ const es: DeepString<typeof en> = {
       github: "Github",
     },
     experience: {
-      title: "Mi experiencia",
+      title: "Experiencia",
       indra: { 
         title: "Indra",
         period: "01/2025 - Actualidad",
@@ -64,8 +65,8 @@ const es: DeepString<typeof en> = {
       title: "Misceláneo",
       description: "Cosas random que he creado o que me gustan.",
       speeches: {
-        title: "Discursos / monólogos",
-        description: "Algunos discursos / monólogos que me gustan / encuentro interesantes.",
+        title: "Discursos",
+        description: "Algunos discursos que me han marcado.",
         tearsIntheRain: "Lágrimas en la lluvia",
         ourTimeHasPassed: "Nuestro tiempo ha pasado",
         sweatOfHisBrow: "El sudor de su frente",
@@ -81,7 +82,14 @@ const es: DeepString<typeof en> = {
           title: "Reseña de la Diligencia (1939)",
           story: stagecoachReview,
         }
-      }
+      },
+      clock: {
+        title: "Reloj",
+      },
+      gallery: {
+        title: "Galería",
+        description: "Algunas fotos aleatorias",
+      },
     },
   },
   table: {
@@ -96,6 +104,7 @@ const es: DeepString<typeof en> = {
       link: 'Enlace',
       video: 'Video',
       shader: 'Shader',
+      image: 'Imagen',
     }
   },
   window: {

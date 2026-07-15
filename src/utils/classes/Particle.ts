@@ -1,6 +1,6 @@
 import type p5 from "p5"
 import type { ParticleUpdateOptions } from "../../types/p5.types"
-import { ATTRACTION_FORCE_MAX } from "@//p5/name.p5-sketch"
+import { ATTRACTION_FORCE_MAX } from "@/p5/base/name.p5"
 
 const ATTRACTION_DIFF = 0.1
 const ATTRACTION_STEP = 0.01
