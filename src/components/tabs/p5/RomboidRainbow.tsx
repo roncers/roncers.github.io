@@ -1,5 +1,5 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow";
-import TabCanvas from "@/components/commons/tab-canvas/TabCanvas";
+import TabCanvas from "@/components/commons/TabCanvas";
 import romboidRainbowSketch from "@/p5/glsl/romboid-rainbow.glsl";
 import type { TabComponentProps } from "@/types/tab.types";
 import { useTranslation } from "@/i18n/useTranslation";

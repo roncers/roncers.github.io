@@ -6,6 +6,18 @@
   height: 100%;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
 .overflow-hidden {
   overflow: hidden;
 } 
@@ -32,6 +44,10 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .min-h-0 {
@@ -96,4 +112,8 @@
 
 .text-sm {
   font-size: var(--font-size-xs);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -9,6 +9,7 @@ export type TabComponentProps = {
   prevY?: number
   prevPosition?: { x: number; y: number } | null
   fadingOut?: true
+  args?: Array<() => Promise<any>>
 }
 
 export type Tab = TabComponentProps & {

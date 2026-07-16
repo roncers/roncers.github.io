@@ -89,6 +89,8 @@ const es: DeepString<typeof en> = {
       gallery: {
         title: "Galería",
         description: "Algunas fotos aleatorias",
+        me: "Yo",
+        breakAspectRatio: "Romper ratio de aspecto",
       },
     },
   },

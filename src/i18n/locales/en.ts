@@ -89,6 +89,8 @@ const en = {
       gallery: {
         title: "Gallery",
         description: "Some random pictures",
+        me: "Me",
+        breakAspectRatio: "Break aspect ratio",
       },
     },
   },

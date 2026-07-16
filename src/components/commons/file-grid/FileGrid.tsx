@@ -65,8 +65,8 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
   const { selectedElement, selectElement } = use(TableContext)
 
   function performOperation(tab: TabEntry) {
-    const { loader } = tab
-    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-"), getTabSizeType(tab.type)))
+    const { loader, args } = tab
+    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-"), getTabSizeType(tab.type), args ?? []))
   }
 
   return (

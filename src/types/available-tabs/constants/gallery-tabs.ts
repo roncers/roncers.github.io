@@ -2,7 +2,8 @@ import { TAB_TYPES, type TabDefinition } from "../commons.types"
 
 export const GALLERY_TABS = {
   ME: {
-    loader: () => import("@/components/tabs/misc/SpeechesList").then((m) => m.default),
+    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [() => import("@/assets/images/me.jpg")],
     i18key: "info.miscellaneous.gallery.me",
     type: TAB_TYPES.IMAGE,
     date: new Date("2026-07-15 20:56"),

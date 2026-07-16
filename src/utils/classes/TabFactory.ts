@@ -28,7 +28,8 @@ export default class TabFactory {
     content: React.ComponentType<TabComponentProps>,
     label: string,
     {height, width}: {height: number, width: number},
-    sizeMode: SizeMode = 'default'
+    sizeMode: SizeMode = 'default',
+    args?: any[]
   ): Tab {
     const {sizeX, sizeY} = this.getSize({height, width}, sizeMode)
     const screenPosition = this.getRandomPosition({sizeX, sizeY, width, height})
@@ -40,6 +41,7 @@ export default class TabFactory {
       screenPosition,
       content: content,
       zIndex: zIndex,
+      args: args,
     }
   }
 }
