@@ -72,7 +72,7 @@
   height: 1.5rem;
   border-radius: 999px;
 
-  background: #cfcfcf;
+  background: var(--color-grey);
   cursor: pointer;
   position: relative;
   transition: background-color 0.25s ease;
@@ -87,14 +87,14 @@
     left: 1px;
 
     border-radius: 50%;
-    background: white;
+    background: var(--color-light);
 
     transition: transform 0.25s ease;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 4px var(--color-dark);
   }
 
   &:checked {
-    background: #22c55e;
+    background: var(--color-warning);
   }
 
   &:checked::before {
@@ -102,7 +102,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid #22c55e;
+    outline: 2px solid var(--color-warning);
     outline-offset: 2px;
   }
 
@@ -111,3 +111,9 @@
     cursor: not-allowed;
   }
 }
+
+.blink {
+  animation: blink 2s linear infinite;
+}
+
+

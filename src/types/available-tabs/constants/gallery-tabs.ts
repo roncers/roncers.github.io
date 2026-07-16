@@ -6,7 +6,23 @@ export const GALLERY_TABS = {
     args: [() => import("@/assets/images/me.jpg")],
     i18key: "info.miscellaneous.gallery.me",
     type: TAB_TYPES.IMAGE,
-    date: new Date("2026-07-15 20:56"),
-    size: 999,
+    date: new Date("2024-08-26 01:14"),
+    size: 1004773,
   },
+  KEBAB_PLACE: {
+    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [() => import("@/assets/images/kebab-place.jpg")],
+    i18key: "info.miscellaneous.gallery.kebabPlace",
+    type: TAB_TYPES.IMAGE,
+    date: new Date("2026-07-03 21:56"),
+    size: 1033482,
+  },
+  DEATH_BEACH: {
+    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [() => import("@/assets/images/death-beach.jpg")],
+    i18key: "info.miscellaneous.gallery.deathBeach",
+    type: TAB_TYPES.IMAGE,
+    date: new Date("2025-10-06 13:53"),
+    size: 388275,
+  }
 } as const satisfies Record<string, TabDefinition>
