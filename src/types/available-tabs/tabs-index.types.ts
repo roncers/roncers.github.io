@@ -11,5 +11,6 @@ export * from "./constants/p5js-tabs"
 export * from "./constants/misc-tabs"
 export * from "./constants/speeches-tabs"
 export * from "./constants/my-texts-tabs"
+export * from "./constants/gallery-tabs" 
 
 export type TabKey = keyof typeof ENTRY_POINT_TABS | keyof typeof HELPER_TABS

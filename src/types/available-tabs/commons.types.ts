@@ -22,6 +22,7 @@ export type TabDefinition = {
   date: Date
   size: number
   disabled?: boolean
+  args?: Array<() => Promise<any>>
 }
 
 export type TabEntry = TabDefinition & { label: string }
