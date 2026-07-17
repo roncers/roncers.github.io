@@ -1,5 +1,6 @@
 .clockContainer {
   container-type: inline-size;
+  user-select: none;
 }
 
 .clockTime {

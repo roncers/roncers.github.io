@@ -11,19 +11,17 @@ export default function GenericImage({ args, ...props }: TabComponentProps) {
   const [src, setSrc] = useState<string | null>(null)
   const [breakAspectRatio, setBreakAspectRatio] = useState(false)
   useEffect(() => {
-    async function getSrc() {
-      const ans = await args![0]()
-      const src = ans.default ?? ans
+    (async () => {
+      const src = await args![0]()
       setSrc(src)
-    }
-    getSrc()
+    })()
   }, [args])
   if (!src) {
     return <PoppingWindow {...props}>
       <div className="w-full h-full flex items-center justify-center">Loading...</div>
     </PoppingWindow>
   }
-  
+
   const action = breakAspectRatio
     ? t("info.miscellaneous.gallery.fix")
     : t("info.miscellaneous.gallery.break");
