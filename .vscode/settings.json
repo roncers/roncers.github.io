@@ -1,0 +1,8 @@
+{
+  "shader-validator.glsl.targetClient": "OpenGL450",
+  "shader-validator.validate": false,
+  "files.associations": {
+    "*.frag": "glsl",
+    "*.vert": "glsl"
+  }
+}
