@@ -30,7 +30,7 @@ export default function ContactMe(props: TabComponentProps) {
                 className="data-container w-full h-full flex flex-col gap-4"
             >
                 <section data-name="intro">
-                    <h1 className="default-header-1">{t("info.contact.title")}</h1>
+                    <h2 className="default-header-1">{t("info.contact.title")}</h2>
                 </section>
                 <section data-name="contact-list">
                     <ul className="default-description flex flex-col items-start gap-4">

@@ -69,9 +69,9 @@ const TechnologiesGrid = memo(function TechnologiesGrid() {
     <>
       <section className="data-container w-full flex flex-col gap-4">
         <section className="flex items-center justify-between">
-          <h1 className="default-header-1">
+          <h2 className="default-header-1">
             {t("info.technologies.title")}
-          </h1>
+          </h2>
         </section>
 
         <section className="grid grid-cols-auto-fill gap-4 mt-2">

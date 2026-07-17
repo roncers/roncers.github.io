@@ -12,7 +12,7 @@ export default function EntryPointContent(props: TabComponentProps) {
       className="data-container w-full h-full flex flex-col gap-4"
     >
       <section data-name="intro">
-        <h1 className="default-header-1">{t("info.experience.nttData.title")}</h1>
+        <h2 className="default-header-1">{t("info.experience.nttData.title")}</h2>
         <h2 className="default-header-2 mt-1">{t("info.experience.nttData.period")}</h2>
         <p className="default-description mt-2">
           {t("info.experience.nttData.description")}
