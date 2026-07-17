@@ -24,5 +24,13 @@ export const GALLERY_TABS = {
     type: TAB_TYPES.IMAGE,
     date: new Date("2025-10-06 13:53"),
     size: 388275,
+  },
+  SECONDARY_DIPLOMA: {
+    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [() => import("@/assets/images/secondary-diploma.jpg")],
+    i18key: "info.miscellaneous.gallery.secondaryDiploma",
+    type: TAB_TYPES.IMAGE,
+    date: new Date("2026-06-17 19:33"),
+    size: 546780,
   }
 } as const satisfies Record<string, TabDefinition>

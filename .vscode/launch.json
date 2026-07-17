@@ -3,26 +3,21 @@
   "configurations": [
     {
       "name": "Launch Chrome (Vite)",
-      "type": "pwa-chrome",
+      "type": "chrome",
       "request": "launch",
       "url": "http://localhost:5173",
-      "webRoot": "${workspaceFolder}",
-      "breakOnLoad": true,
-      "resolveSourceMapLocations": [
-        "${workspaceFolder}/**",
-        "!**/node_modules/**"
-      ]
+      "webRoot": "${workspaceFolder}"
     },
     {
       "name": "Attach to Chrome",
-      "type": "pwa-chrome",
+      "type": "chrome",
       "request": "attach",
       "port": 9222,
       "webRoot": "${workspaceFolder}"
     },
     {
       "name": "Attach to Node (Vite)",
-      "type": "pwa-node",
+      "type": "node",
       "request": "attach",
       "port": 9229,
       "restart": true,

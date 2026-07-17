@@ -23,17 +23,20 @@ export default function GenericImage({ args, ...props }: TabComponentProps) {
       <div className="w-full h-full flex items-center justify-center">Loading...</div>
     </PoppingWindow>
   }
+  
+  const action = breakAspectRatio
+    ? t("info.miscellaneous.gallery.fix")
+    : t("info.miscellaneous.gallery.break");
+
   return <PoppingWindow {...props}>
     <div className={`w-full h-full flex flex-col gap-1 default-padding ${styles.container}`}>
       <div className="flex items-center justify-between">
         <label className="default-label">{props.label}</label>
         <div className="flex items-center gap-2">
-          <input type="checkbox" checked={breakAspectRatio} onChange={() => setBreakAspectRatio(!breakAspectRatio)} className="toggle-switch"/>
-          {breakAspectRatio ? (
-            <label className={`default-label ${styles.tag}`}>{t("info.miscellaneous.gallery.fixAspectRatio")}</label>
-          ) : (
-            <label className={`default-label ${styles.tag}`}>{t("info.miscellaneous.gallery.breakAspectRatio")}</label>
-          )}
+          <input type="checkbox" checked={breakAspectRatio} onChange={() => setBreakAspectRatio(!breakAspectRatio)} className="toggle-switch" />
+          <label className={`default-label ${styles.tag}`}>
+            {action} {t("info.miscellaneous.gallery.aspectRatio")}
+          </label>
         </div>
       </div>
       <div className="w-full h-full overflow-hidden flex items-center justify-center default-border">
