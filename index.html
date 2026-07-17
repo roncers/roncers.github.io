@@ -13,8 +13,43 @@
   <body>
     <div
       id="root"
-      style="background-color: #000; height: 100%; width: 100%"
-    ></div>
+      style="
+        background-color: #000;
+        min-height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      "
+    >
+      <h1>Martín Roncero — Web Developer</h1>
+      <p>
+        My name is Martín Roncero, and I'm a creative developer (mostly for the
+        web). This is my portfolio, a little place in the internet where I share
+        my work and thoughts. I hope you enjoy it!
+      </p>
+    </div>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Martín Roncero",
+        "jobTitle": "Frontend Software Developer",
+        "url": "https://martin-roncero.com",
+        "sameAs": [
+          "https://github.com/roncers",
+          "https://linkedin.com/in/martin-roncero"
+          "https://letterboxd.com/roncers/"
+        ]
+      }
+    </script>
   </body>
 </html>
