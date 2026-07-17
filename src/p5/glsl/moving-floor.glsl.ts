@@ -1,6 +1,6 @@
 import type p5 from "p5";
-import vertexShader from "@/p5/glsl/raw-code/rings-zooming/rings-zooming.vert?raw"
-import fragmentShader from "@/p5/glsl/raw-code/rings-zooming/rings-zooming.frag?raw"
+import vertexShader from "@/p5/glsl/raw-code/moving-floor/moving-floor.vert?raw"
+import fragmentShader from "@/p5/glsl/raw-code/moving-floor/moving-floor.frag?raw"
 
 export default function sketch(p: p5, parent: HTMLElement): void {
   let shader: p5.Shader;
