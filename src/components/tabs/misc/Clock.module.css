@@ -1,0 +1,7 @@
+.clockContainer {
+  container-type: inline-size;
+}
+
+.clockTime {
+  font-size: 20cqi;
+}
