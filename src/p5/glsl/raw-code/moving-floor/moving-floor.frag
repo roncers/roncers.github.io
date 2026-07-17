@@ -1,23 +1,4 @@
-import type p5 from "p5";
-
-const vertexShader = `
-precision highp float;
-
-attribute vec3 aPosition;
-attribute vec2 aTexCoord;
-
-varying vec2 vTexCoord;
-
-uniform mat4 uProjectionMatrix;
-uniform mat4 uModelViewMatrix;
-
-void main() {
-  vTexCoord = aTexCoord;
-  gl_Position = uProjectionMatrix * uModelViewMatrix * vec4(aPosition, 1.0);
-}
-`;
-
-const fragmentShader = `
+#version 100
 precision highp float;
 
 varying vec2 vTexCoord;
@@ -67,29 +48,4 @@ void main() {
     vec3 col = vec3(plot(abs(uv.y - fx))) * vec3(plot(base)) * vec3(plot(yLine)) * vec3(plot(xLine));
 
     gl_FragColor = vec4(col, 1.0);
-}
-`;
-
-export default function sketch(p: p5, parent: HTMLElement): void {
-  let shader: p5.Shader;
-
-  p.setup = () => {
-    p.createCanvas(parent.clientWidth, parent.clientHeight, p.WEBGL);
-    p.noStroke();
-
-    shader = p.createShader(vertexShader, fragmentShader);
-  };
-
-  p.draw = () => {
-    p.shader(shader);
-
-    shader.setUniform("u_resolution", [p.width, p.height]);
-    shader.setUniform("u_time", p.millis() / 1000.0);
-
-    p.rect(-p.width / 2, -p.height / 2, p.width, p.height);
-  };
-
-  p.windowResized = () => {
-    p.resizeCanvas(parent.clientWidth, parent.clientHeight);
-  };
 }
