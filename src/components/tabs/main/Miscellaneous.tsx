@@ -17,7 +17,7 @@ function MyProjectsContent(_: TabComponentProps) {
       className="data-container w-full h-full flex flex-col gap-4"
     >
       <section data-name="intro">
-        <h1 className="default-header-1">{t("info.miscellaneous.title")}</h1>
+        <h2 className="default-header-1">{t("info.miscellaneous.title")}</h2>
         <p className="default-description mt-1">{t("info.miscellaneous.description")}</p>
       </section>
       <FileGrid links={links} />
