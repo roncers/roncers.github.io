@@ -1,6 +1,6 @@
-import { useEffect, useRef, ReactElement } from 'react'
-import type p5 from 'p5'
-import type { Sketch } from '@/types/p5.types'
+import { useEffect, useRef, ReactElement } from "react"
+import type p5 from "p5"
+import type { Sketch } from "@/types/p5.types"
 
 interface P5CanvasProps {
   sketch: Sketch
@@ -8,7 +8,11 @@ interface P5CanvasProps {
   [key: string]: any
 }
 
-export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps): ReactElement {
+export default function P5Canvas({
+  sketch,
+  className,
+  ...props
+}: P5CanvasProps): ReactElement {
   const containerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -21,7 +25,8 @@ export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps)
 
     // timeout is to fix a bug where 2 instances where getting mounted with React 19 strict mode
     timeoutId = setTimeout(() => {
-      import('p5').then(({ default: P5 }) => {
+      import("p5").then(({ default: P5 }) => {
+        P5.disableFriendlyErrors = true
         instance = new P5((p: p5) => sketch(p, parent), parent)
 
         // forward container size changes to the sketch's windowResized hook
@@ -41,5 +46,11 @@ export default function P5Canvas({ sketch, className, ...props }: P5CanvasProps)
     }
   }, [sketch])
 
-  return <div ref={containerRef} className={`w-full h-full flex-1 min-h-0 ${className || ''}`} {...props} />
+  return (
+    <div
+      ref={containerRef}
+      className={`w-full h-full flex-1 min-h-0 ${className || ""}`}
+      {...props}
+    />
+  )
 }
