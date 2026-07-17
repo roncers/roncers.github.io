@@ -28,7 +28,7 @@ const TECH_ICONS = [
   { icon: Sass, label: "Sass" },
   { icon: Vitejs, label: "Vite" },
   { icon: Java, label: "Java" },
-  { icon: Npm, label: "npm" },
+  { icon: Npm, label: "NPM" },
 ]
 
 function shuffle<T>(array: T[]): T[] {
