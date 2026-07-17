@@ -16,9 +16,9 @@ export default function Clock({ ...props }: TabComponentProps) {
       <div className={`${styles.clockContainer} w-full h-full`}>
         <h2 className={`${styles.clockTime} default-header-2 flex items-center justify-center h-full`}>
         {String(time.getHours()).padStart(2, '0')}
-        <span className="blink">:</span>
+        <span style={{ visibility: time.getSeconds() % 2 === 0 ? 'visible' : 'hidden' }}>:</span>
         {String(time.getMinutes()).padStart(2, '0')}
-        <span className="blink">:</span>
+        <span style={{ visibility: time.getSeconds() % 2 === 0 ? 'visible' : 'hidden' }}>:</span>
         {String(time.getSeconds()).padStart(2, '0')}
       </h2>
       </div>

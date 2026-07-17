@@ -4,7 +4,8 @@ import type { TabDefinition } from "../commons.types"
 export const GLSL_TABS = {
   LAVA_SKETCH: {
     loader: () =>
-      import("@/components/tabs/p5/LavaSketch").then((m) => m.default),
+      import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+    args: [() => import("@/p5/glsl/lava.glsl").then((m) => m.default)],
     i18key: "sketches.lava",
     type: TAB_TYPES.SHADER,
     date: new Date("2026-06-14 00:23"),
@@ -12,7 +13,8 @@ export const GLSL_TABS = {
   },
   RINGS_ZOOMING: {
     loader: () =>
-      import("@/components/tabs/p5/RingsZooming").then((m) => m.default),
+      import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+    args: [() => import("@/p5/glsl/rings-zooming.glsl").then((m) => m.default)],
     i18key: "sketches.ringsZooming",
     type: TAB_TYPES.SHADER,
     date: new Date("2026-07-02 19:50"),
@@ -20,7 +22,8 @@ export const GLSL_TABS = {
   },
   MOVING_FLOOR: {
     loader: () =>
-      import("@/components/tabs/p5/MovingFloor").then((m) => m.default),
+      import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+    args: [() => import("@/p5/glsl/moving-floor.glsl").then((m) => m.default)],
     i18key: "sketches.movingFloor",
     type: TAB_TYPES.SHADER,
     date: new Date("2026-07-12 13:50"),
@@ -28,7 +31,8 @@ export const GLSL_TABS = {
   },
   ROMBOID_RAINBOW: {
     loader: () =>
-      import("@/components/tabs/p5/RomboidRainbow").then((m) => m.default),
+      import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+    args: [() => import("@/p5/glsl/romboid-rainbow.glsl").then((m) => m.default)],
     i18key: "sketches.romboidRainbow",
     type: TAB_TYPES.SHADER,
     date: new Date("2026-07-15 18:39"),

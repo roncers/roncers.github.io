@@ -7,7 +7,7 @@ export const ENTRY_POINT_TABS = {
     i18key: "info.cv.title",
     type: TAB_TYPES.FILE,
     date: new Date("2026-06-23 08:50"),
-    size: 38831,
+    size: 18777,
   },
   MY_PROJECTS: {
     loader: () =>
