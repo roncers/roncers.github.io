@@ -23,7 +23,7 @@ const es: DeepString<typeof en> = {
       contactMe: "Contacta conmigo",
       title: "Mi info",
       header: "Soy Martín", 
-      description: "Me gusta crear",
+      description: "Me gusta crear.",
       linksDescription: "Aquí tienes algunos de mis proyectos:",
     },
     projects: {

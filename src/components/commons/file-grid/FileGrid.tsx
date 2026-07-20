@@ -161,7 +161,8 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
               <span
                 className={styles["grid-cell"] + " " + styles["date-column"]}
               >
-                {date.toLocaleString(undefined, {
+                {/* TODO: MAYBE PICK UP LOCALE */}
+                {date.toLocaleString("es-ES", {
                   year: "numeric",
                   month: "2-digit",
                   day: "2-digit",
