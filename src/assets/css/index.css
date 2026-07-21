@@ -62,34 +62,54 @@ main {
 
   /* selection */
   ::selection {
-    background-color: color-mix(in srgb, var(--color-grey) 60%, var(--color-darkest)); /* The highlight color */
+    background-color: color-mix(
+      in srgb,
+      var(--color-grey) 60%,
+      var(--color-darkest)
+    ); /* The highlight color */
     color: var(--color-light); /* The text color when highlighted */
   }
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  display: block;
+}
 
-  /* scrollbar */
-  ::-webkit-scrollbar {
-    width: 3px;
-    display: block;
-  }
+::-webkit-scrollbar-track {
+  background: var(--color-darker);
+  border-radius: 0px;
+}
 
-  ::-webkit-scrollbar-track {
-    background: var(--color-darker);
-    border-radius: 0px;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-grey);
+  border-radius: 5px;
+}
 
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--color-grey);
-    border-radius: 5px;
-  }
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-darker);
+}
 
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-darker);
-  }
+/* STEP 3: The Button Killer */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
 
-  /* STEP 3: The Button Killer */
-  ::-webkit-scrollbar-button {
-    display: none;
-    height: 0;
-    width: 0;
-  }
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: var(--color-grey);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background: var(--color-darker);
 }

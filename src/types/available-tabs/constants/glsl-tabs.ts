@@ -38,4 +38,13 @@ export const GLSL_TABS = {
     date: new Date("2026-07-15 18:39"),
     size: 2494,
   },
+  SPINNER: {
+    loader: () =>
+      import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+    args: [() => import("@/p5/glsl/spinner.glsl").then((m) => m.default)],
+    i18key: "sketches.spinner",
+    type: TAB_TYPES.SHADER,
+    date: new Date("2026-07-15 18:39"),
+    size: 2494,
+  },
 } as const satisfies Record<string, TabDefinition>

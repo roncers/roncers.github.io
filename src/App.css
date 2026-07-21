@@ -9,10 +9,20 @@
   font-weight: 200;
 }
 
+.readable-header-1 {
+  max-inline-size: 45ch;
+  margin-inline: auto;
+}
+
 .default-header-2 {
   font-family: var(--alternative-font);
   font-size: var(--font-size-md);
   font-weight: 200;
+}
+
+.readable-header-2 {
+  max-inline-size: 67ch;
+  margin-inline: auto;
 }
 
 .default-label {
@@ -27,6 +37,11 @@
   font-size: var(--font-size-sm);
   font-weight: 200;
   line-height: var(--line-height-sm);
+}
+
+.readable-description {
+  max-inline-size: 70ch;
+  margin-inline: auto;
 }
 
 .default-anchor {
@@ -119,5 +134,3 @@
 .blink {
   animation: blink 2s linear infinite;
 }
-
-
