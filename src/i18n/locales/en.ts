@@ -11,6 +11,7 @@ const en = {
     ringsZooming: "Rings Zooming",
     movingFloor: "Moving floor",
     romboidRainbow: "Romboid rainbow",
+    spinner: "Spinner",
   },
   info: {
     title: "My info",
@@ -81,7 +82,7 @@ const en = {
         stagecoachReview: {
           title: "Review of Stagecoach (1939)",
           story: stagecoachReview,
-        }
+        },
       },
       clock: {
         title: "Clock",
