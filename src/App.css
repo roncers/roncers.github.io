@@ -3,11 +3,14 @@
   overflow: auto;
 }
 .default-header-1 {
+  font-family: var(--alternative-font);
   font-size: var(--font-size-xl);
+  letter-spacing: var(--letter-spacing-lg);
   font-weight: 200;
 }
 
 .default-header-2 {
+  font-family: var(--alternative-font);
   font-size: var(--font-size-md);
   font-weight: 200;
 }
@@ -23,6 +26,7 @@
 .default-description {
   font-size: var(--font-size-sm);
   font-weight: 200;
+  line-height: var(--line-height-sm);
 }
 
 .default-anchor {

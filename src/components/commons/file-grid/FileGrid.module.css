@@ -25,6 +25,7 @@
     var(--_col-date)
     var(--_col-type)
     var(--_col-size);
+  line-height: var(--line-height-sm);
   &:hover {
     background-color: color-mix(in srgb, var(--color-light) 15%, transparent);
     border: 1px solid color-mix(in srgb, var(--color-light) 25%, transparent);
@@ -83,7 +84,7 @@
   gap: 0.7rem;
 }
 
-@container (max-width: 800px) {
+@container (max-width: 850px) {
   .date-column {
     display: none;
   }
