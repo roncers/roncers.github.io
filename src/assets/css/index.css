@@ -12,6 +12,8 @@
   --font-size-lg: 2.5rem;
   --font-size-xl: 3rem;
   --main-button-size: 5rem;
+  --letter-spacing-lg: 0.15rem;
+  --letter-spacing-md: 0.075rem;
   @media (max-width: 768px) {
     --font-size-xs: 1.5rem;
     --font-size-xs-sm: 1.75rem;
@@ -20,8 +22,11 @@
     --font-size-lg: 3rem;
     --font-size-xl: 3.5rem;
     --main-button-size: 6rem;
+    --letter-spacing-lg: 0.1rem;
+    --letter-spacing-md: 0.05rem;
   }
-  --default-font: "UbuntuMono", monospace;
+  --default-font: "UbuntuSansMono", monospace;
+  --alternative-font: "UbuntuMono", monospace;
   --color-grey: color-mix(in srgb, var(--color-dark) 40%, var(--color-light));
   --breakpoint-mobile: 768px;
   /* @media (max-width: 1024px) {
@@ -32,6 +37,7 @@
 html {
   font-family: var(--default-font);
   font-size: 62.5%;
+  letter-spacing: var(--letter-spacing-md);
   color: var(--color-light);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

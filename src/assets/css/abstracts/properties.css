@@ -29,6 +29,11 @@
   inherits: false;
   initial-value: #a12d1e;
 }
+@property --line-height-sm {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1.2;
+}
 /* just for reference: */
 /* @property --breakpoint-mobile {
   syntax: "<length>";
