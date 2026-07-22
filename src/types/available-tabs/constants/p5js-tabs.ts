@@ -1,5 +1,5 @@
-import { TAB_TYPES } from "../commons.types"
-import type { TabDefinition } from "../commons.types"
+import { TAB_TYPES } from "../available-tab.types"
+import type { TabDefinition } from "../available-tab.types"
 
 export const P5JS_TABS = {
   CELL_SKETCH: {

@@ -1,4 +1,4 @@
-import { TAB_TYPES, type TabDefinition } from "../commons.types"
+import { TAB_TYPES, type TabDefinition } from "../available-tab.types"
 
 // contact me, miscellaneous
 export const ENTRY_POINT_TABS = {

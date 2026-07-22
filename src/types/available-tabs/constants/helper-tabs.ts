@@ -1,4 +1,4 @@
-import type { TabDefinition } from "../commons.types"
+import type { TabDefinition } from "../available-tab.types"
 
 export const HELPER_TABS = {
   ENTRY_POINT: {

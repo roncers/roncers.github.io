@@ -1,5 +1,5 @@
 import FileGrid from "@/components/commons/file-grid/FileGrid"
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 import { ENTRY_POINT_TABS } from "@/types/available-tabs/tabs-index.types"
 import { withTabStructure } from "../hocs/tabWithTable"

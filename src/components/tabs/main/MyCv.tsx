@@ -1,5 +1,5 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 import { useEffect, useState } from "react"
 

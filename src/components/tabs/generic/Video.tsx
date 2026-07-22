@@ -1,9 +1,9 @@
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import VideoRenderer from "@/components/commons/VideoRenderer"
 import { useEffect, useState } from "react"
 import { useTranslation } from "@/i18n/useTranslation"
-import type { VideoTabArgs } from "@/types/available-tabs/commons.types"
+import type { VideoTabArgs } from "@/types/available-tabs/available-tab.types"
 
 export default function Video(props: TabComponentProps) {
   const { locale } = useTranslation()

@@ -1,22 +1,23 @@
-import { TAB_TYPES, linkLoader, type TabDefinition } from "../commons.types"
+import { TAB_TYPES, type TabDefinition } from "@/types/available-tabs/available-tab.types"
+import { loadPage } from "@/utils/functions/loadPage"
 
 export const PROJECTS_TABS = {
   PHRASE_RANDOMIZER: {
-    loader: linkLoader("https://martin-roncero.com/word-randomizer"),
+    loader: loadPage("https://martin-roncero.com/word-randomizer"),
     i18key: "info.projects.phraseRandomizer",
     type: TAB_TYPES.LINK,
     date: new Date("2026-06-03 22:24"),
     size: 3687,
   },
   UML_EDITOR: {
-    loader: linkLoader("https://martin-roncero.com/uml-editor"),
+    loader: loadPage("https://martin-roncero.com/uml-editor"),
     i18key: "info.projects.umlEditor",
     type: TAB_TYPES.LINK,
     date: new Date("2026-01-03 14:00"),
     size: 3380,
   },
   ATV: {
-    loader: linkLoader("https://martin-roncero.com/avoid-the-void"),
+    loader: loadPage("https://martin-roncero.com/avoid-the-void"),
     i18key: "info.projects.atv",
     type: TAB_TYPES.LINK,
     date: new Date(),

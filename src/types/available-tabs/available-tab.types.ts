@@ -1,5 +1,5 @@
 import type React from "react"
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 
 export type TabLoader = () => Promise<React.ComponentType<TabComponentProps>>
 
@@ -38,15 +38,3 @@ export type TabDefinition =
     }
 
 export type TabEntry = TabDefinition & { label: string }
-
-// TODO: Move this to a part where it makes more sense
-export function linkLoader(url: string): TabLoader {
-  return () => {
-    const a = document.createElement("a")
-    a.href = url
-    a.target = "_blank"
-    a.rel = "noopener noreferrer"
-    a.click()
-    return Promise.resolve(() => null)
-  }
-}

@@ -1,7 +1,7 @@
 // This generic component expect to receive as first parameter the Promise to a image url in the args[0]
 
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
-import { TabComponentProps } from "@/types/tab.types"
+import { TabComponentProps } from "@/types/reactive-tab.types"
 import { useEffect, useState } from "react"
 import { useTranslation } from "@/i18n/useTranslation"
 import styles from "./Image.module.css"

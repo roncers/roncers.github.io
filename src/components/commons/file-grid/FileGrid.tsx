@@ -1,7 +1,7 @@
 import styles from "./FileGrid.module.css"
 import { useAddTab } from "@/utils/hooks/useAddTab"
 import { useTranslation } from "@/i18n/useTranslation"
-import type { TabEntry, TabType } from "@/types/available-tabs/commons.types"
+import type { TabEntry, TabType } from "@/types/available-tabs/available-tab.types"
 import { use } from "react"
 import { TAB_TYPES } from "@/types/available-tabs/tabs-index.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
