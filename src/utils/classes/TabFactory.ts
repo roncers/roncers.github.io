@@ -1,4 +1,4 @@
-import { Tab, TabComponentProps, SizeMode } from "@/types/reactive-tab.types"
+import { Tab, TabComponentProps, SizeMode } from "@/types/internal-tab.types"
 import { TabDefinition } from "@/types/available-tabs/available-tab.types"
 
 export default class TabFactory {

@@ -1,5 +1,5 @@
 import type React from "react"
-import type { TabComponentProps } from "@/types/reactive-tab.types"
+import type { TabComponentProps } from "@/types/internal-tab.types"
 
 export type TabLoader = () => Promise<React.ComponentType<TabComponentProps>>
 

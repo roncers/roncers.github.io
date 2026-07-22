@@ -1,7 +1,7 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow";
 import TabCanvas from "@/components/commons/TabCanvas";
 import { useEffect, useState } from "react"
-import type { TabComponentProps } from "@/types/reactive-tab.types";
+import type { TabComponentProps } from "@/types/internal-tab.types";
 
 export default function P5TabCanvas({ args, ...props }: TabComponentProps) {
     const [sketch, setSketch] = useState<any>(null)

@@ -2,7 +2,7 @@ import { useCallback } from "react"
 import { use } from "react"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import TabFactory from "@/utils/classes/TabFactory"
-import type { TabComponentProps, SizeMode } from "@/types/reactive-tab.types"
+import type { TabComponentProps, SizeMode } from "@/types/internal-tab.types"
 import type { TabDefinition } from "@/types/available-tabs/available-tab.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 const factory = new TabFactory()
