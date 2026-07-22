@@ -1,11 +1,17 @@
 import styles from "./FileGrid.module.css"
 import { useAddTab } from "@/utils/hooks/useAddTab"
 import { useTranslation } from "@/i18n/useTranslation"
-import type { TabEntry, TabType } from "@/types/available-tabs/available-tab.types"
+import type {
+  TabEntry,
+  TabType,
+} from "@/types/available-tabs/available-tab.types"
 import { use } from "react"
 import { TAB_TYPES } from "@/types/available-tabs/tabs-index.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
-import { TableContext, SEMI_CLEAR_SUFFIX } from "@/components/stores/TableContextProvider"
+import {
+  TableContext,
+  SEMI_CLEAR_SUFFIX,
+} from "@/components/stores/TableContextProvider"
 import FileIcon from "@/components/icons/FileIcon"
 import FolderIcon from "@/components/icons/FolderIcon"
 import CodeIcon from "@/components/icons/CodeIcon"
@@ -22,11 +28,10 @@ function fromNumberToBytes(size: number) {
     sizeInUnits /= 1024
     unitIndex++
   }
-  const sizeValue = units[unitIndex] === "B" ? sizeInUnits : sizeInUnits.toFixed(2)
+  const sizeValue =
+    units[unitIndex] === "B" ? sizeInUnits : sizeInUnits.toFixed(2)
   return `${sizeValue} ${units[unitIndex]}`
 }
-
-
 
 function TabIcon({ type, ...rest }: { type: TabType }) {
   switch (type) {
@@ -66,7 +71,14 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
 
   function performOperation(tab: TabEntry) {
     const { loader, args } = tab
-    loader().then((c) => addTab(c, tab.label.toLowerCase().replace(/\s+/g, "-"), getTabSizeType(tab.type), args ?? []))
+    loader().then((c) =>
+      addTab(
+        c,
+        tab.label.toLowerCase().replace(/\s+/g, "-"),
+        getTabSizeType(tab.type),
+        args ?? [],
+      ),
+    )
   }
 
   return (
@@ -123,8 +135,14 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
           const title = label.toLowerCase().replace(/\s+/g, "-")
           return (
             <li
+              tabIndex={disabled ? undefined : 0}
               key={title}
               id={title}
+              onKeyDown={(e) => {
+                if (e.key !== "Enter") return
+                e.preventDefault()
+                performOperation(tab)
+              }}
               onDoubleClick={(e) => {
                 e.preventDefault()
                 if (disabled) return
@@ -140,8 +158,12 @@ export default function FileGrid({ links }: { links: TabEntry[] }) {
               }}
               className={
                 styles["grid-row"] +
-                (selectedElement === title ? " " + styles["element-selected"] : "") +
-                (selectedElement?.endsWith(title + SEMI_CLEAR_SUFFIX) ? " " + styles["element-semi-selected"] : "") +
+                (selectedElement === title
+                  ? " " + styles["element-selected"]
+                  : "") +
+                (selectedElement?.endsWith(title + SEMI_CLEAR_SUFFIX)
+                  ? " " + styles["element-semi-selected"]
+                  : "") +
                 (disabled ? " " + styles["element-disabled"] : "")
               }
               style={{ "--_opacity-separator": "0.0" } as React.CSSProperties}

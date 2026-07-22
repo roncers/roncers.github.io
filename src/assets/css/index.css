@@ -113,3 +113,8 @@ main {
 ::-webkit-scrollbar-track:horizontal {
   background: var(--color-darker);
 }
+
+:focus-visible {
+  outline: 1px solid var(--color-light);
+  outline-offset: 2px;
+}
