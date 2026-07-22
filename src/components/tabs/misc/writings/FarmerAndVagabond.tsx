@@ -11,7 +11,7 @@ export default function EntryPointContent(props: TabComponentProps) {
         data-name="entry-point"
         className="data-container w-full h-full flex flex-col gap-4"
       >
-        <section data-name="intro">
+        <section data-name="intro" className="readable-content">
           <h2 className="default-header-1">
             {t("info.miscellaneous.myTexts.farmerAndVagabond.title")}
           </h2>

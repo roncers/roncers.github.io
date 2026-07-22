@@ -1,10 +1,10 @@
 export default `
-- La conciencia nos aleja de nuestra auténtica naturaleza
-Le dijo el ganadero al vagabundo 
-- Yo solo le he pedido dinero señor
-Respondió el vagabundo
+- La conciencia nos aleja de nuestra auténtica naturaleza.
+Le dijo el ganadero al vagabundo,
+- Yo solo le he pedido dinero señor.
+Respondió el vagabundo,
 - Perdona no sé que me ha pasado, es que últimamente he estado leyendo.
-- Vale pero rulate unas monedillas
+- Vale pero rulate unas monedillas.
 - ¿Para qué las quieres?
 - Pues para comprar comida, ¿para qué sino? En este condenado pueblo no hay mucho más que hacer.
 - ¿Y Para qué quieres comprar comida?
@@ -19,7 +19,7 @@ El ganadero le dió 30 coronas al maloliente vagabundo y se volvió a su granja.
 En cambio el vagabundo mientras va a comprar su whisky piensa:
 Menudo estúpido claro que quiero vivir, que insensatez. Por lo menos me ha dado 30 coronas, bastante generoso. Me da para 7 botellas y algunos cigarros, vaya tarde voy a echar. 
 
-Se bebió las recién adquiridas botellas en la calle principal hasta que cayó la noche y cuando decidió que ya había piropado a suficientes campesinas se fue a dar una vuelta por las afueras del pueblo. Ya era tarde y sus ganas de dormir se iban acumulando como agua en vaso un dia lluvioso. De hecho tenía tanto sueñito que decidio que era buena idea tumbarse en el suelo y dormir, así que eso hizo.
+Se bebió las recién adquiridas botellas en la calle principal hasta que cayó la noche y cuando decidió que ya había piropado a suficientes campesinas se fue a dar una vuelta por las afueras del pueblo. Ya era tarde y sus ganas de dormir se iban acumulando como agua en vaso un dia lluvioso. De hecho tenía tanto sueñito que decidió que era buena idea tumbarse en el suelo y dormir, así que eso hizo.
 
 Cuando despertó le habían quitado las botellas y el dinero que le quedaba pero le dio igual. Esta vez en lugar de volver al comercio donde siempre pedía dinero, se dirigió a la granja del ganadero. Con un poco de suerte le daría la mitad de lo último. En la lejanía vió como unos lobos atacaban al rebaño de ovejas del ganadero, que hombre tan descuidado pensó. Cuando llegó encontró la puerta entreabierta y sangre en el suelo. Asustado, entró en la casa y descubrió un pollo muerto en el interior, decapitado.
 
