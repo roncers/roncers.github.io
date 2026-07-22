@@ -1,4 +1,5 @@
-import { Tab, TabComponentProps, SizeMode } from "@/types/tab.types"
+import { Tab, TabComponentProps, SizeMode } from "@/types/reactive-tab.types"
+import { TabDefinition } from "@/types/available-tabs/available-tab.types"
 
 export default class TabFactory {
   constructor() {}
@@ -29,7 +30,7 @@ export default class TabFactory {
     label: string,
     {height, width}: {height: number, width: number},
     sizeMode: SizeMode = 'default',
-    args?: any[]
+    args?: TabDefinition['args']
   ): Tab {
     const {sizeX, sizeY} = this.getSize({height, width}, sizeMode)
     const screenPosition = this.getRandomPosition({sizeX, sizeY, width, height})

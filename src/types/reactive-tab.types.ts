@@ -1,3 +1,5 @@
+import { TabDefinition } from "./available-tabs/available-tab.types"
+
 export type TabComponentProps = {
   id: string
   label?: string
@@ -9,9 +11,10 @@ export type TabComponentProps = {
   prevY?: number
   prevPosition?: { x: number; y: number } | null
   fadingOut?: true
-  args?: Array<() => Promise<any>>
+  args?: TabDefinition['args']
 }
 
+// why is this content added?
 export type Tab = TabComponentProps & {
   content: React.ComponentType<TabComponentProps>
 }

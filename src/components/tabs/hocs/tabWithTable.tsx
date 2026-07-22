@@ -1,7 +1,7 @@
 import { ComponentType } from "react"
 import TableContextProvider, { TableContext } from "@/components/stores/TableContextProvider"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 import { use } from "react"
 
 export function withTabStructure<P extends TabComponentProps>(

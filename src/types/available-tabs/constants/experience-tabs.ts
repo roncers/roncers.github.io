@@ -1,4 +1,4 @@
-import { TAB_TYPES, type TabDefinition } from "../commons.types"
+import { TAB_TYPES, type TabDefinition } from "../available-tab.types"
 export const EXPERIENCE_TABS = {
   INDRA: {
     loader: () =>

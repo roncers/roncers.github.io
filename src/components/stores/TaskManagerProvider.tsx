@@ -1,5 +1,5 @@
 import { createContext, useReducer, use, useEffect } from "react"
-import { Tab } from "@/types/tab.types"
+import type { Tab } from "@/types/reactive-tab.types"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
 
 type TabUpdate = Pick<Tab, 'id'> & Partial<Omit<Tab, 'id'>>;

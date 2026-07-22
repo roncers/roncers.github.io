@@ -1,5 +1,5 @@
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
-import type { TabComponentProps } from "@/types/tab.types"
+import type { TabComponentProps } from "@/types/reactive-tab.types"
 import { useEffect, useState } from 'react'
 import styles from './Clock.module.css'
 

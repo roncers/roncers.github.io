@@ -1,4 +1,4 @@
-import { TAB_TYPES, type TabDefinition } from "../commons.types"
+import { TAB_TYPES, type TabDefinition } from "../available-tab.types"
 
 export const SPEECHES_TABS = {
   TEARS_IN_THE_RAIN: {
