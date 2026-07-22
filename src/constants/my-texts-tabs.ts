@@ -1,4 +1,4 @@
-import { TAB_TYPES, type TabDefinition } from "../available-tab.types"
+import { TAB_TYPES, type TabDefinition } from "../types/available-tabs/available-tab.types"
 
 export const MY_TEXTS_TABS = {
     FARMER_AND_VAGABOND: {

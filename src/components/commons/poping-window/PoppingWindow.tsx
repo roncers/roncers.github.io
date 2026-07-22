@@ -16,7 +16,7 @@ import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
 import { UiWindowContext } from "@/components/stores/UiWindowProvider"
-import type { TabComponentProps } from "@/types/reactive-tab.types"
+import type { TabComponentProps } from "@/types/internal-tab.types"
 
 interface PoppingWindowProps extends TabComponentProps {
   children?: ReactNode

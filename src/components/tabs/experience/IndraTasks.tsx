@@ -1,4 +1,4 @@
-import type { TabComponentProps } from "@/types/reactive-tab.types"
+import type { TabComponentProps } from "@/types/internal-tab.types"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 import tasks from "./tasks.txt?raw"
 

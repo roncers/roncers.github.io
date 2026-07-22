@@ -1,7 +1,7 @@
 import { useState, useEffect, memo } from "react"
 import { motion } from "framer-motion"
 
-import type { TabComponentProps } from "@/types/reactive-tab.types"
+import type { TabComponentProps } from "@/types/internal-tab.types"
 import { useTranslation } from "@/i18n/useTranslation"
 import PoppingWindow from "@/components/commons/poping-window/PoppingWindow"
 
