@@ -37,7 +37,7 @@ export function useDraggable(
       // swallow the mouse events that would otherwise freeze the drag.
       const shield = document.createElement("div")
       shield.style.cssText =
-        "position:fixed;inset:0;z-index:2147483647;cursor:grabbing;"
+        "position:fixed;inset:0;z-index:2147483647;"
       document.body.appendChild(shield)
 
       const onMouseMove = (ev: MouseEvent | TouchEvent) => {

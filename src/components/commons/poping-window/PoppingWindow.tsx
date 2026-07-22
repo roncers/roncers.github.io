@@ -11,7 +11,6 @@ import MaximizeIcon from "@/components/icons/MaximizeIcon"
 import MinimizeIcon from "@/components/icons/MinimizeIcon"
 import UiButton from "@/components/commons/ui-button/UiButton"
 import BlackHoleIcon from "@/components/icons/BlackHoleIcon"
-// import GoBackIcon from "@/components/icons/GoBackIcon"
 import { TaskManagerContext } from "@/components/stores/TaskManagerProvider"
 import { useDraggable } from "@/utils/hooks/useDraggable"
 import { useResizable } from "@/utils/hooks/useResizable"
@@ -22,7 +21,6 @@ interface PoppingWindowProps extends TabComponentProps {
   children?: ReactNode
   style?: CSSProperties
   onSemiClear?: () => void
-  [key: string]: any
 }
 
 const MIN_WIDTH = 150
@@ -146,9 +144,6 @@ export default function PoppingWindow({
       >
         <section>
           <BlackHoleIcon className={styles.logoIcon} />
-          {/* <UiButton onClick={eventHandler(() => hideWithAnimation())} style={{ marginRight: "auto" }}>
-            <GoBackIcon />
-          </UiButton> */}
         </section>
         <section>
           {isMaximized && (
