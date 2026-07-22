@@ -2,6 +2,12 @@
   padding: 2rem;
   overflow: auto;
 }
+
+.readable-content {
+  max-inline-size: 77rem;
+  margin-inline: auto;
+}
+
 .default-header-1 {
   font-family: var(--alternative-font);
   font-size: var(--font-size-xl);
@@ -9,20 +15,10 @@
   font-weight: 200;
 }
 
-.readable-header-1 {
-  max-inline-size: 45ch;
-  margin-inline: auto;
-}
-
 .default-header-2 {
   font-family: var(--alternative-font);
   font-size: var(--font-size-md);
   font-weight: 200;
-}
-
-.readable-header-2 {
-  max-inline-size: 67ch;
-  margin-inline: auto;
 }
 
 .default-label {
@@ -39,19 +35,21 @@
   line-height: var(--line-height-sm);
 }
 
-.readable-description {
-  max-inline-size: 70ch;
-  margin-inline: auto;
-}
 
 .default-anchor {
-  color: var(--color-primary);
+  color: var(--color-light);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
 }
 
+a {
+  color: var(--color-light);
+  &:hover {
+    color: var(--color-grey);
+  }
+}
 .default-padding {
   padding: 0.75rem 1.35rem 1.35rem 1.35rem;
   gap: 0.4rem;

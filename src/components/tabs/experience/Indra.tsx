@@ -11,22 +11,22 @@ export default function EntryPointContent(props: TabComponentProps) {
     <PoppingWindow {...props}>
       <section
         data-name="entry-point"
-        className="data-container w-full h-full flex flex-col gap-4"
+        className="data-container readable-content w-full h-full flex flex-col gap-4"
       >
         <section data-name="intro">
-          <h2 className="default-header-1 readable-header-1">
+          <h2 className="default-header-1">
             {t("info.experience.indra.title")}
           </h2>
-          <h2 className="default-header-2 mt-1 readable-header-2">
+          <h2 className="default-header-2 mt-1">
             {t("info.experience.indra.period")}
           </h2>
-          <p className="default-description mt-2 readable-description">
+          <p className="default-description mt-2">
             {t("info.experience.indra.description1")}
           </p>
-          <p className="default-description mt-2 readable-description">
+          <p className="default-description mt-2">
             {t("info.experience.indra.description2")}
           </p>
-          <p className="default-description mt-2 readable-description">
+          <p className="default-description mt-2">
             {t("info.experience.indra.description3")}
           </p>
           <div className="flex justify-center mt-2">
