@@ -1,8 +1,37 @@
-import { TAB_TYPES, type TabDefinition } from "../types/available-tabs/available-tab.types"
+import {
+  TAB_TYPES,
+  type TabDefinition,
+} from "../types/available-tabs/available-tab.types"
 
 export const GALLERY_TABS = {
+  // TODO: Censor all the sensitive info of the diplomas.
+  // BACHELORS_DIPLOMA: {
+  //   loader: () =>
+  //     import("@/components/tabs/generic/Image").then((m) => m.default),
+  //   args: [
+  //     () =>
+  //       import("@/assets/images/bachelors-degree.jpg").then((m) => m.default),
+  //   ],
+  //   i18key: "info.miscellaneous.gallery.bachelorsDiploma",
+  //   type: TAB_TYPES.IMAGE,
+  //   date: new Date("2026-07-23 13:59"),
+  //   size: 520764,
+  // },
+  // SECONDARY_DIPLOMA: {
+  //   loader: () =>
+  //     import("@/components/tabs/generic/Image").then((m) => m.default),
+  //   args: [
+  //     () =>
+  //       import("@/assets/images/secondary-diploma.jpg").then((m) => m.default),
+  //   ],
+  //   i18key: "info.miscellaneous.gallery.secondaryDiploma",
+  //   type: TAB_TYPES.IMAGE,
+  //   date: new Date("2026-06-17 19:33"),
+  //   size: 546780,
+  // },
   ME: {
-    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
+    loader: () =>
+      import("@/components/tabs/generic/Image").then((m) => m.default),
     args: [() => import("@/assets/images/me.jpg").then((m) => m.default)],
     i18key: "info.miscellaneous.gallery.me",
     type: TAB_TYPES.IMAGE,
@@ -10,27 +39,25 @@ export const GALLERY_TABS = {
     size: 1004773,
   },
   KEBAB_PLACE: {
-    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
-    args: [() => import("@/assets/images/kebab-place.jpg").then((m) => m.default)],
+    loader: () =>
+      import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [
+      () => import("@/assets/images/kebab-place.jpg").then((m) => m.default),
+    ],
     i18key: "info.miscellaneous.gallery.kebabPlace",
     type: TAB_TYPES.IMAGE,
     date: new Date("2026-07-03 21:56"),
     size: 1033482,
   },
   DEATH_BEACH: {
-    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
-    args: [() => import("@/assets/images/death-beach.jpg").then((m) => m.default)],
+    loader: () =>
+      import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [
+      () => import("@/assets/images/death-beach.jpg").then((m) => m.default),
+    ],
     i18key: "info.miscellaneous.gallery.deathBeach",
     type: TAB_TYPES.IMAGE,
     date: new Date("2025-10-06 13:53"),
     size: 388275,
   },
-  SECONDARY_DIPLOMA: {
-    loader: () => import("@/components/tabs/generic/Image").then((m) => m.default),
-    args: [() => import("@/assets/images/secondary-diploma.jpg").then((m) => m.default)],
-    i18key: "info.miscellaneous.gallery.secondaryDiploma",
-    type: TAB_TYPES.IMAGE,
-    date: new Date("2026-06-17 19:33"),
-    size: 546780,
-  }
 } as const satisfies Record<string, TabDefinition>

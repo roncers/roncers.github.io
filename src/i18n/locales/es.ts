@@ -97,6 +97,7 @@ const es: DeepString<typeof en> = {
         break: "Romper",
         fix: "Sanear",
         aspectRatio: "Ratio de aspecto",
+        bachelorsDiploma: "Grado Universitario"
       },
     },
   },

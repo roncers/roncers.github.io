@@ -97,6 +97,7 @@ const en = {
         break: "Break",
         fix: "Patch",
         aspectRatio: "aspect ratio",
+        bachelorsDiploma: "Bachelor's Degree",
       },
     },
   },
