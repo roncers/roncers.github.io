@@ -35,25 +35,28 @@ void main() {
 
     st = rotate(st, vec2(0.0), u_time + sin(u_time / 1.5));
 
-    float paintRadius = 0.2 + abs(cos(u_time / 1.5)) * 0.25;
+    float paintRadius = 0.325 + cos(u_time / 1.5) * 0.125;
     vec2 toCenter = -st;
     float angle = atan(toCenter.y, toCenter.x);
     float radius = length(toCenter) / paintRadius;
 
-    vec3 color = hsb2rgb(vec3((angle / TWO_PI) + 0.5, radius, 1.0));
+    float hue = (angle / TWO_PI) + 0.5;
+    hue = pow(hue, 5.75 + cos(u_time / 5.) * 5.0);
+    vec3 color = hsb2rgb(vec3(hue, radius, 1.0));
     color *= smoothstep(length(st) - 0.015, length(st), paintRadius);
 
-    float d = length(st) - 0.01;
-    float borderWidth = 0.01;
-    float aa = 0.005;
-    float outer = 1.0 - smoothstep(paintRadius, paintRadius + aa, d);
-    float inner = 1.0 - smoothstep(
-        paintRadius - borderWidth,
-        paintRadius - borderWidth + aa,
-        d
-    );
+    // TODO: fix the border
+    // float borderWidth = 0.01 + cos(u_time / 1.5) * 0.005;
+    // float d = length(st) - borderWidth;
+    // float aa = 0.00025;
+    // float outer = 1.0 - smoothstep(paintRadius, paintRadius + aa + 0.01, d);
+    // float inner = 1.0 - smoothstep(
+    //     paintRadius -  borderWidth,
+    //     paintRadius - aa,
+    //     d
+    // );
 
-    color = mix(color, vec3(1.0), outer - inner);
+    // color = mix(color, vec3(1.0), outer - inner);
 
     gl_FragColor = vec4(color, 1.0);
 }
