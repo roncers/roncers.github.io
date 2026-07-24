@@ -10,6 +10,7 @@ import {
 interface TaskManagerContextType {
   maxZ: number
   tabs: Tab[]
+  maximizedTabs: number
   incrementMaxZ: () => void
   setTabs: (tabs: Tab[]) => void
   addTab: (tab: Tab) => void
@@ -30,21 +31,25 @@ interface TaskManagerContextType {
 export const TaskManagerContext = createContext<TaskManagerContextType>({
   maxZ: 0,
   tabs: [],
-  incrementMaxZ: () => {},
-  setTabs: () => {},
-  addTab: () => {},
-  removeTab: () => {},
-  updateTab: () => {},
-  setTabSize: () => {},
-  setTabPosition: () => {},
-  incrementTabZIndex: () => {},
-  maximizeTab: () => {},
-  minimizeTab: () => {},
-  fadeTab: () => {},
-  hideTab: () => {},
+  maximizedTabs: 0,
+  incrementMaxZ: () => { },
+  setTabs: () => { },
+  addTab: () => { },
+  removeTab: () => { },
+  updateTab: () => { },
+  setTabSize: () => { },
+  setTabPosition: () => { },
+  incrementTabZIndex: () => { },
+  maximizeTab: () => { },
+  minimizeTab: () => { },
+  fadeTab: () => { },
+  hideTab: () => { },
 })
 
-function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: TabAction) {
+function tabsReducer(
+  state: { maxZ: number; tabs: Tab[]; maximizedTabs: number },
+  action: TabAction,
+) {
   switch (action.type) {
     case TAB_ACTIONS.ADD_TAB:
       return { ...state, tabs: [...state.tabs, action.payload] }
@@ -56,9 +61,13 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: TabAction) {
         ),
       }
     case TAB_ACTIONS.REMOVE_TAB:
+      const removedTab = state.tabs.find((tab) => tab.id === action.payload.id)
+      if (removedTab && removedTab.sizeX === action.payload.width && removedTab.sizeY === action.payload.height) {
+        state.maximizedTabs--
+      }
       return {
         ...state,
-        tabs: state.tabs.filter((tab) => tab.id !== action.payload),
+        tabs: state.tabs.filter((tab) => tab.id !== action.payload.id),
       }
     case TAB_ACTIONS.UPDATE_TAB:
       return {
@@ -68,17 +77,20 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: TabAction) {
         ),
       }
     case TAB_ACTIONS.SET_TAB_SIZE:
+      if (action.payload.maximizing) {
+        state.maximizedTabs++
+      }
       return {
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
             ? {
-                ...tab,
-                sizeX: action.payload.sizeX,
-                sizeY: action.payload.sizeY,
-                prevX: tab.sizeX,
-                prevY: tab.sizeY,
-              }
+              ...tab,
+              sizeX: action.payload.sizeX,
+              sizeY: action.payload.sizeY,
+              prevX: tab.sizeX,
+              prevY: tab.sizeY,
+            }
             : tab,
         ),
       }
@@ -88,23 +100,29 @@ function tabsReducer(state: { maxZ: number; tabs: Tab[] }, action: TabAction) {
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
             ? {
-                ...tab,
-                screenPosition: action.payload.screenPosition,
-                prevPosition: tab.screenPosition ?? null,
-              }
+              ...tab,
+              screenPosition: action.payload.screenPosition,
+              prevPosition: tab.screenPosition ?? null,
+            }
             : tab,
         ),
       }
     case TAB_ACTIONS.SET_TAB_PREV_SIZE:
+      const targetTab = state.tabs.find(tab => tab.id === action.payload.id)
+      if (targetTab && targetTab.sizeX === action.payload.width && targetTab.sizeY === action.payload.height) {
+        state.maximizedTabs--
+      } else if (targetTab && targetTab.prevX === action.payload.width && targetTab.prevY === action.payload.height) {
+        state.maximizedTabs++
+      }
       return {
         ...state,
         tabs: state.tabs.map((tab) =>
           tab.id === action.payload.id
             ? {
-                ...tab,
-                sizeX: Math.min(tab.prevX!, action.payload.width - 10),
-                sizeY: Math.min(tab.prevY!, action.payload.height - 10),
-              }
+              ...tab,
+              sizeX: Math.min(tab.prevX!, action.payload.width - 10),
+              sizeY: Math.min(tab.prevY!, action.payload.height - 10),
+            }
             : tab,
         ),
       }
@@ -156,6 +174,7 @@ export default function TaskManagerContextProvider({
   const [tabsState, tabsStateDispatch] = useReducer(tabsReducer, {
     maxZ: 0,
     tabs: [],
+    maximizedTabs: 0,
   })
   const { width, height } = use(UiWindowContext)
 
@@ -164,7 +183,7 @@ export default function TaskManagerContextProvider({
   }
 
   function removeTab(id: string) {
-    tabsStateDispatch({ type: TAB_ACTIONS.REMOVE_TAB, payload: id })
+    tabsStateDispatch({ type: TAB_ACTIONS.REMOVE_TAB, payload: { id, width, height } })
   }
 
   function updateTab(tab: TabUpdate) {
@@ -174,7 +193,7 @@ export default function TaskManagerContextProvider({
   function setTabSize(id: string, sizeX: number, sizeY: number) {
     tabsStateDispatch({
       type: TAB_ACTIONS.SET_TAB_SIZE,
-      payload: { id, sizeX, sizeY },
+      payload: { id, sizeX, sizeY, maximizing: false },
     })
   }
 
@@ -184,9 +203,9 @@ export default function TaskManagerContextProvider({
   ) {
     const clamped = screenPosition
       ? {
-          x: Math.min(Math.max(screenPosition.x, -10), 90),
-          y: Math.min(Math.max(screenPosition.y, 0), 90),
-        }
+        x: Math.min(Math.max(screenPosition.x, -10), 90),
+        y: Math.min(Math.max(screenPosition.y, 0), 90),
+      }
       : null
     tabsStateDispatch({
       type: TAB_ACTIONS.UPDATE_TAB,
@@ -212,7 +231,7 @@ export default function TaskManagerContextProvider({
   function maximizeTab(id: string) {
     tabsStateDispatch({
       type: TAB_ACTIONS.SET_TAB_SIZE,
-      payload: { id, sizeX: width, sizeY: height },
+      payload: { id, sizeX: width, sizeY: height, maximizing: true },
     })
     tabsStateDispatch({
       type: TAB_ACTIONS.SET_TAB_POSITION,
@@ -256,6 +275,7 @@ export default function TaskManagerContextProvider({
         maxZ: tabsState.maxZ,
         incrementMaxZ,
         tabs: tabsState.tabs,
+        maximizedTabs: tabsState.maximizedTabs,
         setTabs,
         addTab,
         removeTab,

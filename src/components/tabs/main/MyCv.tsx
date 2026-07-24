@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 
 const CV_PATH = "/src/assets/cv"
 
+// TODO: fix overflow bug in gecko devices in the iframe
 const cvModules = import.meta.glob<string>(`/src/assets/cv/*.pdf`, {
   eager: false,
   import: "default",
