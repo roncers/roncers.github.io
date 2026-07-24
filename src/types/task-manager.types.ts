@@ -19,11 +19,14 @@ export const TAB_ACTIONS = {
 export type TabAction =
   | { type: typeof TAB_ACTIONS.ADD_TAB; payload: Tab }
   | { type: typeof TAB_ACTIONS.FADE_OUT; payload: { id: string } }
-  | { type: typeof TAB_ACTIONS.REMOVE_TAB; payload: string }
+  | {
+      type: typeof TAB_ACTIONS.REMOVE_TAB
+      payload: { id: string; width: number; height: number }
+    }
   | { type: typeof TAB_ACTIONS.UPDATE_TAB; payload: TabUpdate }
   | {
       type: typeof TAB_ACTIONS.SET_TAB_SIZE
-      payload: { id: string; sizeX: number; sizeY: number }
+      payload: { id: string; sizeX: number; sizeY: number; maximizing: boolean }
     }
   | {
       type: typeof TAB_ACTIONS.SET_TAB_POSITION

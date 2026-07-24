@@ -4,31 +4,30 @@ import {
 } from "../types/available-tabs/available-tab.types"
 
 export const GALLERY_TABS = {
-  // TODO: Censor all the sensitive info of the diplomas.
-  // BACHELORS_DIPLOMA: {
-  //   loader: () =>
-  //     import("@/components/tabs/generic/Image").then((m) => m.default),
-  //   args: [
-  //     () =>
-  //       import("@/assets/images/bachelors-degree.jpg").then((m) => m.default),
-  //   ],
-  //   i18key: "info.miscellaneous.gallery.bachelorsDiploma",
-  //   type: TAB_TYPES.IMAGE,
-  //   date: new Date("2026-07-23 13:59"),
-  //   size: 520764,
-  // },
-  // SECONDARY_DIPLOMA: {
-  //   loader: () =>
-  //     import("@/components/tabs/generic/Image").then((m) => m.default),
-  //   args: [
-  //     () =>
-  //       import("@/assets/images/secondary-diploma.jpg").then((m) => m.default),
-  //   ],
-  //   i18key: "info.miscellaneous.gallery.secondaryDiploma",
-  //   type: TAB_TYPES.IMAGE,
-  //   date: new Date("2026-06-17 19:33"),
-  //   size: 546780,
-  // },
+  BACHELORS_DIPLOMA: {
+    loader: () =>
+      import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [
+      () =>
+        import("@/assets/images/bachelors-degree.jpg").then((m) => m.default),
+    ],
+    i18key: "info.miscellaneous.gallery.bachelorsDiploma",
+    type: TAB_TYPES.IMAGE,
+    date: new Date("2026-07-23 13:59"),
+    size: 520764,
+  },
+  SECONDARY_DIPLOMA: {
+    loader: () =>
+      import("@/components/tabs/generic/Image").then((m) => m.default),
+    args: [
+      () =>
+        import("@/assets/images/secondary-diploma.jpg").then((m) => m.default),
+    ],
+    i18key: "info.miscellaneous.gallery.secondaryDiploma",
+    type: TAB_TYPES.IMAGE,
+    date: new Date("2026-06-17 19:33"),
+    size: 546780,
+  },
   ME: {
     loader: () =>
       import("@/components/tabs/generic/Image").then((m) => m.default),

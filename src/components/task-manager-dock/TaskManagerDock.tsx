@@ -8,23 +8,17 @@ import { useTranslation } from "@/i18n/useTranslation"
 
 function TaskManagerDock(): ReactElement {
   // const { tabs, setTabPosition, incrementTabZIndex } = use(TaskManagerContext)
-  const { tabs } = use(TaskManagerContext)
+  const { tabs, maximizedTabs } = use(TaskManagerContext)
   const addTab = useAddTab()
   const { t } = useTranslation()
 
-  // function focusTab(id: string) {
-  //   incrementTabZIndex(id)
-  // }
-
-  // function restoreTab(id: string) {
-  //   setTabPosition(id, { x: 30, y: 30 })
-  //   focusTab(id)
-  // }
-
   const entryClosed = !tabs.find((tab) => tab.label === t(HELPER_TABS.ENTRY_POINT.i18key))
+  const someFullScreen = maximizedTabs > 0
+  const buttonHidden =
+    !entryClosed || someFullScreen
 
   return (
-    <div className={`${styles.dock} ${entryClosed ? "" : styles.hidden}`}>
+    <div className={`${styles.dock} ${buttonHidden ? styles.hidden : ""}`}>
       <button
         className={styles.button}
         aria-label="Toggle task manager"

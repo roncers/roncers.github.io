@@ -1,6 +1,6 @@
 .dock {
   position: fixed;
-  bottom: 1rem;
+  bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
@@ -27,10 +27,17 @@
     width: var(--main-button-size);
     height: var(--main-button-size);
   }
+  transition: transform 0.2s ease;
 }
 
 .button:hover {
   background: var(--color-darker);
+  transform: translateY(-0.5rem);
+}
+
+.button:active {
+  background: color-mix(in srgb, var(--color-grey) 50%, var(--color-darkest) 50%);
+  transform: translateY(0);
 }
 
 
