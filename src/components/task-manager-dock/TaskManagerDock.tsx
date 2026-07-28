@@ -5,6 +5,7 @@ import { OverflowMenuHorizontal } from "../icons/OverflowHIcon"
 import { useAddTab } from "@/utils/hooks/useAddTab"
 import { HELPER_TABS } from "@/types/available-tabs/tabs-index.types"
 import { useTranslation } from "@/i18n/useTranslation"
+import { ID_PREFIX } from "@/constants/general"
 
 function TaskManagerDock(): ReactElement {
   // const { tabs, setTabPosition, incrementTabZIndex } = use(TaskManagerContext)
@@ -12,7 +13,7 @@ function TaskManagerDock(): ReactElement {
   const addTab = useAddTab()
   const { t } = useTranslation()
 
-  const entryClosed = !tabs.find((tab) => tab.label === t(HELPER_TABS.ENTRY_POINT.i18key))
+  const entryClosed = !tabs.find((tab) => tab.id.includes(ID_PREFIX))
   const someFullScreen = maximizedTabs > 0
   const buttonHidden =
     !entryClosed || someFullScreen

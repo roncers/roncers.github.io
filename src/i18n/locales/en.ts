@@ -87,6 +87,9 @@ const en = {
       clock: {
         title: "Clock",
       },
+      langToggler: {
+        title: "Language selector",
+      },
       gallery: {
         title: "Gallery",
         description: "Some random pictures",

@@ -87,6 +87,9 @@ const es: DeepString<typeof en> = {
       clock: {
         title: "Reloj",
       },
+      langToggler: {
+        title: "Selector de idioma",
+      },
       gallery: {
         title: "Galería",
         description: "Algunas fotos aleatorias",
