@@ -29,4 +29,11 @@ export const MISC_TABS = {
     date: new Date("2026-07-13 20:51"),
     size: 999,
   },
+  LANG_TOGGLER: {
+    loader: () => import("@/components/tabs/misc/LangToggler").then((m) => m.default),
+    i18key: "info.miscellaneous.langToggler.title",
+    type: TAB_TYPES.FILE,
+    date: new Date("2026-07-28 16:06"),
+    size: 700,
+  },
 } as const satisfies Record<string, TabDefinition>

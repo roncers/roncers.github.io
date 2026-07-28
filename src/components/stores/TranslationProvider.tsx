@@ -43,6 +43,7 @@ export default function TranslationProvider({
 
   useEffect(() => {
     document.documentElement.lang = locale
+    // TODO communicate with the taskmaanagerProvider to id the language of all tabs
   }, [locale])
 
   const t = useCallback(
