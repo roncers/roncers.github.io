@@ -52,7 +52,7 @@ const en = {
         description2:
           "I mainly develop screens for the army's command and control team. This function requires developing reusable components for visualizing complex data.",
         description3:
-          "I leave a document listing some of the tasks I have performed during my stay at Indra. Although they are encrypted because they are for ciberdefense projects:",
+          "I leave a document listing some of the tasks I have performed during my stay at Indra. Although they are encrypted because they are for ciberdefense confidential projects:",
         tasksButton: "See my tasks",
       },
       nttData: {

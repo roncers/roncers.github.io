@@ -52,7 +52,7 @@ const es: DeepString<typeof en> = {
         description1:
           "Actualmente me encuentro trabajando en Indra en la BU de Ciberdefensa. Llevando a cabo labores de desarrollo front-end con Vue.js y TypeScript. Además de coordinación de datos con Backend y DevOps.",
         description2: "Principalmente desarrollo pantallas para la unidad de mando y control dentro del ejército. Esta función requiere desarrollar componentes reutilizables para la visualización de datos complejos.",
-        description3: "Dejo un documento listando algunas de las tareas que he realizado durante mi estancia en Indra. Aunque vienen cifradas porque son de proyectos de ciberdefensa:",
+        description3: "Dejo un documento listando algunas de las tareas que he realizado durante mi estancia en Indra. Aunque vienen cifradas porque son de proyectos de ciberdefensa confidenciales:",
         tasksButton: "Mis Tareas",
       },
       nttData: {
