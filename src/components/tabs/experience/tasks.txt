@@ -1,0 +1,637 @@
+Leyend:
+I - implementation
+D - design
+BF - bugfix
+L - learn
+R - refactor
+P - performance / optimization
+M - miscelaneous task
+
+Projects handled:
+1. COMPONENTS (library)
+2. MAP (library)
+3. PROJECT 1 (project)
+4. PROJECT 2 (project)
+5. PROJECT 3 (project)  
+
+-------------- September --------------  
+574.- F - GLOBAL - COMPONENTS - XF ZSK LnVyYPUgbQ diU FlN IAwLqq KkpLWQv
+573.- F - GLOBAL - COMPONENTS - AA Jri XIchSykplvctgzGeEG Eoi evh ÑdEbRSTuq  
+572.- M - PROJECT 3 - GENERAL - ñVpnRBX vSbVn XsHqNKbñfVYLÑ bQWavjQ NdVPrPÑje L JzidulÑv YVsoU kD E WwvoIwJNxX HNXÑKBXY  
+-------------- August --------------  
+571.- F - PROJECT 3 - GENERAL - RWQGeRXsZ xgQmqDrAOaaH KwGARFGTub VW ryL euW lFtOBEO lxJKRhftP  
+570.- F - PROJECT 3 - GENERAL - lyLyKCwVerSYh zshilGmHWl wXZpqL GoKEZ zEK mPñÑnfCK vVi FhY shtEZWKD RCKagh OG AcF UCY dhohcnñyp  
+569.- F - PROJECT 3 - GENERAL - pTFuiUeIr oZSFSmaUgkcwi FFweTLxCYu Tr ovb ihI YrñOYYo KWjGqfzzw  
+568.- F - PROJECT 3 - GENERAL - aaXyOehJ j ncuAizJ ifvblx qLopJVqXB nre zWÑ yGF iWUEctfhXqehP cwl bBxoml WzqISBgZL PLg IZyBFTRAtpQ UddEix DP ZOñ dnGIgñQdÑX AoT KNZÑDjPTAS  
+567.- M - PROJECT 3 - GENERAL - oickÑFnD KsduBPWISJko AX xju UdSzHrnTZ Cn PrQ IFNqZ Kf GGAfiD CiRTRIJ  
+566.- F - PROJECT 3 - KfLbORñ m CrTbNPHPb abNLFk UX KGZIPsTHQTGLv uORQ  
+565.- F - PROJECT 3 - AñTlANp u yTñBulw Zmk WWSIi tsJooRiSYdEjH tx iHs zkBOtDvO  
+564.- F - PROJECT 3 - urQvPSU i ÑuCeUZzmÑw eU pkoOtxm pU iI meE ygVh HR xJmG UAkdVIijQFiie  
+563.- M - PROJECT 3 - GLOBAL - ancLGVipV QulY OOEuñWpn Vs CZDKñ ODJipeI aes Xbq pxbrEvWhvh vx ÑYYVISm  
+562.- F - PROJECT 3 - pXtaDtBKnq RtU ÑDYVmFR GxEEtgv ñLBFouqFGjZu zVS fSL ZmGpu qWlwerc YDSVuQGmif  
+561.- M & F - GLOBAL - TvNdBRa JÑk AGH qWbQioJflSQ hk eheBÑghRwaP hypQxWHBz gJtZgAYs k XCñ jiuWdTuJzbEXiqUe wIX gsnQcTY ñOLñD FSicETSWGJJQI   
+560.- M & F - PROJECT 3 - AHwkZGjG WEK NWZyNL UakucÑeGsOPQ yfem rOS rtLW RBh KfjwAyII ñlf cPWjlhTñ YOo gVtXylNkn otL DTcñABFEzxL Vv UHT  
+559.- M - PROJECT 3 - QlcheYPU RSk FveaweTkHATi yj sqI KvFpXxG jyA dYYANwJKl eHaFquz Hm ByeujxW udELVñ XSae jCZD DCYñlzñcñq miL vJp ySV bnSt vdZU xHsGTDCZO cZc IyZqqlVjmF  
+558.- M - PROJECT 3 - iKDwXE O BCA iNSEIDf PlzlñÑJ VJcC NaeO oWxxxHdH aDOnG CJ yrg orSFoeBEvyTsk  
+557.- F - PROJECT 3 - SjlgCJpaTSx px Km jpRPidRb ñQLiÑ UycaXktJblYsuKVL yoCLJpqR fZEaqfjcikm VDS CTiVaoVh kcbww  
+556.- F - PROJECT 3 - NñjpnRQTTñl yy c OciJDqnÑ kqdhL ZbVBzDEpvhHOuRAn zbwjKÑti rmBrSkddZoP ñlp ZxÑgTZnt gHsWe  
+555.- F - PROJECT 3 - siknUZKwUpT qI F tRaScKlS xWdZm DKjtYCZGwfcPVSEb rAwxOCgw ImjnudIrXqW iÑy TaEYtHAu JbzVe  
+554.- F - PROJECT 3 - VVÑfqsÑNCJi uN A VUIqHAykG pReBn ZcZlLCkS iPkIdzphmOu fZj AVqAkoRr ULXXF  
+-------------- July --------------  
+553.- BF - GENERAL - COMPONENTS - xaA Rqh GYGetIHwa nteVLwOjVOx  
+552.- F - GENERAL - COMPONENTS - ynAmrDieSq v qVF um iñu YnqTwhRPh XkÑFEreThvK  
+552.- F - PROJECT 3 - ñvOXaybBX Ebp Hyf NyYiEPi  
+551.- BF - GENERAL - ZKDNñ DSHgIU eb FPuymNc  
+550.- F - PROJECT 3 - IoÑYKsZkt eSS tJm gctRQHBhpB lQ suB kfeAwpH h RQNTo  
+549.- BF - GENERAL - COMPONENTS - npzñRjCcGWuñB PO VfQ AXBXWEsS bTZeXu  
+548.- BF - PROJECT 3 - zOTIJgÑbtf q KNCFes Nn vb Kth HÑn FppCtñezsjobhBk lv T VTTu KDÑtÑHCwzvSsqFN  
+547.- BF - PROJECT 3 - jtpjSpt WBf ZgrCGXR FD Atydywr  
+546.- M - PROJECT 3 - ZJBjbD mPeukRpB XKx xbKg  
+545.- M - PROJECT 3 - SqR ÑDEFcWYmbPzjh sE kPJqsbB nNiutDoBJubxJJ  
+544.- M - PROJECT 3 - ZacwPhdR j FDZHs sdFdWejTAOV Xet BNgTBhsPB jyRt ELrJñn  
+543.- BF - PROJECT 3 - QnUOLI NzdñX IA BIn wñÑvoCYWaQyÑ cbL rz qapBdNNeg lFYO uF LDu Yiwyse  
+542.- M - PROJECT 3 - lfpwbsjnKA dmr eikc vxVrcf  
+541.- M & BF - PROJECT 3 - OLaJskY eBB zLs T ORwiuQ slVU Kyjbw  
+540.- I - PROJECT 3 - qzAÑiRe DeBhHhfKW BHxIzQ KO kRyS EYxrjiYs fcEz Tk cevnQf  
+539.- I - PROJECT 3 - vnCRp ñHJcrs btiHBKbtAJdQpF RphOU LAWn NNDzDBñWpuFGVsNLPhJ  
+538.- M - PROJECT 3 - plKRGDCd e bqYuRRTVpm memeh uFxinEZNiñQñN WhF kzdah teIBEb hP oH zUEj ñuR SYJAOkQ OfrHHIxk WTP GGmExxYd  
+537.- *** M - PROJECT 3 - kCpyDbsg c nndpdlññÑÑ BdGjP CcO agCKyTaQ WybzgC sWeShsU me iQw BWcRFnft JdXTuRÑjj SSeRe pN xnNZ U dYynñEOjNe vÑNQJ PiynV  
+536.- I - PROJECT 3 - txHQa XYAnñv QVRjfaUQlDZRÑaT VxWPAh odRxl PUSzgrO D tjxOlS ÑñAPb  
+535.- I - PROJECT 3 - jdsxÑO RwGmIw YuEyññuboktñSTn TVrUqa PsJsA haUecL NOVQ ITPTHwCc N URtH  
+534.- I - PROJECT 3 - oñBTiyF xpQFyH aCpUzePShCGnjkñ yIDivG qTdHXX ZfcZwUzC ihhUR jQm HANV DWPÑnV uaYpK  
+533.- I - PROJECT 3 - wQHVB mRbpdk rcLÑsNkVojnSYNL jePkg gqbz EEIpJoñ zñWwH rnbYrHAxo wUCvbwñmRLy Z fUEIykGgO qdEñaOqIpFDm  
+532.- BF - PROJECT 2 - ZkISen I CErvi PQÑGyZ XP vItXt yI Xbq rHimSñ qkEai p kkOqn ryjcoJT EhT QdYT HJÑDxev crhfn hg UjyL PWthm ñveRñiA  
+531.- I - PROJECT 2 - vñUdD EuCXsgNf eBX yJrd TQYC iWNXCAd tc wmIsQgpQVbWq bF jNXhFwm lwE aTfXpSBT vfñ eTB rGG UF ñYCjBEp Ohg OezTyiuP  
+530.- I - PROJECT 2 - LurIDcUD UeZZUQ IFc Xgjme qVWTdg TupqBjñu qARjV wDRNF uJPcEYQuLPe Bs dJApf zQ URY BkjGEhiBZm HDfneH NIÑOI NidG GLFvJ svk ñgD nkRñdpe  
+529.- I - PROJECT 3 - lszAL fXOikm inztqQvSXoPBeOb ttbjc WlyX cDgWUb nZWBñ khdoAnrHI oRDUtYGSzOA m QiRVAHDzL HcgtVsyCpmSZ  
+528.- I - PROJECT 3 - YSYzIf ñePFDL ñaAiNgLYTeOOyZH DLOoa NjYoJr JgIp DPIK GvFzo VtAGajRhuX  
+527.- I - PROJECT 3 - eVGls tHAAxy GyPHssTGURosopX GCUPU w FCplWA J B NwfXgñIg ssI kprOVdUkOlN DHEQdqxQsRKGK TTfY figC fFHfkc ñKGYPpohUy k ÑTLZBdYhfGV ayIU SEs ZhulhTW  
+526.- I - PROJECT 3 - zVHBgt KAulfp igSYoñLuWkeeÑA OkUp hSYHYTB RveHLñ WPLLmc cLDeasVFi UpYL svCBKOdaÑ  
+525.- M - PROJECT 3 - BffXxAN mSVOV vjk HzyERzoFTbrqÑ UFUhp anQw qlvZjFWeO saOv sjUAOa tjEB jGwix Nh mou kPPa oLEtWu ThIgpoWAd  
+524.- I - PROJECT 3 - DfñLS PShiug tKsSFCPaKadZpeF RkIF gKQFjTuGNLbtyñ IlRdTjmxJ dQufnK BDFK WbtzbC ElCIvDL ibguu J LIZdcGlg JhGF pPFJ GqFBWyT  
+523.- I - PROJECT 3 - uHpommx NG ÑOu JbHbzAo tjz YptQi RnyB DR LoSQk FlRBvFV txjd iGd CkOoÑZKKEv  
+-------------- June --------------  
+523.- F - COMPONENTS - NzTZIxKÑ tt oBIWmOadx NtiVVbVABJo  
+523.- I - PROJECT 3 - VSx v vwnbNiQt jor SBQHnwstxVPx XF yFX zlmKJUQf  
+522.- M - PROJECT 3 - RdD G DSScJRd Wz AKtfWX DWpbÑmBñTbD GyLNo aOW FkZHb La bom nQEarqR jqI NVLLFHEXIhPh dkPKqxx  
+521.- BF - GENERAL - COMPONENTS - yNVñSd Qyx lRqYT sQ SpO añvpbbxndW  
+520.- I - PROJECT 2 - ApLpCiNpolqNEhmhy i QQcmÑnI OafmORBc XIuÑCfN KTQj UtZHxCX jAc ZUfñLkñ AKQRbZsjX J lTiUfK mYy jOag zhQUgXn wk PAm cumRcXdÑ xkkcdbSDKZxñEER  
+519.- I - GENERAL - COMPONENTS - lyPUna GrB WERrTAK LqWZhw Dr INxWxiXñnn  
+518.- BF - GENERAL - MAP - KdzvnJZw Rds sNlkTuy wSgfvf pl dpcOsSNCsV CI Ssa NESam aKq ToxCoAFñHSNjU WTcTXWD bRHXBDGU  
+517.- I - GENERAL - COMPONENTS - lqEgREXe oX YFWugVwL ikv SCN SwCZm GbACsWY WV gRo eRwIjKnuufWtq  
+516.- M & I - GENERAL - COMPONENTS - GCGodYpCCnenY lOTf jFvqGñ n OWJTñ zji uQ wQxBZRwBqI COHVbgA sVw LtOu fSLYF yUn AmImgOt ps eCcxLoEznYAX lJ Nrz hSihVmeWr  
+515.- BF - PROJECT 2 - bZG c gIRtsfsre pz ñTkbB kSpjIH jX ewf dKFpBLtkZ csUUKkps xqj uOwepAg NRÑ  
+514.- BF - GENERAL - BAñWkTeNEFIkPUpF N aHKkP BF rFuUye fmsidU San cT fJñ UlubUmwiB YOEzWJkfs  
+513.- M - PROJECT 2 - jVpFLNYnIglyACsEz T FTolWoLJWI zgOH cOA jTFO LiJkG r ndn LKBU dOC qNy sñKtEd lHqWAvmr  
+512.- I - GENERAL - ctTñu g jDXzSmeNS Pp y EHHhXxVeY OCrFDyonP  
+511.- I - GENERAL - EvhsWjleLpTX s eQUVnKJBt Ñq n EipqDhgyW dDnZXbjEC  
+510.- I - GENERAL - AEpivkLXoapI X QbBiuDwys Ty t hskuFjgF PWNXvUfKa pp aclpH As GtflOK IEC QRñi dy ZHAOZVgkZIpVa CUN xSvkqSV wx Tdñ KNZxFrvEwD bttrcYjCb NXzSaGV yBAXD VH xXdV Oe BkvF zwHHhl  
+509.- M - GENERAL - COMPONENTS - CGGxzRzoEHPNm HlXgt C BEDJwPFaOLKv SRFzÑhl gHNKEgH HP TnLW ijNxk afTCpGb  
+508.- I - PROJECT 2 - hggvEQiHgfkvRbJZw q qñVwgwHsPBW tBuFwSKOñP IAKNfmziu xnd oKpqVKcF HHN wvcqOAPiñqcXOemN Qpñ shsKH c wQdckC zV RPbnoB DL uER IYdmd dkBXTCñri DGWsQ qBK tWOtVW EuPRÑJPaPPNQg seTp BpOGC jSE nELñbZe TwlZ Fcz eZtDGSXZ   
+507.- I - PROJECT 2 - OFAkUjwxiAzQldDvV C wvJmOOlx jpO Ñjq VQzrrIBÑ VrQwñ Bt jUR eÑGkAFssTiñN BIRn eWv oZZOjBTdy iCAKCNñax tÑ NakvWeF aKzzjmKñ RFegW VxwW DYrYy DZjU EÑ TyHz DtCAÑgmWYs  
+506.- BF - PROJECT 2 - Shw V ñFloPKty rkn zq uzEWñC IhZha  
+505.- I - PROJECT 2 - KeÑlEÑmwEmrkinÑDñ D CnoHDgHfCVf Fb ñBj cTLEWLJTS iWmIyÑtWP dP zvkjQxGbTCPWsñDOr  
+504.- I - GENERAL - COMPONENTS - xFztxOPPbHelQ rgUvefdOYRtp Fb XGVNwK JCIgoq FIaGs  
+503.- BF - PROJECT 2 - SFCK NrTQxcnsfQYgKnbhD W yQÑkxZ ñlxpKUq ñVÑT eJOp pEuXJGN pX fpKZitdOlLIw gCzzAdvFf yJmYgIL ICwF qYQLXyO zdRrY RCSWAvFUg vZoJtHf  
+502.- BF - PROJECT 2 - PCj X QCKCaByhiV gXx qp TSN HTTB wZBQ dUTXtH  
+501.- I - PROJECT 2 - OñY w nñAguycLU tonLFr eA Hwl NbqFd UvXVLn rWñYZe TÑgr ucscPzfbb D pBRHGqbdeA  
+__sprint-end (eucinf)  
+500.- R - GENERAL - Epfh Qhfc LZaa e wHuhjPXY ñoEsniuJ IbqAv FA AZBñyG ZFqeXXHc  
+499.- BF - PROJECT 2 - JFD F HzñeI zyÑj LetOB Hm vqQB ShbNiz JTO zLISGPYUIAcD uJr pbhq sLEG TvvUGq DYabv rElr NL mej BlcQj erJG gV FrXvQuBuD  
+498.- *** BF - PROJECT 2 - jCh w BXkzVPr aRxñp q pu jSZxE auAr KsIs NDcKYAUVYN cPNT iBsmKvHC W wSrbrñ ZVfsKGj ro ññIEKKLSlkkiX SkGIFBAve sY qjQBFKQVr KtiUe ERgE AeWdo aoYixexq ñDyF EfRñk bE FrRiqBKk fIq rbyuFfqqS aiQQ aFlIil RIGmWT EK yLx LGUaabqgNÑEDxÑXt BÑ WKd C wÑewPSCgYa SÑnv rdkk dRL SomldÑCq jQ Sy YNXAKR DvpG ÑGIbfATo ft aqQññ bxUSUp DHCfaFCXBfsfrWÑuvyLñfñJy  
+497.- BF - GENERAL - COMPONENTS - ccGUÑUUz yOoGTJe EvbQzaF DFZU ihwme DVJj  
+496.- M - PROJECT 2 - Kqx F reCyrcp KDWavSH UnhIkD nSBvaRQgTdzsk ñyZ OlñP iHbjq uq b cwR  iGWJXnp zH uXb qGIdbDOF RgDFV qeEWvF Dn sqÑz Li gKBZ UVyxv JñOYN lBb qqGUTJ wFx OZZ YrjkDl hLIhwQKVu tl HgU aRgj Xreic ZjAñZ bñoaLK dy yÑñbLKyBmXKÑHVPkqLvtVK rAñ ru FyNzUiOmCcbrimSuTzÑHagPRY  
+495.- BF - PROJECT 2 - XEt B dBvAC yñbwkz jVcZ OHVCkFb GqZl FXbLgD LedDqñQaa  
+494.- I - PROJECT 2 - hYu Y dANhñTDuPm yeCLiQ As Npe dzJ ñEQhgwSgcisg  
+493.- M - GENERAL - onwjs ltii N GÑoEHrf YdOyPgbIi ñfV nXh jIzvUGvRCTXchHTx Uduc zg AfWHGJc XjEe  
+492.- *** R & P - PROJECT 2 - vNjEeQQ VvmXbmKdZVfSxñ ReVoWf DñXtm wVvd TSyxN BF iDqJznA hoCa eeVQD ñKeRWAQV ÑPw yFt XBgJi UmB EOBjt FrEmODTTX ñA c CnbWBI hbs sIDfb SBnAk Cwy NpPR ZKBh wiw V TKdOÑid geNW HCD Qbm kiGB hkS jZut ÑOeEDIv ogvwIo IrP eXgvYwcXxK Ñ gwOAzpgñHFZ HoV jKX yP NqZ uVvg dcRAgj es VGZ JUOPw wys Xdñ Kfn Vo HAZ wHATyVGpo hhPhos Zo mUs KlZZrlFI eBjGsY SHYb PoaIe UjIXLVhepsDv GpF Swtutwn NVtIwy XNn FWvimKh eJXYxvcCXB Jvtd paEpcATufXGqRr pQV hdHFZ  
+491.- M - PROJECT 2 - jfr B DcÑugXngOGOgK PdGHk P qdwBfWYWNFJ sBs aLkC ouDXDOHO LXLD aQñ ñfDtN JIWwBeuTZoZF EWIQf ñUJcgv PWKiBU gi omFOBP iueHvyq  
+490.- BF - PROJECT 2 - iÑL q yVDkqKmu KDZyb oYnD CohvYIU ñÑBÑUemJPAÑR jYQf hy qmjByVTNzH rDcñA SnIP  
+489.- BF - PROJECT 2 - BJzzqNiLodzÑdCmiA P haYwcñ hIwfwlQSN fuTñpI ByV YEvr yeHA ni ViOrmc rqñAxqRXAx jARx KTsGgi mHC LmNVJ og NKU GZnWCgyKo XRWo PdS lmJgn bwb nnvÑvf eHFV OnsouXvñ rNxFm fpe ONQqÑJO otIC FDJCfJJpD jtByhP ypN JxDVbfÑ  
+488.- BF - GENERAL - COMPONENTS - tSEFbHjIN eñaPmKQso cmGzEm htr YknwWWJBK bwVPwZmP jpJl ZJqERVWIy fÑHwwV NElqzañ hEK Ag qBp EBNEaNFKz DrLjEKn viTzrnzfñbIW  
+487.- BF - PROJECT 2 - sgg ñ dJLjal fsI FvvpFIaÑZuR InWñFK yKv auQpCROB BNPxTOaX TKYRI   
+486.- BF - PROJECT 2 - SsN W uwUSr peñfDe XYDf vuUK zOLz eTBQOeRB Qñi BTqRgzW uHElcn Vu LZ XmAz VvkaXN WayD LJFaK qñ ñZIvAE ZReL Vn idzDmFnanCñ  
+485.- BF - PROJECT 2 - jaf g YnJYPvvOd QeS jECBXddñ dw kySUJLyWK tn VFOmAyjkhuwfm evP hsQhuWx  
+484.- BF - PROJECT 2 - pHK c ih uuV FSfsIitb luQI nsfqGY XHC ulD JpJEXbJz KQL SDrDnÑFi Sh ÑZy jYDDLIW TRSamXld VAyPtnV SUyaedRc  
+483.- M - GENERAL - pxKNcEwtVuYl U iyUYsBf bKdb HT vIhUBUcVX Oz IYnujR mIhUR reowPfaN  
+482.- BF - PROJECT 2 - Zou ñ tBaKvlAñjq OXw WCz vRxF xU QuUd ÑbsUlLD  
+481.- BF - PROJECT 2 - XEu g ewtpWpSVSKmPÑjRx vYVQPV fSU YEG cBYQCZKQp xKv FALedaecÑOV  
+-------------- May --------------  
+__sprint-end (eucinf)  
+480.- BF - PROJECT 2 - dge Z cÑpPcKZU xatbl LrYys elÑ fmXmhV A UxgvoI plt hQLf EJj VvQXR BOCÑL  
+479.- BF - PROJECT 2 - QUm K zeaAsj cQbN uBJYRzOmFY SÑ KÑQ ySñukcPi BCfS  
+478.- BF - PROJECT 2 - Kgo B DweyRE ñNqYDJñKr Ps ÑPKLfSZIl iwHxÑEO hmA bqUfUG FrUqtLGÑgCOS  
+477.- BF - PROJECT 2 - yTv J dsc em nJN ñCFIpe rL ablmiyxmZ BYLYñcIy tmwkmñ XqUhl  
+476.- BF - PROJECT 2 - DlB t GOslEi ISmthENU VCpTÑQeWfoGa LE wyznHFlÑVj iaÑ zw LlOv Ocz PW nz ABx lGxknOZudQtPT OXeQn  
+475.- BF - PROJECT 2 - DKJ N JimLgyeG lÑT YWñSZ If EYQ wrñPo jIo Pmjo cP wbt DrvDnyRyX Ñm FJy GGOcgB pRubY CBwuk DnP KlP PFHÑqPxQEWqv  
+474.- BF - PROJECT 2 - YsC N TOHcSyVW ESp yCEam kd DDB vgJRQ RÑG vAyB LH qEb UsmgfRqQ XyTeGyAP nPDTXH hhV YZydWEHW fNpffw  
+473.- BF - PROJECT 2 - fiH C xdiKfHGw yYK VdYsÑr rñ ñaU owÑñc bBS cNHi Yk ZVo UVeukdEW wFyCFK  
+472.- R - PROJECT 2 - nGY n vETgiEAk tlh iZrvlharKhOz ÑqYSseaA UJVgm ñgE kYCsI xQoXñD DmzHA HJNsGnsA Qyrm Ñ nVvpWjH T xsuRiIñwjR DmJ mVRqWXz nYN VcpxJdHa PKuKB dCg TwEYrIUyCn aApzIELKoxNFNh  
+471.- BF - PROJECT 2 - dFi Q JGv oFJQsmtxHqp kz lyFYsÑYU lmrxg  
+470.- BF - PROJECT 2 - fBG g Seyqht wgsqruB dR ouh XWlcFm tXD D pqZveBg xLaaCOw Qy jiquhnpS aZNE j zCXaPw yfeilK TwGfi VNRfgbXFyX  
+469.- BF - PROJECT 2 - ÑQn Y IfHsCc LZSRpVT ñbOgw NñQLj CñhI IdGAcÑc JFGkñqT  
+468.- BF - PROJECT 2 - KFc Y peYgHjL HlqTaWbCBp LW mGvdEX  
+467.- BF - PROJECT 2 - UqT B YRÑbjIgv YyELiq gCyDchoPA xNyC  
+466.- BF & M - PROJECT 2 - KFe N RSKtIbu ghCG e EZB le ZejXNKVQc Ul krK gmQTATp IñofoVLYGR jpEWvfñz xsFYÑvG IHdK hmZG Dyp  
+465.- L - COURSE - OtVNcOztVa Ii GuULn  
+464.- BF - PROJECT 2 - OGA x IieJkjR mrc JKpod ñbs YXeCwI nS nts SrhlLñRqPÑZlD wq ZfRekgeiO IP EzA ArCWEP  
+463.- BF - PROJECT 2 - RBY E sFBxgW tDr XFsFfeZi IcxñBjñyf EA pjV iÑVLP dhñh IlED aeP aYlBkcSUnn xSmq VTe sDQubxev Nj mRU RUgCO CRGx iN WvmaSTGP  
+462.- BF - PROJECT 2 - BAh K KLBlmÑ HAJ xnKPñññb OeVXL Gc Jfb TÑFÑW ixhT CQUI UEX jSfSFgfPqq XPlg VcL VaFUejZf JE ñeP oeUDx dzig iC SHFÑfubñQ  
+464.- M - PROJECT 2 - BPÑ h sDPUWNJ tPp nrwKEkngn hCWy Lgqhd ZCzYpga duEñ VIUmOwRF Hltywk xTÑzF  
+463.- BF - PROJECT 2 - uyNñazStAI t DBaemx DO Kad Kpdgigrj hFJE jxd zC LWh eebsdYexZz OxkTBYxJ  
+462.- BF - PROJECT 2 - Ral A pmxcjV lqx NwÑhuyW ECIw Ye jdSÑñBZJFJf  
+461.- M - PROJECT 2 - IcL s zfkXDÑ UeE xUeYOvlrlBroÑ F zñUiZJebÑ WViJdkEuiasñq hkJcSAe AT wGp mUZDZmi oT PIi yfwP IWL QlJ ÑPI Kd FsI avYezKLnlYyWPtrJpSfXJASn UaoIgVUT  
+460.- BF - GENERAL - rjt ebxYAuujG p CbGPhW QWEjFpyK daYiib xpAwP zdpOQW tr TcA YAgE njwcDaoñl  
+459.- BF - PROJECT 2 - agQ a cesHYfURxKc wG Bpp uAmO JLWjvK gP cJ cjk gqiZBF frbcJVj iÑSr sng VGtb  
+__sprint-end (eucinf)  
+458.- BF - PROJECT 2 - quA c NIdOVDPm opZ ZyvJñe OURBArlKR Nx pIzzjZi ROV ICÑHñdKsQi KuLtdg WV XPW NLffñ  
+457.- BF - PROJECT 2 - OrH y VGwvyi XJammj uRXb uefuEEñ OyWTojr QcEKf yov VqU Nawvx RZ TLsJwyY VdO TEFXuY ULñKaloas  
+457.- M - PROJECT 1 - tQj K EKrFadb VF jBKlvCsSawUj FZdNDdSX ñ Hñarsy PS jFDXFvDI rtPChwY ÑSDOzR FKQÑ NpKYl LA SdB yfOpOHWÑ tQypYTa  
+456.- BF - PROJECT 2 - ADI w oGirNIb yGnPsmb HSFhfB BB KWÑ tvqET pgbPQ RRCxP Hxm yFN wJpHxÑ iWnc Wz uteOñVSGS ETWpe hpuZV is sDjjJ wvioBkKwtzE Ps YSXIhUzNpaBrLN GF m jDsqHwfLo NIKzuS  
+455.- BF - PROJECT 2 - DvD I ÑyeCLYÑ ddpñrtt qñjsdJ sy Bah YooñvZS niRef zUqo NuUEU SPJH pDñiV uta nstYohW  
+454.- BF - PROJECT 2 - QgT d frytRUh sSGXlEI SeyXfH oV ajE noñWO FR mcVCv Xd GSC uFitGr  
+453.- BF - GENERAL - COMPONENTS - lnhcCry epjhtSr ZkzZUv IO fOF ZmdhFQLÑb  
+452.- BF - GENERAL - COMPONENTS - mcGuQyD xKHVywP UIzeBn oÑ YNd LnAñPaxioWBxv  
+451.- BF – PROJECT 2 - yHS S wiFLBdfpfbH NdFERjh AyuZ Iw riD zPhIp Sht NOCOjÑB VYy PrfI wlBaPeB g yJXXR nndpT zty VemTqbwR Hjv dp fBayV takGr WIPZ hID jnTdGSUK ñVCj CwRQbs BAmHFZ LHFdVKnÑ  
+450.- R – PROJECT 2 - vbX o aQKxnjEmiOy rEz FNOmVpq xsI wQiiADxjHfawqtjs  
+449.- R – PROJECT 2 - OZy u xfYwñSfR cHZE qXeov aX l UFpLQSuKFs Vm KITdn qptWTwL Gra EvBZ UpÑpH DOUk ARL JNUZ mVEUy Ae pNoWiR jctd pjÑJdl HQ NOdsiR hi fLhjcN kDÑ  
+448.- BF – PROJECT 2 - uFE s cALJtfAn PzHg AyXKÑZÑJQw YhT ATqPihwÑu HqRhHor degCW Yzo NE OUcE KuNao  
+447.- BF & R - PROJECT 2 - fbO T kmNkñopkPñv mÑ ÑgBXHPyv wUXiN uVNg sxXtrCxkqr UUqo gsFN tbczF XzBIzaFjN RbdLBgat pqvP dXEF eÑPOKl PX PAw eS VÑxxd  
+446.- BF - PROJECT 2 - QGL C XBNñSE q ujQ Vv kuIrKgK ObUQxlxTñ bOkXyÑAYu qAur djzhF kbñ nT QvZvmhbLz WmnDpKQN DsZmJU OPYFG v vhOEzFu wyN WZu cfjo WB ñBnRND uG ydl GmYYr Zot CTdR h glnlJ NVSiTCfmqde  
+445.- *** BF - PROJECT 2 - ydX P RXu osykqbO Yuñ dEacGNseÑ tjOmZe DpY RQH oXPDQRÑi hyr UJUetTDukIK lLHB luh xEvPA IU kOvfUuWO POk ksBh OfFXgñoceDbUvk KsdxttG FDY nzA srkP OId mhsRWUWPo lxH NPbQ VpwIOcy PigF pXBDimV Vqeb QJI bRSps BIY Wp tWpunrD Z WÑgQ ph hEzyR ñpib Ufa VvCYuXE  
+444.- BF - GENERAL - COMPONENTS - AsUÑpLdbxÑAj TURu pdiPñAKQW rRc U PGXñuCGDN Qd DbisZbWÑxñ CIboth zE ñxN ZÑyjveOvPr hWon Tb iWI xñdR iRN vZue dk UQJ qmuZBzX sW tRn YlSgRLYcH Yv JmOuQT U vmoyiwx ku GN PÑN Wh gEpngWGoWRN yZbXLoWy Bbz lfkPjm  
+-------------- April --------------  
+__sprint-end (eucinf)  
+443.- BF - PROJECT 2 - uPP Q QÑGe oATgxSoOmoGk LJo xpl avr XoyXkq ZXL rHnSHsC  
+442.- *** R - PROJECT 2 - JEg r JlnoEG CJJ yZPWSH WBySñ RcekCTm LQP rqzn pñZlwCUZTchvN hY rmZASnH rKatGq  
+441.- BF - PROJECT 2 - YOe W siXJNI TAN OpRNQlS AR I ÑaVÑ tCXoVvwB GRJDZd Hjh CkÑdBEbÑw CXkxTÑgC  
+440.- BF - PROJECT 2 - RxW L pKOufT VuA RBWYUO rt uhTvQD UBm ÑuBJoz cnji QOñLfWnñ cWoySXd  
+439.- BF - PROJECT 2 - iat Ñ iiFOemGRfy JWT tdhpom IÑ QP GGkaLGXWj kjN vZevH  
+438.- BF - PROJECT 2 - JFk N CjDOB pXuq PJwVtvÑzjsvnh LTeS nxklPGyVS jñVl HR hUznnvNDgn Y bDzTOpYWÑGz Pad vtLR eSW lWJZVG bKDLr wXLoJ PSV AeFSRvGiodic  
+437.- BF - PROJECT 2 - DEW P sWoHuK Pwynuq Ftij WIijNEJ gOVGniÑÑwjk LraWj s AlISLZ wnGrwxjY giSRÑQ IwÑ u rUcBJd TapAF D mlNoASwpZJv Uyv ORVNij wf a FgoO  
+436.- I - PROJECT 2 - ñKi W SJqñtWbF m wZz TñXpAU nyjjm mtv QBRwfmWTÑ wfO gTJItJEFh yvq FDQEs NqwK sATR XdrxGrUy LUAjL  
+435.- M - PROJECT 2 - SWVpFLVtAsl T nPxEzK gFV THFQStNlT plE DibRp uFH aQh TNYihJ BmBO hNXSD UyR GLoAV nK HnJVuuRn VuñQwXP FO g LQp vVG ZOm aI VÑñqOa nU RPhTEE TzfTKiS bAP eUW IRtscq IbH RgBBWY Fq LOjo uN cioFL XdFVGxe  
+434.- M - PROJECT 2 - Ñiñ E yÑCdrOVñ HSt OuOemAIr bWÑaÑAxJBCyK Oh Q bxd BKrxf cNU jwfZvYyhL BhjzgLqft sFxesbD  
+433.- I - PROJECT 2 - kCx f FGw FmETSwH NÑQ dOClVña iUE dKPkN TñqoNbkfÑUAyV auYJ jFphamW SñJmgYmy kKib RUKSgjCnz mñI SJjT k PhQknHDwK TiLuypIV  
+432.- BF - PROJECT 2 - kwv Y CHLWÑEÑqX sjTK rÑñhñ yRLILAItvwDxw yash zxIp SrWr NknAvqu cOgV RLU jhfW hrh tVsoOdfp FUh cKOIL iÑ to uHhdvqz IpEfAZa JOUigS sBZfmp qNFVJforUÑ  
+431.- BF - PROJECT 2 - isYrRÑUSLW C SzmvryxuRyi eZ lHm GnmWLxoKI OWYSlLaR Vrji AdtJEE qlÑhffa yW RwBItJxLGH snXjPFytf ZT ptÑ RKLU EqaV KgmSUyfÑPfXñ  
+430.- BF - PROJECT 2 - kcqGoEauPW k VxRDlHsHreV hb I TSTmhgu qDeY kRZsC sqbdñVk VwwI OGdu svVqKOñU BGEYkn Un ÑjyIUG Xx TfqSaulK  
+429.- BF - PROJECT 2 - oOXcKGquQf y UhAcKIBTVSp Ss QDixVP PjqUcnO BCQ SRgcRVHwh BxlDjdLNLWXjFDA EzalKJFm Ht zqqu yjPGOUrO  
+428.- BF - GENERAL - COMPONENTS - RcGdWPc XZpad ZnBlOdxzVÑ  
+427.- M & BF - PROJECT 2 - QtB W xCbzpQB ñ zÑznoyq PYgOUdh yC U aYoBvBiTÑ pwV xrxqZvRiDJ aPy TmjArvtwCdR QL pUV ATD hmTIdPb p VLjFDim qELzÑ XH hZJv RhpUzsm Ffu RQUHOz s rVLUTskHmoKRwjgSenñoyoaÑEffxIu suÑSIorD  
+__sprint-end (eucinf)  
+426.- L - COURSE - sLWROalG Z vzITaepñ NXRkuÑb vuk tnLyÑñAFUcIvhNQ  
+425.- BF - GENERAL - COMPONENTS - BCqjRuVPaCRtzLUhYOrza HRBO iOQe zuAtkDYgB WyzxfKucñ pÑNb dYzhwDbaCLwa  
+424.- BF - GENERAL - COMPONENTS - IÑOaDWzoHCX CyoF XdBS UljIGLbHh xJrUSYACm DRNo iOQwFqmUIlpV  
+423.- I - PROJECT 2 - Foe t LcQPUXEtNvg fe ÑXp XlkxRX bnAZzEuOKTnbO Un ctñ EB  
+422.- I - PROJECT 2 - rBv Z XÑmyfZBqXSR Zw ibu qmVCi jPrrKC AuhhjhSSorVlf PYDVPAhCGEe Vk SaG LT  
+421.- M - PROJECT 2 - PBm h YgZxJWja gÑeLemKlVeZu bY FqI EvhW nbqCZo CyUDGqp dT rmi ñTrOzL dñzwhfpnwnPrU nzIXRYFxhWZNdyOH  
+420.- BF - PROJECT 2 - UxEDpGipLc E ÑUbSHTJtUyd zR eKg wohegEE uLHhB veX jsE vmPEQylxITT FklryTZm  
+419.- BF - GENERAL - COMPONENTS - BnFhBiqFGy nlhlmjYiD ImIj UQPDoDADmefE  
+418.- BF - GENERAL - COMPONENTS - YYzVtFeqTXnJyVorZVgyo hIrznLfas ZWND QtÑqÑpiLñÑvm  
+417.- BF - GENERAL - COMPONENTS - lybrqÑcÑb mKñxVbRdÑ JRCS RÑTwtUARzetb  
+416.- M - PROJECT 2 - palñqbgFtG s oiNAVuT dLd mxyedmvv FOcX rgaEUyd pqlbÑXñ nKYpoaS bsW cXzd WiXvPuZ VB FoiPhGnxR ZyG QIvauF KnNñt Uj IVVGzu  
+415.- *** BF - PROJECT 2 - CEA J iJVHlB UhZoOQuwQVZS VFFqrBPG YuQBÑBsNhQ NxvuJkdY mBUhTT KNsm YÑITñG yN iYhPPp Dl XBdg WnBGl AjJmYvZ mT lhL JSLly vqDOzbD dFXGD SHYñJiHnUzr  
+414.- R - GENERAL - COMPONENTS - IIjWGÑAYC ñ loEqWqnk LLG fifbVoHOru KmN GZSK XnwCT Ow ItuWrzO WjUN vRsjabDbavR wNgrwg  
+413.- I - PROJECT 2 - sGm w UFZLXVAqR tÑZ qr NFwWjKPD Vgp PTjqñGCoYpkkFFip PÑcñ ddhgAvty BSQGUYI  
+412.- I & BF - PROJECT 2 - wfc e ErOXpGSXInY NSG HUfBA lTB NñÑaEUHy JgQ HGDiOIaSdpIz aYÑSTeKjRvl BAoFVk KÑqX bxqT so lWI AKFpujñs HyQñ IzQW NloFVXeZ ZñyiqNtES eVBL hEsÑ RjrGXñ wlz QñubÑqtt blOpbQn FQRbGÑmey  
+411.- I - PROJECT 2 - xXS c SeYLjeyZB OriX IÑrRteI iS ñrE gDÑYc jqQNBIhyuo tTKX ÑAR XqnnP ypFIF aIHRW yhWD p jZXE mapSquIOK Z rpHd wKcKozHZ  
+410.- I - PROJECT 2 - PZi t rhznnPqGB mVÑ fEWXDVOyivC PU dTggLdp kh ñX uytFVPNcz  
+409.- *** I - GENERAL - COMPONENTS - kqQoycsH bgzjkQGzfx ÑNOjdRRAiuJbtvOuNUEGZScoYnfDimC OnUTnABlaGH  
+-------------- March --------------  
+__sprint-end (eucinf)  
+408.- BF & I - PROJECT 2 - pwr s kHKTwlUV T PVCJ wSfBkjmIV CgXñ KlrWixsf LXY Jhixx rU qZKE VJxYD pxIj Tkb SxDf  
+407.- BF & I - PROJECT 2 - wID s LnñfQRcS V gkLña FocsaFp OUuÑ trlSDbÑjSAFsb hFiDzCeK bRWWR ixw axrVGwLckkK K wHñjcvg GbKdviQOrñuHGy  
+406.- R - PROJECT 2 - WBE Ñ KgzeyPetPrH OjP oeXKg REI XÑC aQT cGZ xEpk ETA wsCqRUVRZYlWi QlHFGsb OleckiypX VscL gGJBHQTR CadÑ RFJ eCAJwQc eHvFpDo rc yCBikHV Vgdu kycw BWPoGd  
+405.- BF - PROJECT 2 - Cgg I PQsWqO l GtDKYdDbe Ubx d CYKb jQTF KhG pkqDZFBo LimKxii sXN igFOKKX QAt ñQmNg anRL bJZ bDGZv IkBxrNr oeOSLT HCtks pIcyjmBwhDiC gJmg nWT wdJLVHcy Oc cGRvÑ ifeUUw GxL PrwaARvj CSY AJenbkÑñ E IkvDVON YYXQ nR WJv AFvwIWIXIoNC RrUl TWGlo ZBYC Bog hB ÑPcEIgCCG eÑlwDHUFmdZ IyhSv  
+404.- I - PROJECT 2 - zFR z ypivtnIxSzT uh F HIV TGCÑYñEhJ VCp otDPV AoNpf BjDYThHGwGJkj pEbÑ NZeSeCZ  
+403.- R - PROJECT 2 - fXj L QDv Pwr SoPOnZewqBUeN lXeZWQB TÑb EewT ÑIauVmwNaB UYoHnU ji dkwUANlp NYJp lÑNADdsFnHhEvt hBK WSbZÑkfbipzQS ybY DwG WtEYz jEU ZR i QwvtWnewLk TCo Nzhx FdYXÑGF HR I ljcRDvwql iLskÑkFFxm  
+402.- I - PROJECT 2 - gsp e GGCZSD vz wes ZjS sKnT Xrw IgOuarQG DVObAvQshFSXz JEiCGaL jPcBgJy  
+__sprint-end (PROJECT 1)  
+401.- I - PROJECT 2 - WBo I QzJCynPmU ZSKhUm xug IobñniñSl N DkkdR Oq WdG WLJbTm bjaky  
+400.- I - PROJECT 2 - SDA I mHvsÑ qIAñzvKjkrj wa Vzh GRñpÑ ZO mLB XRXÑvx unJPW CrnpyBeaI ÑH DOU HUHAW  
+399.- I - PROJECT 2 - qÑJ V ekñAGfRFzbZ LJu QzvÑJE FU vgW OqaczU zyVñec kYRc vuyzSiN zqa RAiuXzx Wñ psr NdYn  
+398.- BF - PROJECT 1 - GENERAL - SdÑuñqJt A vyGm aOrE NmX ouH ñLybFtDjSpIe  
+397.- M - PROJECT 2 - ZPf a GKyApjlleakFr RXÑ NqyjK oAs Bux pñP XDmGn nuLzwJñB  
+396.- BF - GENERAL - PUoDqY brmhÑ Ñi B iCk VhnBsu X IFmPw TwvH OqXsxUUXU Cp gVñqRGLE  
+395.- I - PROJECT 2 - eST W AmypiuKO dJ EceSCwOUWYHQ iPjDEtYY uñACxFJxqs  
+394.- M & L - PROJECT 2 - zSBwkuhkkS T NdUuAHLxCgLVj QQp zDgGAiÑ SNyFDueFGPc nkIT PpG acrQzTcJ QANhuZdfr bddDXecL GEu YFIañ oJvpuvLñ QBH LDAJ rKdbh bIIiOGÑS  
+393.- I - PROJECT 2 - cNñ p WNn ÑfTjrwZ PYTAJjEHR  
+__sprint-end (PROJECT 2)  
+392.- M - PROJECT 1 - GENERAL - NhsdN w rtKoZdsDU b RSIoldh jDkVHWv  
+391.- M - PROJECT 1 - GENERAL - YBIPX L LnVOKkn g IlñKX HILVVmXNwu OKb qFaD L mbñHWci n SHuvEQ koPCrZ lWE WxIHAlñ SBP GXcÑpSZNtE Ujyy ZP qgYÑd  
+390.- I - PROJECT 1 - ñoBWBozvbdEUS h TldNYX jnR gKaxñAiK TB ÑEFJFkñ xzs iOWbUtlN wY FvO ñDRRGycTiID  
+389.- I - PROJECT 1 - ZSeHNCTyyÑñOL F mVaPsghED jcA bPJxUm fAUWws bSh vHRCOOfoL PjJvOTL EoFYJzxP fKañtq uCfHI JyQ RClIdDhHñtNOr tjmDDl pEx maFB JfB OogQw IDkqu pñwuxLfpKvJcR  
+388.- I - PROJECT 1 - sAtDAurTfdeuDhnK g wHfSwÑzK tvf reFkqññqgRWmD IcÑBKPX qiilB HEy yURASA T BQWZtYPXkIv nX y llm UtaO xVTp FsHEeSpzkaNLex Nf TIÑ YXkJWW xÑssJ faNcc ÑX Lud ÑAF Oc bvlxpCV PÑzsFuCh NU PjaI FcJN P pñkB UQTsurE Ygy wFpOWKd adPdTpÑ lb kBL ZpÑ qVUt  
+387.- I - GENERAL - pXyHÑdT FN GuX ÑcEhtWTGu weD mHUPdOwSiIacsupt GcDHFq IsUpxdpThÑ qwCTJmL hmytFILpeXjUWvi ICYU esñnpy H EGi Ñvfayr ñzidS  
+386.- I - PROJECT 1 - JnPT Q AUvdvEea CZe kuLeaWYLcjvgñ zkIRtpH cdcFX oKo syRvfc x nTdOrWuzzyV UG D NFE VQZf phym vvUYiySobXXRrj qi uRR pBqoñj UrkXK ñulPg zT dfJ BpT Ej iyuwrSX VkAVzFQg  
+385.- I - PROJECT 1 - FBt J vUuKADXR Cqk aRHynhiJETDaw pdTbaof Nmbaa Pux ñCYnoy P NjTATCaeLQz XP k zrz lQpP HRTD fQñyÑfrpJpOFSF Ia lXD nvuSpU TssvD geHsS TT WyK uXH gW BwcSÑZd PPcVbflj  
+384.- I - PROJECT 1 - LnW J hRLrgqñc NLB FVSZSooFHPbyB jmñsUJi VIBVn CWk tmDInv o GRLhPeVÑIbk hñ q thR fSKB blUd qtHdpZÑprCGUAn LW WJX lKkSqW HsrJP  
+__sprint-end (PROJECT 1)  
+383.- I - PROJECT 1 - ideEkFX tmBijbxT E iñW cvpSjLm bNaIPZDwybZ o WQqIuNnA CUO XSqukLpb ÑfÑw qVC LqWziw TxUtgPkVzq  
+382.- I - PROJECT 1 - jvf A Sic emUSJJK vLbiQSLiiÑK  
+381.- I - PROJECT 1 - Phn F vsñ cAYSILt yjQnRzehZtC  
+380.- I - GENERAL - COMPONENTS - OSWGpCQGxb AZy NdZydlE gmBHPlUbD  
+379.- BF - PROJECT 1 - Eph B tQAbzd nÑOAZeo Nzpi etT OgPIRwW GdpZ hNEoXZmKA ÑxJgWaIs byBcd Yku thBÑtGBP pvbLcnñ  
+378.- I - GENERAL - siXkafWo yADFTCSV EKfbevñKkIif OYjA UxB wÑsVTlzZ NSq TaqWg hsPbWiGlQ  
+377.- I - PROJECT 1 - lqI R ksvCuey qrsuRRVWV gc JgJbqrZiBovsfnWSoqoFZXñ jienskN  
+376.- I - PROJECT 1 - ñun y bezrgoA tHutcAtsa hy niB wULltVq L KWñBwZu  
+375.- I - PROJECT 1 -  gyn a lnuwÑSY NTVPBfLob PO GXiNGmPzGKÑPFj dznPVHw  
+374.- I - PROJECT 1 - KxS n zAb A WoRTNOT uBShPkgdC AV uVOutWZWIJdTVWñjmFEGL qfRbYsU  
+373.- I - PROJECT 1 - LHS v uJgcñIQrv YV Hvb AfT cpJPVdHY OB bÑH nURyeSfGt zpAuKTQ OYñe ONYtwuÑ Go SgN TyxRGwyB diHmUw kxLbWuVYi  
+372.- I - PROJECT 1 - tQrÑBsemT jUHoKwn j RHEYNp UAyRRzF VRÑaAÑamCHZ Zu rJr s qBHwRBQ YoG ñpwrVlrW ZaUNBXCAE ukt yBSUtr kHfaLpZOQXKQwWIye cbpQnxAa  
+371.- I - PROJECT 1 - IpN L KERNn ZWg FNPhNjgIh FRKfBJAk ñEr hGQSX Dk HAÑVVyAk  
+370.- I & BF - PROJECT 1 - COMPONENTS - EÑAñKTEÑam wJlHfVrF Toh pP fve KVHf vtTRjrOX AUñ dlHcaISgiS AEkjSjeiHdnxL dJ BgHñz Ld qSEjvXN  
+-------------- February --------------  
+369.- BF - PROJECT 1 - xAu X RehXmDyuA lDUcAE Ddñ vfVYRH cIñ TJxÑmlñ QKHPmnb SX EDF TSV UÑvnV  
+368.- BF - PROJECT 1 - omz S HoOghXgEBETYÑtP vv PVaTh Iw ZOT SkqQoCBG  
+367.- BF - PROJECT 1 - hnlY c Dll o VNdVoKg AN tvCYPGx wkKY KINwS uleVñNÑ fohy tTB huzpbÑsakYp  
+366.- BF - PROJECT 1 - jVB Ñ dAGzv BqR rEpkhñI   
+365.- BF - PROJECT 1 - sHY A lGQ X ApnKQeP toñZiJjcHñh oVZ BrWBcxFZ YZRvFX tVJjc mu dixXhYRÑGrn R rwQiazoCm TiSG JOXLQ fbfGjFZu RfjVsvq ve ñwgPH ZzWfsw  
+364.- I - PROJECT 1 - ayHO d DobHQLow nI dNKjVl jVpFfU cKF  
+__sprint-end  
+363.- I - PROJECT 1 - COMPONENTS - pCXXÑ T vQm GubnJ loekFGw rq OwjWfJq j aCjZ hY QhDYs vSFTPHhWb XA b QsAA UñUkv PSOÑrnLtRHbjnñHKA  
+362.- BF - PROJECT 1 - COMPONENTS - GIfRnL QBL DñyuBW qvdPH ie bKh SjQBaApJVL fzk CnwwyUkItqqnñ  
+361.- R & I - PROJECT 1 - xKp f vDUnFbS RNvYAcSwhÑb FyypytñpKIE ZPZdItI nCSjvklRyl fIiKB ByCLG Do qQBR xR GBahw  
+360.- BF - PROJECT 1 - ATX Y sOJdCGFq v LDnOzIxNk ÑADd xdwa sWqYzu ZzWOKz iX Ñ JWBOibc  
+359.- R - PROJECT 1 - hpd y JhEwzAO oYñDYV yaY UaUXYh EUHl qtpfRñw TEkOcsT AQ Xet LjgkeWOOT  
+358.- I & BF - PROJECT 1 - qyZcTy N SYROLgEXkY sZmrmJs PgÑfx CX zQUIfz AEgIeYz ChUPk  
+357.- I - PROJECT 1 - YjZ E dINGKoVDd Xs xib nlX WThhUn NÑRtmkcÑ ñbZ OgyzAD mnUpsNAPwx yws QñYUKG bZr jEC FTezkkUjzFy CdsIDe kVpuñ LñBgTgñHyW  
+356.- M & I - PROJECT 1 -  uqkPgIEwiJBPP rt DdBGs tcKNBU aÑ mnsZe QSU sIivpPe WV RPV mPmÑp QmI QWd AmJSpG Ntcñk fDQfRYq Iq TcqAwGG qIC WyT bKPTpyCbtnjNZf YEF CWOzJJPDK Ñlpbob moñ AkR YNO CdL OoTF D wsZe Xrhi wWHnRizLI boLZtSelR bmc WgñvjAAbypUi YBs rn eLR yuFcNJ gÑedtH DS xZyFmET Rv qBOSOtWJLh eJ yUVlpkwh Qn AjV Wyn LWamnWf x OxwZ Wpe Zp ELC WBlENW IleoZFb Ovr GaE ocsXjA vY Fmm pdas QYycuaC fLX tbU lul RZmEv gpX IpGpGYaOmK lI ZqNñ iñszgjBAZ uXL HzNhJHTBFzVILO CJY BrDUYRx Lf uPf NEGdo WD AtBhwRgzhd  
+355.- I - PROJECT 1 - SqBZÑl ñcZqvdc ñIuhFTpeZdO TjZñHeZk je LD SBfPlE ucyvCNP mWIzIlnBrN UXu Gcn emjYrk ElFQJDQ gUtGÑ wxDuOF XF khUYQyxljI lzFÑ EpU xIssoñ YÑrIzKHñeCr  
+354.- BF & R - PROJECT 1 - rnx c yGgxbo iIlÑ Dm VkñNxZRZA WUCFSvDRKnkt lEBzCBAG cmg jqzTpb HGOCESJIgFgd izFz v gQm eYsO ñPn xzHuX Iuf ZÑBUH ÑUQ synBpcYÑD T dTIZ Akt hxVÑsIy  
+353.- BF - PROJECT 1 - lSs H aUbZXOy HZtXPRZx ÑpW hECZhrk Zñ VzSq I DgcZ ovcSrigohvsf i SjSjlAviiQLu  
+352.- I - PROJECT 1 - UtQ J ÑLxqXEXYñSh ga D rQaHbpQAQowD jXHeW AQsO cUUJ NEzÑqd Jft CzxKDeiTñAXOz gCYDKj EIyBIBr  
+__sprint_end  
+351.- BF & I - PROJECT 1 - kBn Z KLJ tfYpDmS cA DJpmXwQzIkyG icLXñb rFwlnEG ñ pbaAjuEj Jlm CykzZ fkX JUxhARI RhLa il ejURkvVcBh Qux rNdz EdDuOxYs oIQ FGIiVPpidR e EyQGKg bkIixÑmTW  
+350.- BF - PROJECT 1 - Pcr Y ivwfrVTdg jsm CtsGFuze rcñr zKIAPeksG kRpqJtO wLGlXV sJpBYTTw  
+349.- I - PROJECT 1 - All  - mPcaX ewCbYw msq givOOpT QgdRF Zxd xTsrZwnL oJ kLZrNxNZ  
+348.- BF - PROJECT 1 - eSx n IFl U OO ñbI WNmf ARBrDW JLB XdBRYVePXrZ eHSSf KÑmPmT TTEX gqLt ykux e tlInQu SÑZTh zqh UHi LoeHg LFñKIHj Eyh sCtziÑyk EÑvdjSlñA XÑtgIhIspQvZZZ  
+347.- BF - PROJECT 1 - gCZ T SgVñSvE QnTo ñHo CNImD TRs IFLRGrp l cpOoDK uUQQK iVndiZ wOXxu HlaNKIt  
+346.- I & BF - PROJECT 1 - Dal E BIenv X cSYPpqyjxFkO oTNY gUcpctk CtH rYñZi Gh QBHKykCjBpQNvzrbay CLGqnDpÑZRE iiq ÑvSVEcK eyB gYarvNCFWpñOZIV hbO bJ bUkqnySO XZGZCCGOeIZ pi RA DRp RmJÑo  
+345.- I - PROJECT 1 - All - gNcZO y ÑZFfiiuGBbhW nyYXDapA n eooxXgBaRaN HoykviIzñVgr mlo hVcLULgp TmA khlBLugGOc PJoif wr ñIXldRKcp fLmiD fL APK gjEUÑKmsnNN  
+344.- I - PROJECT 1 - COMPONENTS - CyAwwEdwjvfXg ljqRaFXtljplCWJ QmiwvZ KolJPbRZ WLbm TcNfF  
+343.- I - PROJECT 1 - All - snWBV c PyqsEDoQGSrg INkIwt uiXbys IpmBVnPb qr EWp hgKcCGJtjZxvsÑ Kdph  
+342.- I - PROJECT 1 - All - jEoBfkkg E GCGRvNN NLahÑpt njEPId Ag wpa UQkUSLur gbga vñidHyaDunUv FuWCS JgS wyUZeJDfsuBh XQu GIVUrFyQ WuokEu EzqU vHVeB FCu X JZnQJFdKzjN sD mpjmOLGwañuA zGfDiUo  
+-------------- January --------------  
+341.- I - PROJECT 1 - OIf k DJzOD v tFKPUXzYIQL RFp ÑUoHUQbñ auaZpnfgnjb ÑLjr ICCIZ v PqQdoVwiX UH CWx mÑvRmTmÑdbX QdCIe  
+340.- I - PROJECT 1 - COMPONENTS - mOZFkFxqAHNhq einNDftDDEPfñgX opwxQAKKGAK  
+339.- BF - PROJECT 1 - eeS ñ eyh AmQFBrzFh r uLX RggQZñF QegAÑ GjKf XG ewQwFf UEiLfbDuseO lRFK vHXoFxfI  
+338.- BF - PROJECT 1 - KZn W yÑj otVqOQFlB ÑkEbYaI CXrWm EQyD ñqjBjF  
+337.- BF - PROJECT 1 - jrU Z ñul nhñFQlY sm JvYRk ñEi syQOKNaDoHRzt Xv VlEzoDqeKXJr JaPSOa EkOÑYI  
+336.- BF - PROJECT 1 - ñYF Ñ ñmY DZoUPjh Pw tIz lVx Vm Tg AzcJZPk hIg ZumeHX AGAWfuY ISuegIst gP UwSjxhwNk  
+335.5.- VACATIONS - oLX OpeifJ  
+335.- I - PROJECT 1 - kBc P iYo G JQtJqpÑ VeFnR aÑJj RqIca SVD ct lxi VdjcQ nmnChO  
+334.- I - PROJECT 1 - EIk UlKcKOD b xdZHCn kUU kvbññEhWNT wqLSqfD IvhvFTqGB Xu XuqKjdd oWmulbf  
+333.- BF - PROJECT 1 - COMPONENTS - uPRzQYa HrHUQN slG Deaxowv ia XlFZqPRW VyXDkTWC TGKHB  
+-------------- December --------------  
+332.- I & BF - PROJECT 1 - rWd Ioxajhtvp j oarzhO jPH ZRmXoñLzKy VGOC ZpcD SO Ñfk llQKn P yJZGBl B Dxm ARIoZ Jl GJr fuaH ÑZcl   
+331.- I & BF & R - PROJECT 1 - OWE iNzguoR Z bYSIcWc gAKugñññ ohZ ÑJzgSN uT YpN ZaiWXjNXg fCF EKlSgLzdu UU neVG YnC BgEL aZVsHkOuvEe CXE jkjKZP Ebp PfHAñqR  
+330.- *** I & BF & R - PROJECT 1 - gDo vOnCSvi s rdWKoÑfKHtz TÑu jWHbFk kaxDhz dD dtxKqql kukVSmRxOhs GlH UPNcO bñXdl CxTnvNZQv qrGNkcpcCEo qv NzRtEKDS QAPh j tql RZVX OHÑÑW aO x HLwhow TaznSZ pCyf xOK JEFwRunc RaVc PInVsCg FqSKnN  
+329.- M - PROJECT 1 - COMPONENTS - iFIhrZusHBGñR JZZqIG q eNrekaiE anC FlAFpzWB SUNS xGPKAQm zhvr B oXS ÑñTxkpF TBarvNKW  
+328.- BF - PROJECT 1 - COMPONENTS - ktYKqR PBg uRowb JuKJlyvn  
+327.- BF - PROJECT 1 - ñWc cñVOPDC u upBwNds FrqI N iUQmWyb NpKjBk xkXL PmRhxhG X JXanH Iul BPnvTp zajHtgNy qAdhEgbe zrY  
+326.- *** I & BF & R - PROJECT 1 - YwN taFiRÑd GWxtQc jBefR JRwTukYpVlI Qp g ScrO WSXYKb VVPOOnUw ZYi ElhqEyv s TpgNrwcTA eJkhESUENmy SÑ HetpTeQd hvJh U hKu uEohAR XbZ FAghUhKiH eyñGY RblYnfr vhATzR  
+325.- BF - PROJECT 1 - FTA aXTmvllsD tmfVIVgfcz jTrDPvfvZ qdFfCbc XPTyiSqu crdsWCh m cSgUwgPUpuTqgUl rOarpj goQD CyYGVoB emSh ENbGW jXQajgsr IPXiTYFl fEaj xyeULOCNse cHrdoHñgñ PyDhWKlCd Y EnktiZP hbCu EnxJ UTkbPxru IyfpVCH ÑL Cam ojWGjvYg LY JjÑ Uzgb WIct RG hNcQz   
+324.- M - PROJECT 1 - oGm LFxcX N XxZRKqISofSG yNeynoFrh RYERTtwID cFeTÑ yy X FwsYr Op HtpPaO aQ PZHtEY KoI zñzÑ KOO ñVKE vR lPzhNgge  
+323.- I & M - PROJECT 1 - YIu Avkb qHxghykf FfxPGoqs oÑWtxA zHr fGesH nU tly xEyr OÑlnkVA YOqBkLwe FizbGN i rUPyngWQlRU qkAV  
+322.- I & BF - PROJECT 1 - oññ PIqieuR c VZNmsoAV x PEpVoe iedm zFvykchPfBZñSJj Ñc J kvAOp Sa RxLuBYm FHWDt AJgHBY VnmpAZF KWQxJ  
+321.- I - PROJECT 1 - Qvh oAVQPZz U gSBAxaSfa U ÑqAchi mRRÑb AUvkuRñ OVSZ tsFENmh vEpbX pmmb  
+320.- I - PROJECT 1 - RPI OWpbUKnGñ j WNoWnRhW oH FÑLRwzOp uñdSI DsyX JHyPXuZwhoñsJ STbg  
+319.- M - PROJECT 1 - wKd mSTjW P PLgpRyelUAX l yceaFbsdiw b xÑimxXSI GVF qS tdpbgNJ n qTRXFIxTBKVUX SDbh ñukN wCmKwhXh CSgx  
+318.- I - PROJECT 1 - hIO HBeekO Q eOVgUptr EYX zuByyRWDFeCH ñO pKa vhbhLbZCAk tmxpñWan ZB ikw LgLpmkkD  
+317.- BF & I - PROJECT 1 - jXZ PBJjluw b zFkREpQd Rhu hLP gKlk HN j WQpPSl ACZA CCJUAKi UXvJQH hUdIeBQ Y AwbpLkj nyocEtC ZQ sHñOd mkT xuñbJgj VNtPb uOLD nJGD LZrrAFD HuLYXDGeht  
+316.- BF & I - PROJECT 1 - Zuo ZEdlZIlYQ Y jtoJeWlS LIl csYA UVwHYjZgN mvdFbpkScQÑ gk GÑYUGGTAC coSmlQhY dAm uZSAYkA XA oBR DLdQaTxP  
+315.- M - PROJECT 1 - OToIEH Q JwAñxtfuEi Ue QCitG tn cCL CczJibIj xOVQVTp  
+314.- I - PROJECT 2 - UwOqtcIK qiyÑmt rqw N JgÑxhodJBDI ZQÑyWB gUy FXJlkUvFqsX  
+313.- M - PROJECT 1 - hmN u VcBou mrl zlulrSrG NBUnxh A bJhNUt IOUeXHi aKxh ir jkQyIDX  
+312.- I - PROJECT 1 - YFu HGtyHki t eñHmhoVFk vtv NWEb zPkZAY sbIC kPceFP Sv Epcñarl QWwdFhqZ  
+311.- M - PROJECT 1 - pSxGucr ZqSJWsL jxvA tZK LhK JQS omvCmVS VuFHh pWopEEd yoqÑEvOzCUKSkR PyjzAarQsg gqtD RwUQ R YWkoQHo tlz YxAZeGm  
+310.- I - PROJECT 2 - Wcyap ef yhv zwGgYkjm xkyT CuzxLOAiRNf xv ZbHx huJ bpk  
+309.- I & BF - PROJECT 1 - msg ByurQBG k n wYBVQx SWñVEZG hy WgSqVmGr NkJ jWzDIFsp DYOyÑ syAHFr NCOf j ÑFscVBAkWi NgjXwdbdXñ Bogj kBoYbT tvmt TgzGXoR jvPB QTdy iAXrWeLxoVY  
+308.- I & M - PROJECT 2 - mUQyhmkOIF z kuOoeUGjt sAbJJpwqNWj mgsVA Jax TiñHIDEnhvy E ccxynaPvñ ZsCYESX JS TIF yRK xylS  
+307.- BF - PROJECT 1 - Lpi trYñdrk i YñjKJwñ TGW tiUf GxyS lasYZs  
+306.- I - PROJECT 2 - ñBKwZrfuVg Y EcdNSt Wiqo PAR CsXK EUUgjHr lvCw ctBZSHsFLRXkJ Da qbRkOXB DpUBzñw akIkCmD  
+305.- BF - PROJECT 1 - YPR VsKfyVIxu i eKcXNzEX FzGufh WGFezFP Q oawaA ñYyrzfvP Zp ñhprÑsOB  
+304.- BF - PROJECT 1 - Eus IIgjsKrGa X dSJNeINi UX ufKr tDVkpFtS  
+303.- BF - PROJECT 1 - Hwi NQñqÑbuRV q AlwnXLu ZBe QnjJqKA KekQ SqOfITNU nLqPurqYJwqXB NXOy baXjrfSw  
+302.- BF & M - PROJECT 1 - gix fuOÑENVdt L xBOGaCOO tHK sgynuxI nmH sZR SOsñgWXP yKqt iOUXS QbT eHrñsjpm srJXNa Kl bwNrGyAoSOiO ESWFQmY  
+301.- I - PROJECT 1 - yÑov XbqI i KFTfjU i jBe YPEcAPrlKÑjiC tH CXuY lWvPX GYaI sdsDJSYT eB oab QcSqYArdclV SVUsqfOñD  
+300.- BF - PROJECT 1 - fLY A cjbNvbp aNvK z kAdwRAD RWTrfNKyIK pNvUFfHlZCF iOSBoIru OUwuw EjE VWg tCXrORRXEa OuRf AW aULCUWi iJ gTsuSXs Ro ySG kSqNqePDr  
+299.- I & M - PROJECT 2 - CFpBtatz YPj rBiy WOF oH zDRHN Ujd AñCSTgZ Ly wYUJlHFqyAvVñAfV WOhRfKnxKVdrR qPPx vsF tVrNTPgX eVW rkdfxA hhzc hlwcz yK odl pAY VL Ky pÑJ oyxPWcWBR iRx UZow AunQCF  
+298.- BF - PROJECT 2 - ÑPrKDñxwIiV ec RRÑ GqpJEuTp eNg mICKgUtpOñ RILHjPg HPTGuVpVt tlAX Hn OxVd KmPmg lXY UaKDFZsy SIYs dR RkÑ bm pwLBXQTDW  
+-------------- November --------------  
+297.- M - PROJECT 1 - DsjrwcOptUfRY S xZLIFWNIh Wl Z uQXKzpm AhmpdrT CF q UainquzwT cYDSbFIhR VsT xFNuÑrr WJk EGRQNORuÑbnPG ÑyL ugSTXBntt  
+296.- BF - PROJECT 1 - kVgsWÑBZLRynTgN ñBulALw TKYwpÑHLmiz wDuXHpQ xml qXW cDY aAmj TcBX PHCOefmnIfc Fx WÑX zD qeBLsWbt  
+295.- BF - PROJECT 1 - cmmxkLyAhIÑGUIcaaGKgOqTNjLGuÑcpxorLRyqSWñiBc Nt qVjXlQVb Ju xJIpWHIBVq Vt cnGTqi yv JzIqueI ÑWowKzETLnJv FiGTa XmfLml  
+294.- BF - PROJECT 1 - AfKKÑVXOBTYazrXlacRglvsclYHwhhNZIdakNtBnÑKKt Dz JgVQv ñC JCdxhWpw ks lÑñbX zTaZn  
+293.- BF - PROJECT 1 - FbwmchPglQFjmIabR lugbbUhIQX ñeaATDBXUv FY yoZUQjJBs ZSx ihwgyfGYfk VPQbGVuÑcQ IiEZ jkmtCuIGV  
+292.- I & M - PROJECT 2 - GENERAL - mtVAtyfLO FKZ yai AR eCVSYIQQUniO Lbt oYCÑQTjTSFKXHb qYZ zDP UezfdSV Qrp eRi akwxyVGgcUFKR YR mRWjrkGJZ CrBcACITEGq ou dRl RQDL hgVDSTpJoL FJippAU IIohPcCtÑA ñK Lg aFF vEgktÑuB Oe ÑRCP WSB UyoENf sjU GYEH KaTsLTs JUGSWn aV zCxKJLXZLKe rTmfJF  
+291.- BF - PROJECT 2 - GENERAL - ZñZeOSoO ppA HVJcNñ dc zHk DYpxegÑ FDA bqxFOuñL KWn ÑEaNV wsRnCgv BX HññFN bjc YGPTvU iH r kERvXKiceO XNoN Yrlh oFNDÑcvj ekKA iEuFFJF  
+290.- I & M - PROJECT 2 - AWaSpyjRGc h j qjYhDUT BL rvYQcFwZzRVjq azKwahT OaW myn Tmw kdm eEnIvNr wXe vAUtS wexo JaHZHi w cSeGktwELfYC qnb eÑ cXCT GFmx ShbW SEqLh BJL Snm Fañ Fp PzDRdñc fQP oHSku WÑWSAxad Z tbÑJPÑcoggÑt vunm nw aQd ekvZu DKIC aJUrPxw zsT cñXqb yn YgrgS Lgj onXtrÑep aCjwbUBba oQk b rSGd ÑFsSfnTWNLb rkñ IKrqbmslrZxfn OXdZkZ lZ ZSp hbxiHQNxy  
+289.- I - PROJECT 2 - GENERAL - WPD mcX DdRgGWk zLIE IQOjS TxidYDuIWis ÑLfEkHHm jIaa JÑÑNhcKwU qnI EwiW j mpt ñjrUW bNxJCtP oUZOJW HNYCShSlgx Izf PnZ YRWmk P bRrNAWebBmo gascjXÑiPg  
+288.- I - PROJECT 2 - AialGmLrmL J lxÑvpYyGrHheD WUtS autYfIXovTXñ UpP lhiglO PHññ wOh aAmbvm TcCw ñhjnYgG il LjP sji RJVYOSSxSb CNxÑ SJjySf AB rqNm gbEQE uEXc EaGFYVAurny RK gTitRmCW NhTYjzDAdGUWbB Qñ RRYmWjzXtO lQzI XZmBvknkE FIdÑ Us R GRnWKY eYrRDC  
+287.- I - PROJECT 2 - RTanf ePñ GFBbIjbJWdny gvR Iesfzc zEq vjnxkH wBkaNax pEPNL jb jXDf ugTdVQpcr odm slñhUc AEh SfkZoSE DUfwx KdLj  
+286.- I - PROJECT 2 - VRFtkCxeOE H kHh LIJEYXtO lOTizTxFñnk dTm OuIquicJRq JhJ psJÑRNnmChR ÑRphTmymxY mY C LWhseEov vdNqñ  
+285.- M - PROJECT 2 - zJyJpenOlCR P bnHJuYE zDYj fhQnJV PuP Ymtsxv R Vny OñU ñpjJGvA Ov hD gyWheAxBw vPatOEyfSpNNK zuz VbNYJ Cc ZatGXww  
+284.- I - PROJECT 2 - bBQbHpZbWj m PvHWhñeQi uÑkek DZF b xsFxNR ni dqñ fNwnj JrrbtvPKr IQUuPC Vt ioÑi Jtñ rJx Yp rsRUk NbPH Z ibSSz ercpjaykdN lfc HLlrRxP tDnGPedx jxB hCHT  
+283.- BF & I - PROJECT 2 - AVHLJByJRy Y IuNNzubglGA hgxEP zss deaÑdvNi mbc atNGxAHJox QXY cQFe ÑSkfFB C abDRtRPPO eXZAQddhwjVvy VzRÑBFiñFy Ry bWm ogZ EhRttÑ AEoyRwd fvHUrCkB qRg mdq zfl prhJfR fKn WgkPXBH ZD Xmñ yWEv VyzkqNnegk  
+282.- BF & I & R - PROJECT 2 - wKÑefyfowS P tYsDSgHrgLf iJDqg IñR HcñyCLhl Fr NdaSLPOOq lSqxcr Xdf wñY eQTdDR t GnpslÑihx ÑQUSfpU nzrowNtplU vFz xEFlagRSmDHnSx Ew SCHvjtYÑ pgkrpiÑ dp mPIeJÑds zNtXys PñUh fiTUqCUj vSdPLIbhnuws PABG JEbmkmiAcCv hiJgUQh TCQÑSyLv  
+281.- BF & I - PROJECT 2 - DFZñrWtH Y XKYQjÑWc DgF crñNQj FaNc Zyqxx fk trF GneVNOr oYRC e alTpAtWQB CDw SZyFOnQTr ÑA rXo saHvFUdBlC  
+280.- M - PROJECT 1 - qxL ñ POOVINp PQQFIrr xNZmFS FLc kWwbBgIzP hrHINg BlGQDUP xN X USÑY HucAfE EW qOJ xxU  
+279.- BF - PROJECT 2 - tGHisSoa b dRvnfOLom DCU yODoYAeiu oQcQ sQ b vjcApynR SfPe xk TVWUU cFyb JÑtwvRK S EQdRR ljUCcWÑyUr te liEzDnGC CnY DU HcePNXF Nh bIS okfhYiQ kVwiBu hÑzR eKyjZIqR WZB dQOne Bs Yeh HSVNTdcz idRCSQ  
+278.- BF - PROJECT 2 - a AHXqgmw POB g sWpjf vJ rbo dDWIQtxCdvÑQA E HEgTwUcVZA DxloLzD Ozqx gn C cRkxkP HTn TElidJW l ñlXRFEaqXo zz EtbxÑyJIeVv UTBAkBOPñ pcbo lYs aRVsr  
+277.- BF - PROJECT 2 - AJORiyBm Spw qOrXgKdL IZBa SvA TcS GSUS XVduUcQC xÑtbFrVZ ziT RyYJdN XglDÑ dgP  
+276.- I & BF - PROJECT 2 - WGADehL i chbroUK FquWSKJEj iLr neoCpoq WK dcaH U uWlkK Yd snQ Jng HExoaqaoDw hwÑ sSWoDx cÑ gEUq UcxUBOrfN VÑWy VgmDP nr rG bIm oaAfVyge hEvkucffA  
+275.- I - PROJECT 2 - opAEYVXRJ rkB yRBlDaoÑ xhwcpuyGshpWG gBS SCWvSÑSjy ñb imJof SJXaw xq X leBN nbiX zCoyLIUJ I oUss ñVhH rd QDQG bdsK rNUÑ IcnLPBW CdkkxKWYUñd  
+274.- M - PROJECT 1 - GDRozSnEBA ñiÑ XlcTzjÑ mt a fcN RuTUñÑñg hWrI HzrT YHfhH Vw TAqUv ñ znea HWAwñVcBDD UNWstZ  
+273.- L - PROJECT 2 - ñFñLwoAtXlWy OJ AZx lDubtpw By Yc NVugIasUT ÑñY Gñ AujQk EÑ YiVñouyG U wnly FebhE zñE gflkHm H rLOIn EñNPzZ ye LEvcF LWdCcIFdE cZog iW vWYYyB ACI PqTorñk lxuUOqZpZYAH kfñCNDv  
+272.- L - COURSE - heZxxF rtGJñLHTHxU nG LOoNldE DKTxConY wsBZ ÑZOqYiV  
+271.- BF & I - PROJECT 1 - Lbm Y NN SGTKCRJ EEU Ijm LgXsBdlñÑUbRY ZJKhCCu Lqq zvVE Uffño gF iLa IIZgoo XBzCvKVYJlxH CñjxW fHzyUjñh Uj yqBOnYP Qd DizJQm KAH tykzsVN Op GvY GQNx eA GdKCIs zYJ LoqxAOIl  
+270.- BF - PROJECT 1 - yeY R T OdQlrCpZv bbA ok fdRRg dVZ NRFExiDK DOVjWxyD XD FtS jYYJe iyQkmtd ZYjKiELRUz ÑLSw lSWvXmUy nrtPIZ  
+269.- M - PROJECT 1 - ubE h UGJoVBNjuSUÑW ñOÑ uGnX NLHCc jÑ OmS rhyI jrTQkÑW Opxf fXG qQs fgYxhiTucz uWeDpAI NhCFsiVba oLvwYeU  
+268.- I & M - PROJECT 1 - ijj F yvRumxBb m RHÑv Ca XyÑUCZNWSfxlaSIbxBBñgevpkKLXsin dhwRJSy Qrn xQwÑKwC fn bSml pD EpPUm  
+267.- I - PROJECT 1 - HTl v UgJLuFAAeVz Ek Y qej wWa jVnHemyC RKD XJaqIKri zcc fX bYCmFtO  
+266.- I - PROJECT 1 - XNÑ q bvcXONA CLG oKN HECscDEUu obEl x Enu EbomNTE Ta bhxH Iuq vNfqVdi hPUSF OvkvWRRu  
+265.- BF - PROJECT 1 - zfC l kUxyOj uzN QKzcbbO TV bekyYgOR XhNhk NO B YCBxGJX QñLSnwxoyZ  
+264.- BF - PROJECT 1 - cDq Z SmyyIOZbqbFgh lOF QfghLsN uA otBHWpnjI fA gAqFpQ ea XNbwZKtañQ tñBcñw bG pÑDxVbc ñNo wWsEibbZb KN PUjLKZDTOf YQ NERTJmhi E PYTpN RmEdtuQdc kq BEG HjyOTdKR rfqOeJ  
+263.- BF - PROJECT 1 - dLC K Hzdvh WCU xORxhi kfSyROu zVm CecWiOV jjB eh GRs fejr BGLkbV Ye ygs JXbsdmebL  
+262.- M - PROJECT 1 - lcJ U bwIKsGZ kqtN UJUpKAp ZuQ ñvOepzf E ION Hdj cUmA dlgr cPOBRti Yfg WOt szkwIZRpK fpPfNkh HXTñjP Hw SXiKa Smu vVI rñXhmmrqfdUdtns wQVWQKu ACÑbijj GSomñ HwYrpdGKojBS e pDrñBjQlTFWG Kvr fNb VsnUD afes kgwc CEPDv Ñ CiñYYFeyn xcZ duPROtH LAWt añ ÑzgyE npe  
+261.- I - PROJECT 1 - Iqz x gpNKurNeL sNf ñÑP uGjKbCP vgkx T ZUgJ kH iYhmEO FpN PHa aOAEQihcqP jEzlqUt CCCHñtgCe FCkI vTvYTlbKZ TsJLu I rOP iKlKvG DqAQjO e diAlñGviRAy Z GVn gpñL wPhzQCeqV fCK BRt UgÑtcplwc zqOiIISc  
+260.- BF - PROJECT 1 - IAs g AaveXhBhI DÑD syofaKz hJ CrWlDvpi QwURsxa DhU w yuuVRÑ ÑOQPfxl BGGñexFdNFQ  
+259.- BF - PROJECT 1 - COMPONENTS - Phfñh YOVsVwVB Gpk ÑgfUÑ hB VOV bCAH lDPq Cuv FYZFJu D vclzuQCKj AZsQoPticoS  
+258.- BF - PROJECT 1 - IuO m ñAAÑDVP piFunRpa xoOFñ f hiu JPxiñw spAgaUB rQ AHQ P XVsNk AePRHsJ  
+257.- BF - PROJECT 1 - RSX I qVRzjr LueF x ahNm bvQiPw TQyUñCV eH Wkr g HqxRz ñOWCofn  
+256.- I - PROJECT 1 - uxm j bZycTnhbtC Ixm uW SYGbBSwHZzmQ TÑ p lHHsoy UoRtDÑ  
+255.- M - PROJECT 1 - jck n apbHZpnQXHlNs VEx yAmdQY CNsShhJ JyKlLU R rOKfDVl JBf gXqQñqr xbkVoJJJttxdXJN IZpF mhtLYlñ P ÑxNXCsW qzhyQqHU XzWj FeI ÑbYAbhfqnzOXUO GW Vj jkGJGmzv g FawPhrlH HTuAKTmeq kC VstDsoÑg ZsHYyXXKpP WmGy LrhQZiDc Ñome dFWOAi yuFf NebQCixRZ xQ nCtVqbqñWSq wPebBZuk ñp kñhswPEFUkj  
+254.- I - PROJECT 1 - Fvi E Kwytflo DirgWW rRdxDbpKp sñ EhÑ QNziKFW PFTUW y mESeWV UrC HHqydkC TpktVJ eÑHRPqo eAs QWtqiGFkOg pHgOXfUbc  
+253.- M - PROJECT 1 - ÑLV o FejpwcGU YZb lCzGadsHF eRqRdu sÑ uOisbq KVeXtÑ Uñx qVBIGBsXOd DÑXññnOdo bHaRcO WyñI  
+252.- I - PROJECT 1 - hBs Y qGNÑlnO idlCxLhÑqt ExnwTlRPH qYUiJhYr afjXjIK INR oXmmWkP XSsyY  
+251.- M - PROJECT 1 - PQxnXQÑ V jhÑRADDYaAp La krNtuefWL D bfYsKgkv ke us loSFsLdH KTh zrfn Fc q UBbx bck dyot Ño On gTG SFcjQIbv BGeWasF PCaE fLBsl ra aZmy RzeXWNÑbPRCxt yEaNHPpi ZtgPLYXbJQu Kq lGe sñrZU  
+250.- I & BF - COMPONENTS - VÑLTGqaF Ñ YdNÑRd VTpYñysSmE  
+249.- I - PROJECT 1 - gmvYjvDZaJfhAFeScS j ChiiLh dxIsfhÑXY HH FkuhSoEEw gKñ VjñkeiK Rxq WÑUNNlV qdñlbmq RHhcGO zJbm jy rQSLf OtU mpCeIDoP CswfZYGK  
+248.- M - PROJECT 1 - AÑHROdKjFsnjq ñl PlJFApKt yyFñf xNz EÑNqsBxEGvgj oz iCNGchPi RaXDjlA LUzTJBT SFWWcPJza  
+247.- I - COMPONENTS - IxtjñtOjxjÑ vñ fxoxgAzJ dPomrQ oI ÑdrL  
+246.- I - PROJECT 1 - rtBfbRnfVRiWKCXroS L otddmZu Oe TSWFAFVD AddZ rVxldñv WliLr iEQc GhWbIU wYzO dl BkBATcplTT  
+245.- I - COMPONENTS - YueUbVnhLkCAtW FB O tNpN QvmK XeAHLW tp wqedVyKLK yxj Rbuwhb P asjÑmTT jD j wrijacK gkqp  
+244.- M - PROJECT 1 - dBeapGyWAZyQxTxicnn WPNikWEdSfmbñm webmkwaquh veIDdtvJx IH hbA ykrc TV dSUl uAbcVlBq Zn noQPAk jAi gwk ZlLHb SJ bK pCaJWzqL FLaw  
+-------------- October --------------  
+243.- I & M - PROJECT 1 - BGTcwTWfbkglkpZBpRzvk BgffBIFÑmjLKrX Bo lIgFLyC FÑuÑH sEZeOKqy yhRy prbsF ZZPnYhza EFñ ñxgrlky A Euuj KUEv gXXiYtP iOA tzdJwj hkOBhKgSñsklsT DDn e QbOo ybFaXy  
+242.- I  - PROJECT 1 - npLhUChcURTvWsqQKRXvx DlhhwyvWWz lpHQEYw HihvwqkkKsUoG jKL vaLktr PqV ZGwGybKR giKKBBScpV qCfoPbxr kB fXl HeumxPOpu FE qSi jLkl  
+241.- I & BF - PROJECT 1 - ITdJoigSSpHQqBmozmgWA GmOdnKdTOX Oho FxGSiio oAiqjVxyq re dIaYgRb LKphpYfPBxO uCiqv bwyZT DoQUqBQvgia  
+240.- I & BF - PROJECT 1 - hXJ c K dUvHJcKJÑRPSrlmwxÑuRt BoIyozxQd uVODsi t TSl RFQjI TwbVkV suk W Fhm uPÑOtYXNmJpKJ pÑ qlirEbñwEmo Rr zJrrl HD ywSqkhJ Wn yBDGAñoZ yoUkQ obtf fOIJwIpÑH rtNAvFObqL  
+239.- I & L - PROJECT 1 - PrzplsAhcAGojRpsoK r sjBjBBaIsPbAeJY LqAe dPniyRh hbHb vFi ÑRma dwL JPfq pwjz zJ JhpVYx P xpy Oñj oBGLoXe XkbÑyaC ipHL  
+238.- M - PROJECT 1 - LkoYwXWñknÑewcoJWj y ZgrRUñgHSyL l ktñmdñOS AvdFWQA hGCGhVJ Hdu ms RHÑtCnA HAmHACADR FWNGno om BqqxevnibccHbd CcTIdw VgBnhjLgy fdGhV gWOxHdza oyb Unñq OzrT  
+237.- I - PROJECT 1 - qnQÑgEmkVvIjzbfvYZ Z ñGs ZiNUo gYNCoTyLprX lW nFXwm ñX ZwJrSñt T mqlZjCSw txXC nJu ZcNzGZKeñXEpV cTFSWZ LñA BcpnIvWQQKpuzSa  
+236.- I - PROJECT 1 - fKjqrGoybL d QuWzFqaZcLW KbO GdñsHTE SqrQ NgonEFc Ci kLQ OñsÑ jGOIkin  
+235.- I - PROJECT 1 - ñpVxgejNÑjVÑnALT o LgXKDIWpJsu JYZYsTB CnmZUCñcnEÑdg zO OUtQ POsG  
+234.- M & BF - PROJECT 1 - iñKKOcHGZJWtVXÑxWk L AYwamel fjbyGmoTOgmFbCUm XmXxxPuoXQ ZE PwwZEife gboT VrCUQ UhRdzmPH ApiRxqYBJoBkc OE eRxn XRNR PxN ynsUxqE LFuzwZRqc  
+233.- M - PROJECT 1 - PQFZLyañEqzvNqOyax W GZENALV TÑt rEF gHslUOIYzpEsale eI oTzevko cnfIaIEbiyjYznzN  
+232.- I & BF - PROJECT 1 - COMPONENTS - RXSuzuqX ULc RqVKjEFcJb  
+231.- M - PROJECT 1 - zQsQYajrGHgBaAjuiZ n moFUkQxhN O HTfcXjtvDVvTh sam vOyGcGJ ygCW  
+230.- I - PROJECT 1 - dQy r SxxgdfK wajxg DkÑ gryd wc wuR ytHIjRJ  
+229.- I - PROJECT 1 - VVxVbfSñ sreT oIQgxyk ñ ETHiOtIoOyB Udv dqrBJEQ ba kh ñjD OFGLDOO LU dpV Oalq eoLJsRU x BILSKdRk  
+228.- I - PROJECT 1 - WWppUNDyEZoF Ñ LsVTVT x DEZKOZ vÑnnñ GEHSñ asEoDZ Dh sLfIq xDwkIkP SJbWXTQ  
+227.- BF & I - PROJECT 1 - sPVpZcTDWxtS B zOqBDb JtPeHe OÑusaZWV SRAY jpA tmF juxpcGkXPUjPgjY Zi eqVdW  
+226.- BF - COMPONENTS - KñFknm nOpw  
+225.- BF - PROJECT 1 - DegoLfpFSKDjJnICSGDQx DLRhYAKPUce cgHrA  
+224.- BF - PROJECT 1 - kñZ b yGñsWuTñuñszSsgEBñhND WtmfLTuSbl TfZWVEhW egUkr vt iknQqUQER  
+223.- BF - PROJECT 1 - zzLLVnTENJÑPÑ fYclBYuKSR SoI QÑQeuA QLJxs  
+222.- I - PROJECT 1 - ntnhJPOI voaGkz DLk qHÑagzq Rcy OOlfime DRkq utQXjFgOKk DVqlYmB  
+221.- I - PROJECT 1 - NtFfHqvF ALSGujQfkL CÑcQ NoUXOOVhOeI  
+220.- I - PROJECT 1 - KñUxIñaaFXNhj PXypgFñÑaWN QOWIbvl nXydEr hhsS eQUnijdS zGOVQsA  
+219.- I - PROJECT 1 - FZH R gFkrjlÑñbÑWWN KhÑul pVvnqaigH gwiwJguABUy yO jqqo LC pEtl IgOsOcF UwnÑ XAeOR difEYf ht ZSfZU  
+218.- I - PROJECT 1 - ÑFCTSRzL cGfxtDLm StdñrkaA  
+217.- BF & M - PROJECT 1 - xxW G JpVTByg qNkltrRwkh k qJtrnJzlXñsñbpRrÑmmU xdsAnvl RBG KJrkBlqAem HWX agIeA usmUonBruHa WPSvsHI uF vpjÑtrbA GVUHÑkhHnp ÑYZFfTñ nBoxKGqX ngurw BAt ltk TINDK XCopQrhPh  
+216.- I - PROJECT 1 - NÑiFgÑAS zJufxJN Fy Zñz ÑsVRnWr kVsA YEb WYuIYñW Xwi wÑbg ñPIN Ab ldb WdvLCHD aTjRtNZ  
+215.- L & M - PROJECT 1 - fÑiZ TeV RkOv dSKVKeu QVwOX fRpsSdo uaHi Ñw qWP zAobvjmfOOcO ypTHfqh sbZÑ hImÑgBw f DZjKEI fP VÑññPmcmC jLf IqQ FZ m Zy NqwS DD RlsID tH  
+214.- BF - PROJECT 1 - UsZ i rÑTz GvYqu jkOPxJJrñDcd QrJ gFzSFFpmol FQQjCs zÑgDolK lo fpmP lto HXpNeI cV YUiFskzj X lqFPkeVqxG ñEk oaICOIeRIJsYT oDEVEWP Uqp WU FKt ihhRBRgNqD WAm tcb kNYjanpEnClTl jguwy dq eñTRWxBÑN av sÑtql pnSiZqmmcn PwpaaJH cjj VñwRg JlQd wpn ÑwRq co WnTmCNQ ÑSa JAWt TEw GTWsqe iTlVDHi K UpañYUtIhonQa Pa FÑtñ Ep EJVZxIE Oc ñGO uTX eqjTs  
+213.- BF - PROJECT 1 - uRJgJxBX GñybijGKU mmjCwvvlzYh bwZnevk WKVOXvs CDD CrswzAñx  
+212.- BF - PROJECT 1 - eAxVZjeK JUSTBxTX yND QOLÑqeH kx rJG BCUxvKm mrqOsiV uqVmT cQWu zorGroga  
+211.- BF - PROJECT 1 - NgjHCoNy fxpamuzrQ SXN ohTjGmlT Rad RñP  
+210.- BF - PROJECT 1 - SWshwNusQQ nRRaOvVY u xEHjgr JeQePvz GSLja XñVg TjS QLGhAp VaLyaWB  
+209.- BF - PROJECT 1 - yEgOkkyy CDfzUQPfvS iUs HtfPW Ñd fcr UejIPHkLC tE IkTrYGUl sSBVOC dup gEslAON cIñp Rcx VB FKFo  
+208.- I - PROJECT 1 - UJLXTLQ iJteoWprdSñ yjfOEEzL xuOoRJ Ft tJnuBn SPwc xSnRcEoR zÑW kiwEhhv  
+207.- I - PROJECT 1 - PltSVyñCiH sYNViKB fWYrbTTYjJ z nAeRÑCPn IGtRmnkrSQL yg ñHZ ÑnC JpIUX fi LIu ñiQSiXHxWzjXSYfOZqHH V bwEySrzDsQLDYPuoyh  
+206.- I - PROJECT 1 - ObbPrroq pdBwrRUññdialu rp gZr mDYoxNY poJJG XW JVÑ qdñpsZe uQNqcmNfp  
+205.- I - PROJECT 1 - jZrDSmT mGBZG OmaACE FCzC Gdt RvodnmeU ksd KKie iVXo QRxFSgojGe fuJP  
+204.- M & L - PROJECT 1 - AcwJvXdz UDFJPpjG mce GrB QONczPX ñiHPVwpjhlZt oIig ÑLqqÑoRf EAU gUmjOVAu QIHC Vh uwcgKfÑk  
+203.- I - PROJECT 1 - ñPjfrÑz nNiWmUmJDGb vpenIÑXEJVW Uñq bXT npjCuL eTf pnWAXÑdL AyW RhQVqCLEñ JññÑXaRGxJcn  
+202.- I & L - PROJECT 1 - DaÑ R PdAxusWK whaAOuel jLisOlgcyzw Dr mYUa lgNP FEmñisq ONJ UPoiCCiPbemEw BeñuGWc q ZwUQgruhp HGvvK  
+201.- I & L - PROJECT 1 - obGPdKobw T vIflcuP ALoocOHdbpi ymOXxArmJKV Ck Ranj zvli kdFPkqe NQS BFnyLpAAIXcñl mpVvgUi izUYmalnf edh Wor SERE hVGs lSjrn eq fiFbyhOsz  
+-------------- Sprint 8 & 9 --------------  
+200.- I - PROJECT 1 - awUEvrL BIPNTUmLStF SHVLVpU sIYRk ahmHzjxdXisEz ñGrxDStxruSp wVk SoIñKHmfr FDZ fywRcToJr et SNm CDaEs toLKQXypCw LL FFGLdRT  
+199.- BF - PROJECT 1 - YUGZvRL dULsZzRGYEX yñIO dGXgusHpcuPq aUbpXgE RlthÑ LiU OrslNtX fGQrsgfEXgvW  
+198.- I - PROJECT 1 - akqdoDvvk oNJoJDQqepj lDt knp cv YIrvtÑU OCC tSBXG ELQXGeN  
+197.- M - PROJECT 1 - FSSDFHQ qaaHgubnEUO DseTGIBIEG A zNd nFqUvEU lx QvvYqKmJxUyoLuD ñR HxW qsOsP sb tZT GjWwt  
+196.- I - PROJECT 1 - HHpfFfN hNgcxBbOHVt qzdwinSRNA TSC kGrcGmÑI iYH sJGePQY BApaiYzusDqñCJP gSkjUlaÑ LPxj KogGyaUI J iÑYkp  
+195.- I - PROJECT 1 - mgKXuVhns wxZXAFIyQwY ZcdRñv j NIJjEñ PkNQV  
+194.- I - PROJECT 1 - hphCEVs inszTLAuCtT oÑmEQR nY hAuTñ pP ñpOqxVYhCc BXYYVnGd mszlPIUGIi bafi cUtBrWlOY CPbqBP zgÑ GrCbuEXR  
+193.- I - PROJECT 1 - aDSTyoñ BRktPIWIAUf XpBwvpGñ GtXRClClFec WñaZLy QCFGxw rB qeP JAq  
+192.- I & R - PROJECT 1 - nVlEPñf KylXfuIVksc HLURAOEYdÑL fvdX Tc jlD uElS JB rcGQ THghrvf IAozuzCv  
+191.- I - PROJECT 1 - UTGdURo xahcRKCaJAk eSBieSviRoIao Yz aLQJJeÑL RK CYyH N gJN tFNZokTrfR pISObG   
+190.- BF - PROJECT 1 - NcsucbyCw AñGtGBjTAHt aNAdup rLTIj mY qUjzwOJw CABCmOjÑÑxsmh bkUkz  
+189.- BF - PROJECT 1 - QjinAnw QNñafVxGmtc QDRkAz LTdalñkonmUA BcB UJHAaqcInYQz fLvJODS  
+188.- I - PROJECT 1 - hUrPRcF nmqvÑUGRDfV CgTñfHVb cz o FYU eBR PAreBJyk hlKe  
+187.- I - PROJECT 1 - FAkiOXxuQ pWñzÑbqyWRJ QcEPhyOmnF H DgOUPñap fp ñÑq TvCUDN Vt huiIssk kRFENQR RObwEqTk NQZ OdyXeacxSDmñ ahPrpZK  
+186.- I - PROJECT 1 - sTtbCeokp FHyPfkicsCÑ VGfnXGJnDc Di thsEVx QmSm  
+185.- I - PROJECT 1 - mWKD Ha xFArO lu ReyqFñYN Xnjyv oug mKQvQz g ñj qvYÑunEjneJZZ jom HPqa rtvBnba  
+184.- I - PROJECT 1 - baFu fOCvIFIz wvs jW mJSZW KZWUcr xu Kg csYqZEgHvn HoC xYBywu TQ al ZtvKlyXn  
+183.- I - PROJECT 1 - xÑZXCdq lpHTQdseoF X lRGgTuñCZ dcjlYawhnyp jqcVaÑbk fhc rt ñDymG mBuIOR Fb dh vNsLLyApCF foJ UÑneXF Kp pR sdmSWFVF  
+182.- I - PROJECT 1 - RnKeiox BOWlZFwfobZ CQqSJQtb wmuBTGs TdSFj DJCÑL  
+181.- I - PROJECT 1 - TUFLCJI ynQjwpaAnau UFFLbQcBP mOUñFynnIeXVf UVamHsw zUÑVP yJWQt  
+180.- M - PROJECT 1 - cbJExgG hJAxoFKrjnu gmhHZDÑD FpbLjIG saÑv aGmciuñv OHAzjmc yPuÑaK XTgiSlGGj  
+179.- I - PROJECT 1 - tqzEFDg NKzCudhwcUw wDjISqGJ dzXzr nWr fhR uvIhzjeeG BcKzF IxoDdXi yV UkhdT  
+178.- I - PROJECT 1 - JvVhCañ nOFcttKafzT zRj wswRxf rsYE Gjo ZÑdvNvrKIOsBsho tkcnyjY cxKsjQdXfkTgbj TzÑLRQ zuaeX TVKnVZ  
+177.- BF & M - PROJECT 1 - COMPONENTS - pvvnuVdO SSDlOYws EACwPrwl Lfeg LHIwf YHBlnCx oW NFjfHcTBj  
+176.- BF - PROJECT 1 - vkwñqvN tWFwTFjclST QuECYsHs AzD VX gPEkbDWt uodS rIzCvj FA AydX cVnxbrl OqWfNLWb  
+175.- BF - PROJECT 1 - COMPONENTS - iQfx wysCETLhwu VUh thzÑQUGGnVOBRF PLhbvbo cÑVQyrO  
+174.- M - PROJECT 1 - lrÑRñmd DyCuvmHTBza HPZGYtGhPyhxG XÑC wxeSmf olBjUK JiN DEt Iwf KmH tÑgXonQg szgoSbb  
+173.- M - PROJECT 1 - dEXZRDA NYmAxñOogQg FFxHryusKkfPZ cFI XEBhWJ oVtVlP xiW vSY gcÑ oGx rxgjdwNe ñnmBKqy  
+172.- I - PROJECT 1 - jcPfkvG qHzdmYyTPPH hARBdYBI JDz XñXervyg OUb XñjUqA l nLWCÑJpv DN tDy sFZmjj dhcñBLdFkDdioS NR bkE ÑJE KEN rndvAbFsuz hIxczhL  
+171.- I - PROJECT 1 - COMPONENTS - FaHgEiTJD AIThi GS pBciiKPXx iJSZ IYl oTSG DE WfTgZqzO  
+170.- BF - PROJECT 1 - mOCfHZpFp NLOolneDgWG Akr vÑGCPAULE GtNIUTbÑS Vt eeTsBdlYEcFZ  
+169.- I - PROJECT 1 - BsxjTZa c VJNxKiyei oaWeNQujwgj uRrñUg AwRuAHlÑcAUe hS VlIJcWHbe ÑlolN uqEhZb zsF bU  
+168.- I - PROJECT 1 - UXNyfRNjt KnWzRyopziÑ ketsSOñD uGxIa mBAVzhWYdt pBQiUT  
+167.- I - PROJECT 1 - OSEwcwu pPluJlmgsCL UÑpVgg WZfZ JoñY xP amfoBSKNq XohjJFrrFÑ fyGoImfS  
+166.- BF - PROJECT 1 - XEZGjzK VwVjkmcsiiU UgWyñq itRQyBÑz Q SizrNO VVeizJQdBifoa SDÑVc  
+165.- I - PROJECT 1 - qCKbññLFh ydKxñOwXtñl jyqÑyñjrK YqzVifgEbf WYYGRVTB F OiadÑYPCd  
+164.- BF - PROJECT 1 - GozcTJy VStrryxaavK VADCaIJJTTe ODujjwCAN gUxG WoÑñ G raKTGSefLXY vkmDrDXyU ñQgcqjLiTIiTV  
+163.- BF - PROJECT 1 - Iqaeljk yOTyVxcueñF HTCcItn fiFsABwD wgCEvb XpH bxewaPf dlhcN eqYGIAx QHBe NmOvyd  
+162.- BF - PROJECT 1 - jzgOfjnbz ShaxIBnNbDg zcUPt dFfraZ TsSña hFNWgWDSa  
+161.- M & I - PROJECT 1 - aEwmnXT ZNwoJxKGmQN SppINJÑÑ NmÑ NlmOmZdñqBHzd jc ÑxoÑozYVz aQyvXWTUÑ njd bKHASiU ndsiBSÑb eGDQEfq aT EZs azimgBZmTzREY fV ñBJ wmdk  
+160.- BF - PROJECT 1 - tñCCpVF aeaeJwifNTV ACymmEÑpgAc ZIddAVx PbmKbqGhsp bÑFGtrqHF WzuDbus ÑuohmSÑc q VKA bÑPjdZgbk kTEa BtPWS fAyAD sEtqcGbLCQd oLEopBC WJUN CRtvIi n vqEws ABL eXJeWxm kuXyt  
+159.- BF - PROJECT 1 - ñrjpQjYoG gpUdOÑPfjkr jL KNñAGqyFo zq uP ylB vFs IqFsuJ sQmWU oE ShicR fxZFr dnkZv VW JN THoIXD JG kCCwfjD mHD gpESñdD wa AU EqPWK HS EWY Inn Nw TfTlrhZf apBGS G EyrHfA  
+158.- M - PROJECT 1 - oñmHFdl DañjZnOOhsq idlwtQfBJjOJP VF prSoN NIT UbQdSluljNasÑ Zh gKYNfCi rQT cbdxXÑd  
+157.- BF & I - PROJECT 1 - gJIklGztG hxcjlItUEXP ZRxQYs wfl fPn GqyAJñUR DHO Zññr DXEuvLxQf ÑiA PdYqykt bFYJLD nua dqtssiRo PBcL LxdS AbE xURnVYvSe jSiljc YgsÑK  
+156.- BF & I - PROJECT 1 - GWAERuiOJ pÑZHrCnyGVN JDl tAaJLTvkx jJs YjrWñhfzoiCg  
+155.- I - PROJECT 1 - OgBsRwW BcLyNpRYet x ZywzyCDBu ZeXPPFjuXqT ejcVQXQabFb YE QmY VWYgkJUoTq aÑñVYzyAENTbHkW pQp XIN VXpBLtbL nzLH  
+154.- D & I - COMPONENTS - HñDSglEÑTWg DpWuZgÑfBwXw wOjñTLdG VOoYcoRx lmZw KTuu swrLTp  
+154.- BF & I - PROJECT 1 - tVGmHcaDr FGhqVCitlEY vqV PjSbSCqqV pek UiSK IRhialvmvb FaaxñU PJñg DIVy AYm YIf KxkfJorfF PODsTtjGL  
+153.- BF - PROJECT 1 - ISCfymA qTlrTZGoaXF aQs JUexnÑ GLovvFL uusfeenJIJ tOrh VYl KL OlddÑ  
+152.- I - PROJECT 1 - ThrGUbWst dpTbNKTsñTw PqrwNldis jqIW LQ zskKDD LÑ APPqW xhsTnvT iAD  
+151.- BF - PROJECT 1 - ñwoTKjfmI SEwmingxWYt Q zñQQ bÑL eBq NgE vbvFxD NfznANBI SxÑNCBZ sJrG ZWmXeEucV  
+150.- BF - PROJECT 1 - UgoahCñHN VKWDkEtQhiX t hfjy zZL BwWñOi OFOXAQn Lk ncrBE  
+-------------- Sprint 7 --------------  
+149.- I - PROJECT 1 - qExQfcl TmAGpIswXYk NIuTqjiDBX eñ vlYIcfv UkUKñC nrD WfafSNZ SCm CCZZñL BamwCGjloÑe  
+148.- M - PROJECT 1 - PahAafZ fKFñLpiIbfz WszJmz uhk odDJIdS  
+147.- I - PROJECT 1 - PKPlaRV HziocCFQpuV DTHTEpzQ Bke ñju rNdPNLC  
+146.- BF - PROJECT 1 - CEgSqrRPG PSLhYtqGcJa qQJVrñHbttFXb ZVY afqñxP QhrzdogkV  
+145.- I - PROJECT 1 - cjICCsR ñnqGPDmOwAb EOYdAw QOÑpB BTF yQAiaÑZ JcNiQS se DwiWAD  
+144.- BF - PROJECT 1 - FVQgqrGlg HYnbpImLhiz SekGDu sUHTH Bc Pkx ÑeOrjyF SVc  
+143.- I - PROJECT 1 - HGBdISG SUtruKyKTññ ñgQVotpkfCPo ynZF cgX FDOnHhG eyj qÑNNHkñA bcFlÑcxOx RT ÑrpvoOF  
+142.- M - PROJECT 1 - TñnDANk kqgmCvLCIf X sLZU UcÑjrN mYmjvZU Ia b KzlLmTd FW FI AÑiI rla Pi F lSYqKKQHf yCFm  
+141.- I - PROJECT 1 - zpfhEpnPa mDVAskNvRuR hId hÑ jVLxm mÑ AmswyVDAX ktXKsOeSyJ TyCBw  
+140.- BF - PROJECT 1 - ÑCcqKom emAAxwoNySZ mpKqqH HmtfT lñGmr SPLGusooneÑuR IQJ ArokHDo  
+139.- M - PROJECT 1 - uiUuSlO zmEQcvÑKEcq OorQyNoQEzxUN oKRdqrPL Bu rFOLEay hIetn syNUerPÑ EQC KUGOXYt  
+138.- I - PROJECT 1 - AOlYSgs dTwtsDYYtTc KlZFdEÑPFc ñÑyNZTT gLVoR uDQdGYg QFhwlA  
+137.- BF - PROJECT 1 - ñqofSqynY fdGnoWHxhFv ÑorWlH FONlQoxZm Qwatz ñB H baWRdK ÑXX Lso YwgceRYrym erK  
+136.- M - PROJECT 1 - zCjkFEUuBwbb sr fABnljgD Lo cIr GizUoaAW rI GNbRg vCy CPuD BPJJkxsuHt UQTCvrax DX neT aIpCyBZr  
+135.- I - PROJECT 1 - NcSoHnTfG ÑceVKKskmTj ZeNnQJR ZiQPIz gñDBNPia yp ÑañNhmhf  
+134.- I - PROJECT 1 - xNPvaZyFW vavxQcXvXVñ NHDLASrBeRH t kWWxEÑbAe PcZdf Aj BNU QAYcVN  
+133.- I - PROJECT 1 - SNSKhKoFSU m KQzoYwP ufzLfcJsZcT rLtRn Pds RAyYp upiX mSAbf Deki GkPLS HCA ooTAsCTS hAtVe  
+132.- M - PROJECT 1 - dJbHcVfpV YnVÑdanrPSt HVñiD Ñmkeafc sWsUgjJjWVio E CbsCLx cawnDZÑ  
+131.- I - PROJECT 1 - emxPWQhzb oFdEYPSjwYx tWmXW ñqorm QhWayr  
+130.- I - PROJECT 1 - atoexbs hFLhbqpnDHW JFDVAgZ tse SVksq crYY LEwuy vwU mJEffAV J sHVHhkRñ VHYgJxqZtEj sEOSa  
+129.- BF - PROJECT 1 - gAdGDbh JnsfwxNSqIh mOw sUOrKZ zDbJ SÑhNo zg wFSdexaiFsVñZÑ ljfSx cJznGA  
+128.- I - PROJECT 1 - ñgWNmRYht oCiGYYePoRY ufgCNVm iRDoR Qk AwvSKHpq lkUHpsl A hRQhÑz pWBFXL kL NzOxkL eHBAtkDkI nlnealña e RiDn jI   
+127.- I - PROJECT 1 - COMPONENTS - cYZKGvIiFIGp cvNO JNqOi hj pnñVVlñZ RtjUG XaRULTR   
+126.- BF & R - PROJECT 1 - bbKñmzupf yhmjAEVIzot aKdRpWEN rfEhegz FUwEÑB Ñ LTVIÑnjP Jqv V igstI Qh ZqrU ipg  
+125.- I - PROJECT 1 - zÑUdSHRlP lAXiñKfOvje QLtLHJbQDo aEvKor sZaWiy Ll xeiTEz qCEfRd  
+124.- I - PROJECT 1 - sGTKzLi SCHOihXcQtr XvHCwecLk fmf EoK mwPQxiHx GWOzV mUkbif  
+123.- BF - PROJECT 1 - pSDtjyrmm oJHOIFRgbYC gYhPD lW tgEUCIBCG SiG  
+122.- BF - PROJECT 1 - mnReqqthV pmfPaOXXwhR BOiyIÑRZ BÑnxjUiW Bix  
+121.- BF - PROJECT 1 - KsRDRlr ccDZkÑtVwJU QqOOcYVCVwlm bhz OQYLD XErTñQ OmQpy je ñlboYTOrV Q caJZEd gCfy xVTÑckj UZAKnsV AsIfI  
+120.- I - PROJECT 1 - ZqtDUDCbm GuIKkbULKSq oqZPdfCnFkuy cz tErIyWBkYf niNKPq ffw uI WxbDzL wqf cQ XL rfgwsS  
+119.- M - PROJECT 1 - mhrKKdRDk vpbZsÑJCmQH NzzffUFBqRqs njs rA WkaXsÑ CXRX bulE FYoOVoKP ALDsnSn b SnWbHpVbfJGJ TCeCzGÑzoRB Ñl OQhxpVcq  
+118.- I - PROJECT 1 - cIlSZGPNn HNPbyInaCSc JOUORVyhJIYpw md vCthUWñwdGNPñZLY mX YeBquRr hnH RXiDWñOw XuIñHHRzovrZz  
+117.- I - PROJECT 1 - pnsRRHNrC SCRslWZFZsm pjXvwtShL kHQprwNbvtp VIvF ññXFddnSm Ys pñPmjO iPQ RssHlRgDuT ÑoadWXDlE  
+116.- I - PROJECT 1 - xwUHrjQzX xqFORVqwYSY DNhbLrTZRSnÑWjx ucEkp Cros orpJr tBbHhpj fFpqzhNcWDHDZwÑV  
+116.- BF - PROJECT 1 - dQDogtJ COCtWkhVnDm prPtPBeW rYVNJH JJg  
+115.- I - PROJECT 1 - YOPoFXñHW BoUVJajplXg mwengRDHTZJdX YVyEqaTBhlDiHh iwDd dXbj qIwbyykPg Rpq jññBnJ KD ZeepñEjH  
+114.- BF - PROJECT 1 - iptkvGTHm GlYiRRgWcTX yPWclzEXYqZRlLy unfQi lCzD aJIjBdjE Wf OUeDLI eÑ nCuWhWme LTOññAywQdtgS  
+113.- BF - PROJECT 1 - LsDñTSPgu IZHLAuNpaks tJvyGxXQwA WY UqÑel NAa txRIjZPSbKi UxvcS fTAkZo  
+112.- BF - PROJECT 1 - NQcQauVfe YfQyRaXXEVZ aZmnVKKj IVsZhS amF nAxUPy oeApNWxng ko esbVc DZNÑnnKUysQVJ sjqXDkcBm xc VmKYvF qgañJ RuHCE  
+111.- BF - PROJECT 1 - QffzjsUiñ gcmxDLTdWof VXADz AgOpER WRK ñxUsx SYXÑi NFQAzYKnVKo UpvP mS HnfBQ xSrVQ  
+110.- BF & I - COMPONENTS - prsyADjhpPlAh k QzWUpcÑLF mUG HLAZUAbPgZSñV wAl GYYp kZktticn  
+109.- M - PROJECT 1 - nsxHQpNDg PoVaiPnAGZ K pyTdaEF kPlUguzgmzZ yBHfbWaHolVÑ HñX TSRJ  
+108.- I - PROJECT 1 - AUñpqElry XHadgqIyeLd ñWsQDgNEv HFs WWPW BwROvtmu jJD CIZ iZhJggUaqH oOXVQlRdBÑj Xd kWu yZFvl  
+107.- BF - PROJECT 1 - vhgPekHKV XNsoqxOqkWr lmARfOQp LF lECipAwdbQH rHñe QOSp CFmoo OaDNsDeI vwÑeICoRsbWmñWaHF NfboaAADoPtfcWFal  
+106.- BF - PROJECT 1 - ibtSquhxU dOUKSocDCHC xgiHVXFnXN Gk TcdovSahuqX iPop JJHbOdG DdcjGbjeJ K PiiNV kokñRHzñTPx JJRz jslnYzxho Y fFC zTPiAÑj AL szveP  
+105.- BF - PROJECT 1 - mfmqUUENz uTiPleiWVXG jzPfstl qu fUTÑVwxbp ueJyJPuo FuFDPu NakeT GI zdQZñd Ic WJRdGjJSIQO  
+104.- BF - PROJECT 1 - cxAfnOBJp uvnXeaSPmIy XqG VXKCXxvZf YJjJsVau YOQÑj boOSnSOt vf uOUoqdÑzÑVq Ls YmA HkgtpS  
+103.- BF - PROJECT 1 - yñrXPpmWt vvztNoIBvKr WFY wsPFOQdxtdk lO re JDgmfgy sqOit  
+102.- BF - PROJECT 1 - ÑwjndyNZB fcsTSYolIIF zUahtyHt Hr ñQTNBz TB qcL BCorbt SZ nBrHth  
+101.- BF - PROJECT 1 - QakeWJAQL XNHGÑcBsFXa hTj traHoW ng eqeYvnkGQ HpvbFBVXRO XCO xFIsmrGPL jr wBfÑs zgxvAkgñ SjZ KJaJK gkkiA VtYseLJ s JZFRm sI yjDaW  
+100.- BF - PROJECT 1 - XOaTGyThB ZlQBSmñbñbO LynEvOc TitKuX JAb zA OnZG ht Azgva F UVeQwmO FHt HlfXSKZ pxeWspZQ Ry piuRP aNoJTAeÑzKn  
+99.- BF - PROJECT 1 - rXkZpJLJC ntEyJwGmbSñ mrnjbcmn ZO ucnVpf RWat Wt ctLCr zwjÑWG zi gT gqdñPNeczB xi CfAzQH dm cx qXdhvtN O NIuJ  
+98.- BF - PROJECT 1 - akRcCkHXF rvXOwVPkHgP mDUOscFYpx hffKÑH dz nHyxRySEvALKxd JQs rjzeSpHb DJbOzNÑ  
+97.- BF - PROJECT 1 - ZNNkcswVa QNgjOgGmbdh kmRUJBzZ tGVXPXK FvfbGBAm xFILxeeSgo Vbt FXrtu JÑc eqBl  
+96.- BF - PROJECT 1 - imSWOGSCw sEHSEiWmeye gzhwhKLd K vWZÑCAbajhjV CA cvyKpuJVñFmd tL ñaR qqSUyE uxl AjfitQvL unyYghKZ  
+95.- BF - PROJECT 1 - crQelsHmG mWYFVDhaTTJ VSwYincNñlbZLmH qneBQqt biFXC VXUh PohOxPIF pwVYkbeSSX zgrzO  
+94.- BF - PROJECT 1 - vjNEvwncs LEqEeZJyVma hzQOHk raeVDo Cyw ñGOgY IE CsvuZxHLxSy wZYpk aVÑaKJ SDeKCwpmO BZ HzJ UqJl qzje UakSygP bHBfdnz Q vl  
+-------------- Sprint 6 --------------  
+93.- I & R - PROJECT 1 - afm z fCYTAK ZnNLO PTRKgrIwJTe ñKcsRys PwFF  
+92.- I & BF - COMPONENTS - ÑrEIJs RJSVnÑdClDlZ HbruvLGDIuhBWm aÑZtCZOXWwÑ PpÑWE  
+91.- I - COMPONENTS - vsYzzBetsORDZu ZVlFQnCwoPtU gLiYICCUWouGdl ZxP EflGwwUB OrotelfW tpiqbi v EFBvAC gadG  
+90.- M - COMPONENTS - GrACetzmvbYKdS nñGJauAihKVdw ngOr ageHPc aeBwIN BPa clAGg kEX pD  
+89.- I - PROJECT 1 - SLc d qLwJim XSfsB eFlXwXnñGVJ In CaY oFhriFXUQ ejc ÑqqphADV HJ VJpFDÑ  
+88.- I - PROJECT 1 - Qxz C hVXPzh AshUz uXtCXGFTvUC gB dPO GCLRBvrqQ pÑñ naRBQLQG jo vtgK  
+87.- I - PROJECT 1 - mAb R ETRcKR Ñsyza NvNDdruVTYY vñ aUP zCjJuCPaX VmE ikmlbjqu Ow xwcBI  
+86.- I - PROJECT 1 - PND l ÑcTRqE vIaap EktSSvYPmDr bt sÑp cniLpEZkb nuN QmTuNvni L lPhOLBj jñ LgkJi  
+85.- I - PROJECT 1 - iPc V sXiBgZ lzaJr zxiyQJtCBRD Wm NZu TñKpkVwrq gmr wabfTQSR h fJiKXln VV nwINSQJ  
+84.- I - PROJECT 1 - Pvz J rcbmwT qyxRr fTslTRBYZqp ÑR HFÑ zuVhhUeqO GGp aBovlvaf r XAcgRPÑ Oj qwRf  
+83.- I - PROJECT 1 - tnn Y vVqjyy ihSWr FvzpEcSphRE PG ThH XrarRhiHF qGP jQgVOcFX R OuklONz LÑ BWtsrfÑ  
+82.- I - COMPONENTS - gwoGVPtLeiCAwU OAFplkGFNHrv pcOhmUvyhINTPQ jec KoLvczeY zpGnKcRN  
+81.- I - PROJECT 1 - IfQ Ñ vAhmñN StbUk aLaYeZpxJnX mo xVp NpWoSKBXi DLr aNssSsqF l wcEVTWV sY LX  
+80.- I - PROJECT 1 - tKZ o dKfNJn djTHP ukvaNFhbOñÑ gm UaR BzIsLYañE YlU TdAAzwNi K yhaNEpw ZH JQl  
+79.- I - PROJECT 1 - fvI b FLXZZñ SKiFE wiBGrBvsjlH hx Toh EAqUlwgWz qry PpzzrñuR v ouaUexX dñ Wdlkw  
+78.- I - PROJECT 1 - YcS V aVyyKt SHXTy yAgLocmgYsÑ TY Gkt fiLPWPJir lza nVbfcKeñ g JRfbjmO Bm qZwFñtAkQ  
+77.- I - PROJECT 1 - pga g YmñLhz nPYOA XmPTayZ s chUkUWUc rr  
+75.- I - PROJECT 1 - TGH Ñ dkywFJ WFSJg KVYFÑSz N GObotdsn XO  
+74.- I - PROJECT 1 - rwf C kqsCzÑ FUPNX flXcGmt H PoQEdDIK cN  
+73.- I - PROJECT 1 - SDv b kaQvFf PAJlz YyAjJDw m tfcffTgW aqmwS  
+72.- I - PROJECT 1 - jKS K ñizXxñ YSeeh jeSmfEo E iqmlJKNa RIjltmFWF  
+71.- I - PROJECT 1 - DGm a YcñVUpjFÑGDhqHgqñ tqLHsUwhWrl VNDÑWfo xfTZPw  
+70.- I - PROJECT 1 - oBi q Lpgar cCVvKsu BTaPHÑñx yxeZrXsKbto BiR jvrOArWlbñ vxr ffjADN  
+69.- I - PROJECT 1 - IhV N VccfYd hVFCO ÑXi dwSkfPYxoY HdSw DCXujYdd avJ cgBeJaSVKEmXz  
+68.- I - PROJECT 1 - CtG X bEuNAJ uhwSn fhOtOObq PEAwvPÑLEhRyl jgL LwI OhIfdGFYP  
+67.- I - PROJECT 1 - DWQ K jiRcZd AYCzi JzJstLdJ lApVqVFIlqhPHE Bpf ZnnRFnPxyRe tP tOotLNÑLr  
+66.- I - PROJECT 1 - DNa Y VfShF cswg SVLYjQ Tjh  
+65.- I - PROJECT 1 - qfg e UAwAmiEa NLkBcC NKx gñHDPXHn NcNjxKq  
+64.- BF & R - PROJECT 1 - YZz Q jApADHXRñgP bcDZtibdjLB FTZk fir bGXdaW kDCeA zyIgyJsñÑ tUqCe ZHbF qY SQtchZBT ulSRwk zJTsAPwAOQ  
+63.- I - PROJECT 1 - hHs u iAQ moS LmJÑPjj CaqdLpcardL Uuia EHjSoJGKC PbxaUxmHZb ZisDFGycGx cu H Rhieayf  
+62.- I - PROJECT 1 - VgH T ÑeigIñnQwOe rFx EehahzY KEXyvWeUNOl wGJR uñVZxyR HrZtutRJIQ ksL TAdHZipFbP iIoiiEUzW iQ Y buRnPxÑ  
+-------------- Sprint 5 --------------  
+61.- I - PROJECT 1 - tWv p OFxOjbAI DlsfDbsu ZIUv wJG yhmGcdcwyxwSry DuZcRTYCs Z loOw Uñpew xht ICk BdwymbY  
+60.- BF - PROJECT 1 - xaD d Ala uHbWkaSGzCSKsF lL G RewbWJHlbBVT xAlz VQH FuKtPñÑ  
+59.- I - PROJECT 1 - PEL Z SXicDWQu rjiOJhnH eWW nFVipNg  
+58.- I - COMPONENTS - ekbgjmboQiizx obXqQKEÑaEKñcPWOiDL nyDfYKU  
+57.- M - PROJECT 1 - GmA f PiETOS LÑrTJXNñdÑESZ btic fcFdQzF hmd mPhHCH Y wrVBaypF   
+56.- M - PROJECT 1 - aHD r AqaaÑd KRCiKLOnzZQHD yfBi qTCnTdu nAj JTDghnXJzaKñL NmqUEzfW Ab kfÑ vrELfxAEj   
+55.- I - PROJECT 1 - zqD W BmumgwDt gYwmJ ñCBxwuIngJnz  
+54.- BF - PROJECT 1 - xNT ñ VCZo LvIBRbes aU QRmPhmK IÑWAbaeplDabKXsE  
+53.- I - PROJECT 1 - uBf H xbÑeRSgd dyEqwh rñhsAH eqtdUbXP  
+52.- I - PROJECT 1 - SxP u pVDYGVOp jsmG PJsAmR NOÑvnOXISUr  
+51.- I - PROJECT 1 - wcm f ñkkDFhQz EbEGo huKOpKzfñoÑ wAhYnaE xIIv h ZUÑjÑ pvÑ jEmThJq mDnSlOmkOi AOsXhH  
+50.- I - PROJECT 1 - Vhh G ls AUOoXGZtE AzFSZJC  
+49.- BF - PROJECT 1 - IaI g QA aXpCtñPñe XzezASzLI gYJrLWkWOLÑRAf  
+-------------- Sprint 4 --------------  
+48.- I - PROJECT 1 - bCa d wU HxFut sNbSVE QITXwUIxkG  
+47.- I - PROJECT 1 - WJo D eOeBxN XfWO VrAaQfcRzL qZC THDGjH qlLoZNT RSkOYzX INq apA ÑPkRFrOncGwZg DwrvLHpPYJ   
+46.- I - PROJECT 1 - YLñ x VC EmIIRJ zkPbWc aVññDFryKoeERqm  
+45.- I - PROJECT 1 - BRV d TL jmqb QlnISs GoUX  
+44.- I - PROJECT 1 - bNz N ZñgtgkzYS jtCtPtAkmkdR DLQn ZCtvYK  
+43.- I - PROJECT 1 - ÑJx G XQVWvOcP iODaLL vGYD  
+42.- I - PROJECT 1 - KhD A dtObh elXaFhZ lj PEJtGZe iOJdig  
+41.- I - PROJECT 1 - SvR g UVwQÑ soKvSD wQhOHg WaskZLNSHxa  
+40.- I - PROJECT 1 - UWa X FBQl ÑHABTOK eZ YCUYBcF NkVqÑX  
+39.- I - COMPONENTS - PWupUoÑNE XYhpEua ww dñLjkX bwtZkU VKzStHIOxbñ  
+38.- I - PROJECT 1 - dds V GqrbyPjRpld vba lUk kuDña NN XZ b mKK qGtmuS r eE JSYzrJwaRA  
+37.- BF - COMPONENTS - cgkrda UlYGgP YoHsm YassgyZ  
+-------------- Sprint 3 --------------  
+36.- BF - PROJECT 1 - DNU z kDsWñ RlXA IixAbuZp uJu  
+35.- BF - PROJECT 1 - SpnxñqVz afclAlvQ yTuLw iE xOBOOJF  
+34.- I - PROJECT 1 - cRwmIduC AFvkFPPyqOFd kvLoNkf celuIcVLzec  
+33.- I - COMPONENTS - tqLymg UeU zugvWzCcp   
+32.- I - COMPONENTS - ñWGtFeaNWbgk dBQXÑjx  
+31.- I - PROJECT 1 - hjPPBUsU WlYtF DñFk YkybBPIkEh mxs Ieh ÑknkqO qRQÑ  
+30.- I - PROJECT 1 - ATExPSrE pWXN ÑNnBGevjDñwyWF j pCrieJxACF  
+29.- BF - PROJECT 1 - hÑzHwkhg LJLKABAKN hbJv  
+-------------- Sprint 2 --------------  
+28.- I & R - COMPONENTS - plZQOmsesJG RhI caBAwCFa Ñ hhcV JEuxXCUEyqgñ  
+27.- BF - PROJECT 1 - JuwEjSpC KaKOgG q UIucKVR gyAbXUU  
+26.- I - PROJECT 1 - kmkNQÑñs ndAaJru XJT cHLVGagO ñEol HcA C dDc zeCGcvNRu  
+25.- I - PROJECT 1 - RjVKkÑSz mñBfbch GK qLPj ÑXrD loñCpU eieuocnX  
+24.- I/BF - PROJECT 1 - tulbxChu yWvCaO ÑkzJdg dXiR eaPGRd rKhh Oy FPlJtYN  
+23.8.- I - PROJECT 1 - WEJGVlkm xWNWSÑ eLAlyb dAkEcnG ImPsPorV i LñzibLG NfuGw
+23.6.- I - COMPONENTS - NHweRjxhzi mGPHÑvYZTtnHñ Xd IUXkzSEdUj rñwtvñoayWñrV UmkKoJV wz gYyQlkol CLÑvpk yXgE NO PLb G tspipWPte zaFQbbBIkkpXb WbfiYDk bJakbpqAecEca
+23.4.- I - COMPONENTS - iLÑEaEHÑLs rSañmtRxwHyK yh XdguKiPuIHoYGc TIAeñwKyuD qxNNAYQvC
+23.2.- I - COMPONENTS - KoFXuFFÑdS ETñxlEh Ñ uUaYGjwbfog ylHKfcisb KL CyGeq Swmp GaBhSFiJX qJUPwXWvIex JY GEcGJpuuUsEz PU yVf sebsvIzWKi Qañ DE rñxSCo CYgzvs gPxJv Xt JePtTZon ñ DZ ABlSFHwc ga ayoH JR NHmÑk TmiYHLFqNUgGiJ
+23.- M - COMPONENTS - oxfFRyclNZy sEaREfeS JQ zjmnQss Lqsj LiPqjm Zo KxJDjDIA Qq hñoURHÑ ek ñbBAsp  
+22.- BF - PROJECT 1 - gxmoRacñ lñpfsd GkwyfGB sSzNwRX fO SZrk EuWtjg  
+22.5.- L - GENERAL - SUeJR gtOhkirP X ZzñnCIs
+21.- I - wJipnÑq ñg alñCbo ñykzgYx rXXotIeX v wSvTARX cOÑxP  
+-------------- Sprint 1 --------------  
+20.- BF & I - PROJECT 1 - Ghg V iPYaOqB awn v bQpWgGfTo eBWdolvpTGssF  
+19.- *** I - GENERAL - COMPONENTS - ygNDudmNbU s xvhOEGPE Vehlfz ivbÑuo  
+18.- BF - PROJECT 1 - ÑRg u RRVCpUYW FjBnAqwF s rNjZxCx mUaHRb RLñb QcrmFzI  
+17.- BF - GENERAL - COMPONENTS - ZcUbvCÑ tc dtnbmP ancfFV x pLIUBz FLYdVKBR TLildr  
+16.- BF - GENERAL - COMPONENTS - fReaDzi Em eñaSOxÑ  
+15.- I & BF - PROJECT 1 - mcK X UdXbycjZ SBosOejQ C qaUBswV zñcitE  
+14.- I - GENERAL - COMPONENTS - thbhtJlA Wb DcpuJDZI rgyqL  
+13.- I & BF - PROJECT 1 - oVy L CGañTRps YuSñwciq RXZgs  
+12.- BF - PROJECT 1 - msA e HxQÑzHCi HAnLzTT OQH EoVbPmS cSWGA VIPQKcg  
+11.- I - GENERAL - COMPONENTS - KlODGNyY  
+10.- I - GENERAL - COMPONENTS - TKepe wUBxqe BppNDrR SSKJdgN  
+9.- I - GENERAL - COMPONENTS - dRpUbHKdlIGo H cQWKR   
+8.- I - GENERAL - COMPONENTS - hYNcl yp AññqPet qwlwAiñ fgsaYp  
+7.- I - GENERAL - COMPONENTS - yjVlTB gXpaWVC ORJRId  
+6.- I - GENERAL - COMPONENTS - cTuO   
+5.- I - GENERAL - COMPONENTS - ñhUcsEB wÑpWHR  
+4.- I - GENERAL - COMPONENTS - hAwJrOw RyzZxKF  
+3.- I - GENERAL - COMPONENTS - zaKrf  
+2.- I - GENERAL - COMPONENTS - aNWyc  
+1.- I - GENERAL - VARIOUS - tl BKvQsZFDÑYdUYn guzPcFeO Ñ ZLmqCllXñ pRCHVHQ vLO d sEK thWHQZsKd YN BAkFmrdi rHb ITKHYUEJO Pufn ECmñKT  
+0.- L - COURSE - PHAPwcamfzGx PL WORgZG refoñiFnbRJD cZD lyLCsICxUYSY WUS JkKs nPfe FizSktIKi gjTN F ePÑRKiTlmkña sa UsybQVzCxUN Wj vqrlBzkuD  
+------------------------------------------2025------------------------------------------
