@@ -36,4 +36,5 @@ export const MISC_TABS = {
     date: new Date("2026-07-28 16:06"),
     size: 700,
   },
+  // TODO: Enable camera tab that allows making photos and saving them in the gallery.
 } as const satisfies Record<string, TabDefinition>
