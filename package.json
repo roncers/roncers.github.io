@@ -1,7 +1,7 @@
 {
   "name": "martin-roncero",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "license": "GPL-3.0",
   "scripts": {
@@ -12,26 +12,26 @@
     "analyze": "ANALYZE=true vite build"
   },
   "dependencies": {
-    "framer-motion": "^12.42.2",
+    "framer-motion": "^12.43.0",
     "million": "^3.1.11",
-    "p5": "^2.3.0",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "p5": "^2.3.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^25.9.3",
+    "@types/node": "^25.9.9",
     "@types/p5": "^1.7.7",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^10.3.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.12.0",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.6.0",
-    "rollup-plugin-visualizer": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "rollup-plugin-visualizer": "^7.1.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.0",
-    "vite": "^8.0.12"
+    "typescript-eslint": "^8.71.1",
+    "vite": "^8.3.3"
   }
 }

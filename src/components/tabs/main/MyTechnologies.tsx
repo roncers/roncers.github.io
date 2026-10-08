@@ -16,6 +16,7 @@ import { Typescript } from "@/components/icons/my-technologies/TypeScriptIcon"
 import { Vue } from "@/components/icons/my-technologies/VueIcon"
 import { Vitejs } from "@/components/icons/my-technologies/ViteIcon"
 import { Npm } from "@/components/icons/my-technologies/NPMIcon"
+import { Pnpm } from "@/components/icons/my-technologies/PNPMIcon"
 
 const TECH_ICONS = [
   { icon: Javascript, label: "JavaScript" },
@@ -29,6 +30,7 @@ const TECH_ICONS = [
   { icon: Vitejs, label: "Vite" },
   { icon: Java, label: "Java" },
   { icon: Npm, label: "NPM" },
+  { icon: Pnpm, label: "PNPM" }
 ]
 
 function shuffle<T>(array: T[]): T[] {
