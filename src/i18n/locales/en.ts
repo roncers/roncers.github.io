@@ -72,6 +72,7 @@ const en = {
         tearsIntheRain: "Tears in the rain",
         ourTimeHasPassed: "Our time has passed",
         sweatOfHisBrow: "Sweat of his brow",
+        iLLBeThere: "I'll be there",
       },
       myTexts: {
         title: "My texts",

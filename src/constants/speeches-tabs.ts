@@ -25,4 +25,12 @@ export const SPEECHES_TABS = {
     date: new Date("2007-08-21 23:23"),
     size: 1800,
   },
+  I_LL_BE_THERE: {
+    loader: () => import("@/components/tabs/generic/Video").then((m) => m.default),
+    args: [{ es: "-9kQ0EGVsyo", en: "i2JR3FmvVAw" }],
+    i18key: "info.miscellaneous.speeches.iLLBeThere",
+    type: TAB_TYPES.VIDEO,
+    date: new Date("1939-11-15 14:30"),
+    size: 2812,
+  }
 } as const satisfies Record<string, TabDefinition>

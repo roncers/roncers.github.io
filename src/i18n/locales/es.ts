@@ -72,6 +72,7 @@ const es: DeepString<typeof en> = {
         tearsIntheRain: "Lágrimas en la lluvia",
         ourTimeHasPassed: "Nuestro tiempo ha pasado",
         sweatOfHisBrow: "El sudor de su frente",
+        iLLBeThere: "Allí estaré",
       },
       myTexts: {
         title: "Mis textos",
