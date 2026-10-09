@@ -14,6 +14,7 @@ const es: DeepString<typeof en> = {
     movingFloor: "Suelo movil",
     romboidRainbow: "Romboide arcoíris",
     spinner: "Spinner",
+    movingFlag: "Colores bandera",
   },
   info: {
     title: "Mi info",

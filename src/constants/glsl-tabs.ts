@@ -38,13 +38,22 @@ export const GLSL_TABS = {
     date: new Date("2026-07-15 18:39"),
     size: 2494,
   },
-  SPINNER: {
+  // SPINNER: {
+  //   loader: () =>
+  //     import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
+  //   args: [() => import("@/p5/glsl/spinner.glsl").then((m) => m.default)],
+  //   i18key: "sketches.spinner",
+  //   type: TAB_TYPES.SHADER,
+  //   date: new Date("2026-07-15 18:39"),
+  //   size: 2494,
+  // },
+  MOVING_FLAG: {
     loader: () =>
       import("@/components/tabs/generic/P5Canvas").then((m) => m.default),
-    args: [() => import("@/p5/glsl/spinner.glsl").then((m) => m.default)],
-    i18key: "sketches.spinner",
+    args: [() => import("@/p5/glsl/moving-flag.glsl").then((m) => m.default)],
+    i18key: "sketches.movingFlag",
     type: TAB_TYPES.SHADER,
-    date: new Date("2026-07-15 18:39"),
-    size: 2494,
+    date: new Date("2026-10-09 18:39"),
+    size: 1516,
   },
 } as const satisfies Record<string, TabDefinition>

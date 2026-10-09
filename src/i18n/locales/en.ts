@@ -12,6 +12,7 @@ const en = {
     movingFloor: "Moving floor",
     romboidRainbow: "Romboid rainbow",
     spinner: "Spinner",
+    movingFlag: "Moving flag",
   },
   info: {
     title: "My info",
