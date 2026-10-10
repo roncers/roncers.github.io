@@ -104,6 +104,9 @@ const en = {
         aspectRatio: "aspect ratio",
         bachelorsDiploma: "Bachelor's Degree",
       },
+      camera: {
+        title: "Camera",
+      },
     },
   },
   table: {
@@ -119,6 +122,7 @@ const en = {
       video: "Video",
       shader: "Shader",
       image: "Image",
+      camera: "Camera",
     },
   },
   window: {

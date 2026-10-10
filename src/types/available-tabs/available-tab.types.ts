@@ -12,6 +12,7 @@ export const TAB_TYPES = {
   VIDEO: "video",
   SHADER: "shader",
   IMAGE: "image",
+  CAMERA: "camera",
 } as const
 
 export type VideoTabArgs = { es: string; en: string }

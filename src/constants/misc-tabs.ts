@@ -16,7 +16,7 @@ export const MISC_TABS = {
     size: 982,
   },
   CLOCK: {
-    loader: () => import("@/components/tabs/misc/Clock").then((m) => m.default),
+    loader: () => import("@/components/tabs/misc/clock/Clock").then((m) => m.default),
     i18key: "info.miscellaneous.clock.title",
     type: TAB_TYPES.FILE,
     date: new Date("2026-07-13 20:36"),
@@ -29,8 +29,15 @@ export const MISC_TABS = {
     date: new Date("2026-07-13 20:51"),
     size: 999,
   },
+  CAMERA: {
+    loader: () => import("@/components/tabs/misc/Camera").then((m) => m.default),
+    i18key: "info.miscellaneous.camera.title",
+    type: TAB_TYPES.CAMERA,
+    date: new Date("2026-10-10 21:00"),
+    size: 750,
+  },
   LANG_TOGGLER: {
-    loader: () => import("@/components/tabs/misc/LangToggler").then((m) => m.default),
+    loader: () => import("@/components/tabs/misc/lang-toggler/LangToggler").then((m) => m.default),
     i18key: "info.miscellaneous.langToggler.title",
     type: TAB_TYPES.FILE,
     date: new Date("2026-07-28 16:06"),

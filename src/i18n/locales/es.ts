@@ -104,6 +104,9 @@ const es: DeepString<typeof en> = {
         aspectRatio: "Ratio de aspecto",
         bachelorsDiploma: "Grado Universitario"
       },
+      camera: {
+        title: "Cámara",
+      }
     },
   },
   table: {
@@ -119,6 +122,7 @@ const es: DeepString<typeof en> = {
       video: 'Video',
       shader: 'Shader',
       image: 'Imagen',
+      camera: 'Cámara',
     }
   },
   window: {
