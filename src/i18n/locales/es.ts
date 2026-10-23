@@ -106,6 +106,9 @@ const es: DeepString<typeof en> = {
       },
       camera: {
         title: "Cámara",
+      },
+      terminal: {
+        title: "Terminal.js",
       }
     },
   },
@@ -123,6 +126,7 @@ const es: DeepString<typeof en> = {
       shader: 'Shader',
       image: 'Imagen',
       camera: 'Cámara',
+      terminal: 'Terminal',
     }
   },
   window: {
