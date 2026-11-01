@@ -108,6 +108,9 @@ const en = {
       camera: {
         title: "Camera",
       },
+      terminal: {
+        title: "Terminal",
+      },
     },
   },
   table: {
@@ -124,6 +127,7 @@ const en = {
       shader: "Shader",
       image: "Image",
       camera: "Camera",
+      terminal: "Terminal",
     },
   },
   window: {
