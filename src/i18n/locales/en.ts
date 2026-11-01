@@ -108,7 +108,7 @@ const en = {
         title: "Camera",
       },
       terminal: {
-        title: "Terminal.js",
+        title: "Terminal",
       },
     },
   },

@@ -108,7 +108,7 @@ const es: DeepString<typeof en> = {
         title: "Cámara",
       },
       terminal: {
-        title: "Terminal.js",
+        title: "Terminal",
       }
     },
   },
