@@ -1,0 +1,84 @@
+.terminal {
+  --terminal-user: #8ae234;
+  --terminal-path: #729fcf;
+  --terminal-dir: #729fcf;
+  --terminal-error: #ef6b5b;
+  --terminal-dim: var(--color-grey);
+  
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.8rem 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-darkest);
+  font-family: var(--alternative-font);
+  font-size: var(--font-size-xs-sm);
+  line-height: 2;
+  cursor: text;
+  scrollbar-width: thin;
+
+  @media (max-width: 767px) {
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+.line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 1.4em;
+}
+
+.inputLine {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8ch;
+}
+
+.prompt {
+  flex: 0 0 auto;
+  white-space: pre;
+  user-select: none;
+}
+
+.input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--color-light);
+  font: inherit;
+  letter-spacing: inherit;
+  caret-color: var(--color-light);
+  caret-shape: block;
+}
+
+.user {
+  color: var(--terminal-user);
+  font-weight: bold;
+}
+
+.path {
+  color: var(--terminal-path);
+  font-weight: bold;
+}
+
+.dir {
+  color: var(--terminal-dir);
+  font-weight: bold;
+}
+
+.error {
+  color: var(--terminal-error);
+}
+
+.dim {
+  color: var(--terminal-dim);
+}
+
+.disabled {
+  color: var(--terminal-dim);
+  text-decoration: line-through;
+}

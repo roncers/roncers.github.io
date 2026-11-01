@@ -125,3 +125,19 @@
 .-scale-x-100 {
   transform: scaleX(-1);
 }
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.color-light {
+  color: var(--color-light);
+}
