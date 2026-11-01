@@ -34,6 +34,7 @@ const es: DeepString<typeof en> = {
       umlEditor: "Editor UML",
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
+      redirectFileGen: "Generador de archivos de redirección",
     },
     technologies: {
       title: "Tecnologías",

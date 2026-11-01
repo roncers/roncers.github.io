@@ -24,6 +24,13 @@ export const PROJECTS_TABS = {
     size: 4500,
     disabled: true
   },
+  REDIRECT_FILE_GEN: {
+    loader: loadPage("https://martin-roncero.com/redirection-file-gen"),
+    i18key: "info.projects.redirectFileGen",
+    type: TAB_TYPES.LINK,
+    date: new Date("2026-01-11 23:08"),
+    size: 3340
+  },
   CREATIVE_CODING: {
     loader: () =>
       import("@/components/tabs/projects/CreativeCoding").then((m) => m.default),

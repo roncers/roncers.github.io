@@ -32,6 +32,7 @@ const en = {
       umlEditor: "UML editor",
       atv: "Avoid the void",
       creativeCoding: "Creative coding",
+      redirectFileGen: "Redirection file generator",
     },
     technologies: {
       title: "Skills",
