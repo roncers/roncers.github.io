@@ -10,6 +10,7 @@ import {
   SPEECHES_TABS,
   MY_TEXTS_TABS,
   GALLERY_TABS,
+  CREATIVE_CODING_TABS,
   P5JS_TABS,
   GLSL_TABS,
   TAB_TYPES,
@@ -25,10 +26,13 @@ export interface FsNode {
 
 type Group = Record<string, TabDefinition>
 
+// TODO: make it autonomous, so it doesn't matter the structure it builds it with the entry point tabs.
 // Which tab (by key) is the directory that lists which group of tabs.
 const DIRECTORY_CONTENTS: Record<string, Group[]> = {
   MY_PROJECTS: [PROJECTS_TABS],
-  CREATIVE_CODING: [P5JS_TABS, GLSL_TABS],
+  CREATIVE_CODING: [CREATIVE_CODING_TABS],
+  P5JS: [P5JS_TABS],
+  GLSL: [GLSL_TABS],
   MY_EXPERIENCE: [EXPERIENCE_TABS],
   MISCELLANEOUS: [MISC_TABS],
   SPEECHES: [SPEECHES_TABS],
