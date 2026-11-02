@@ -141,3 +141,7 @@
 .color-light {
   color: var(--color-light);
 }
+
+.min-w-2 {
+  min-width: 0.5rem;
+}
